@@ -122,6 +122,26 @@ def export_to_csv(output_dir: str | Path | None = None) -> None:
         logger.info("Exported %s → %s (%d rows)", name, path, len(df))
 
 
+def get_dataframes() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
+    """Return (df_metrics, df_orders, df_summary) with caching.
+
+    Uses st.cache_data when running inside Streamlit, otherwise falls back
+    to the module-level _data_cache dict.
+    """
+    try:
+        import streamlit as st
+
+        @st.cache_data
+        def _load():
+            data = load_raw_data()
+            return data["metrics"], data["orders"], data["summary"]
+
+        return _load()
+    except (ImportError, RuntimeError):
+        data = load_raw_data()
+        return data["metrics"], data["orders"], data["summary"]
+
+
 def get_data_summary() -> str:
     """Generate a text summary of the loaded dataset for LLM context.
 
