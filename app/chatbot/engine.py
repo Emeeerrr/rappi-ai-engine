@@ -1,23 +1,288 @@
 """
 Chatbot Engine - Core conversational logic.
 
-This module will implement:
-- Processing user queries about Rappi operational metrics
-- Routing questions to the appropriate data queries
-- Generating natural language responses using the LLM client
-- Integrating metric context and data summaries into conversations
-- Handling follow-up questions with conversation memory
+Implements the two-step LLM pipeline:
+1. Planning: LLM maps a natural-language question to DataQueryEngine actions.
+2. Response: LLM synthesizes query results into a rich, contextual answer.
 """
 
+import json
+import logging
+import re
 
-def process_message(user_message: str, conversation_history: list) -> str:
-    """Process a user message and return the assistant's response.
+import pandas as pd
+
+from app.config import DEFAULT_MODEL
+from app.data.loader import get_dataframes
+from app.data.queries import DataQueryEngine
+from app.chatbot.memory import ConversationMemory
+from app.chatbot.prompts import (
+    FUNCTION_SCHEMA,
+    build_planning_prompt,
+    build_response_messages,
+)
+from app.utils.llm import chat_completion
+
+logger = logging.getLogger(__name__)
+
+# Methods that the LLM is allowed to call on DataQueryEngine
+_ALLOWED_METHODS = {fn["name"] for fn in FUNCTION_SCHEMA}
+
+
+def _extract_json(text: str) -> dict | None:
+    """Extract a JSON object from LLM output that may contain surrounding text."""
+    # Try direct parse first
+    text = text.strip()
+    try:
+        return json.loads(text)
+    except json.JSONDecodeError:
+        pass
+
+    # Try to find JSON block in markdown code fence
+    m = re.search(r"```(?:json)?\s*(\{.*?\})\s*```", text, re.DOTALL)
+    if m:
+        try:
+            return json.loads(m.group(1))
+        except json.JSONDecodeError:
+            pass
+
+    # Try to find the outermost { ... }
+    start = text.find("{")
+    if start == -1:
+        return None
+    depth = 0
+    for i in range(start, len(text)):
+        if text[i] == "{":
+            depth += 1
+        elif text[i] == "}":
+            depth -= 1
+            if depth == 0:
+                try:
+                    return json.loads(text[start:i + 1])
+                except json.JSONDecodeError:
+                    return None
+    return None
+
+
+class ChatEngine:
+    """Two-step chatbot engine that translates questions into data queries.
 
     Args:
-        user_message: The user's input text.
-        conversation_history: List of previous messages in the conversation.
-
-    Returns:
-        The assistant's response text.
+        model: LLM model identifier. If None, uses DEFAULT_MODEL from config.
     """
-    raise NotImplementedError("Chatbot engine not yet implemented")
+
+    def __init__(self, model: str | None = None):
+        df_metrics, df_orders, _ = get_dataframes()
+        self.query_engine = DataQueryEngine(df_metrics, df_orders)
+        self.model = model or DEFAULT_MODEL
+        self.memory = ConversationMemory(max_exchanges=10)
+        self._planning_prompt = build_planning_prompt(FUNCTION_SCHEMA)
+
+    # ------------------------------------------------------------------
+    # Public API
+    # ------------------------------------------------------------------
+
+    def process_query(self, user_message: str) -> dict:
+        """Process a user message through the full planning -> execution -> response pipeline.
+
+        Returns:
+            {
+                "response": str,
+                "charts": list[dict],
+                "raw_data": list,
+                "actions_executed": list[str],
+                "error": str | None,
+            }
+        """
+        try:
+            # Step 1: Planning
+            plan = self._plan(user_message)
+
+            # Handle direct responses (greetings, meta-questions)
+            if plan.get("direct_response"):
+                response_text = plan["direct_response"]
+                self.memory.add_message("user", user_message)
+                self.memory.add_message("assistant", response_text)
+                return {
+                    "response": response_text,
+                    "charts": [],
+                    "raw_data": [],
+                    "actions_executed": [],
+                    "error": None,
+                }
+
+            # Step 2: Execute actions
+            actions = plan.get("actions", [])
+            if not actions:
+                return self._fallback_response(user_message, "No se identificaron acciones para ejecutar.")
+
+            results, charts, raw_data, executed = self._execute_actions(actions)
+
+            # Step 3: Generate response
+            response_text = self._generate_response(user_message, results)
+
+            self.memory.add_message("user", user_message)
+            self.memory.add_message("assistant", response_text)
+
+            return {
+                "response": response_text,
+                "charts": charts,
+                "raw_data": raw_data,
+                "actions_executed": executed,
+                "error": None,
+            }
+
+        except Exception as e:
+            logger.exception("Error processing query: %s", e)
+            return {
+                "response": f"Ocurrio un error al procesar tu pregunta. Por favor intenta reformularla.\nDetalle: {e}",
+                "charts": [],
+                "raw_data": [],
+                "actions_executed": [],
+                "error": str(e),
+            }
+
+    def get_suggested_questions(self) -> list[str]:
+        """Return a list of suggested questions based on the available data."""
+        countries = self.query_engine.list_countries()["data"]
+        metrics = self.query_engine.list_metrics()["data"]
+
+        # Pick a couple of metrics and countries for variety
+        m1 = metrics[6] if len(metrics) > 6 else metrics[0]  # Perfect Orders
+        m2 = metrics[3] if len(metrics) > 3 else metrics[-1]  # Lead Penetration
+        c1 = countries[3] if len(countries) > 3 else countries[0]  # CO
+
+        return [
+            f"Cuales son las 5 zonas con peor {m1} esta semana?",
+            f"Como ha evolucionado el {m2} promedio en {c1} en las ultimas 8 semanas?",
+            f"Compara {m1} entre zonas Wealthy y Non Wealthy",
+            "Cuales son las 10 zonas con mayor crecimiento en ordenes?",
+            f"Que correlacion hay entre {m1} y {m2}?",
+        ]
+
+    def set_model(self, model: str) -> None:
+        """Change the LLM model at runtime."""
+        self.model = model
+
+    def clear_memory(self) -> None:
+        """Reset conversation history."""
+        self.memory.clear()
+
+    # ------------------------------------------------------------------
+    # Internal steps
+    # ------------------------------------------------------------------
+
+    def _plan(self, user_message: str) -> dict:
+        """Step 1: Ask the LLM to produce an action plan as JSON."""
+        messages = [
+            {"role": "system", "content": self._planning_prompt},
+            *self.memory.get_history(),
+            {"role": "user", "content": user_message},
+        ]
+
+        raw = chat_completion(messages, model=self.model, temperature=0.1, max_tokens=2048)
+        plan = _extract_json(raw)
+
+        if plan is not None:
+            return plan
+
+        # Retry once with a more explicit prompt
+        logger.warning("First planning attempt did not return valid JSON. Retrying...")
+        messages.append({"role": "assistant", "content": raw})
+        messages.append({
+            "role": "user",
+            "content": (
+                "Tu respuesta anterior no fue un JSON valido. "
+                "Por favor responde UNICAMENTE con un JSON valido con las claves: "
+                "thinking, actions, direct_response. Sin texto adicional."
+            ),
+        })
+
+        raw_retry = chat_completion(messages, model=self.model, temperature=0.0, max_tokens=2048)
+        plan = _extract_json(raw_retry)
+
+        if plan is not None:
+            return plan
+
+        # If still failing, treat as direct response
+        logger.warning("Retry also failed to produce JSON. Falling back to direct response.")
+        return {"thinking": "", "actions": [], "direct_response": raw}
+
+    def _execute_actions(self, actions: list[dict]) -> tuple[list[dict], list[dict], list, list[str]]:
+        """Step 2: Execute each planned action on the DataQueryEngine.
+
+        Returns:
+            (results, charts, raw_data_list, executed_method_names)
+        """
+        results = []
+        charts = []
+        raw_data = []
+        executed = []
+
+        for action in actions:
+            fn_name = action.get("function", "")
+            params = action.get("params", {})
+
+            if fn_name not in _ALLOWED_METHODS:
+                results.append({
+                    "success": False,
+                    "summary": f"Metodo '{fn_name}' no reconocido.",
+                    "chart_data": None,
+                })
+                continue
+
+            method = getattr(self.query_engine, fn_name, None)
+            if method is None:
+                results.append({
+                    "success": False,
+                    "summary": f"Metodo '{fn_name}' no encontrado en el motor de consultas.",
+                    "chart_data": None,
+                })
+                continue
+
+            # Clean params: remove None values so defaults apply
+            clean_params = {k: v for k, v in params.items() if v is not None}
+
+            try:
+                result = method(**clean_params)
+            except Exception as e:
+                logger.warning("Error executing %s(%s): %s", fn_name, clean_params, e)
+                result = {
+                    "success": False,
+                    "summary": f"Error al ejecutar {fn_name}: {e}",
+                    "chart_data": None,
+                }
+
+            results.append(result)
+            executed.append(fn_name)
+
+            if result.get("chart_data"):
+                charts.append(result["chart_data"])
+            if result.get("success") and isinstance(result.get("data"), pd.DataFrame):
+                raw_data.append(result["data"])
+
+        return results, charts, raw_data, executed
+
+    def _generate_response(self, user_question: str, query_results: list[dict]) -> str:
+        """Step 3: Ask the LLM to synthesize results into a user-facing answer."""
+        messages = build_response_messages(user_question, query_results)
+        return chat_completion(messages, model=self.model, temperature=0.3, max_tokens=4096)
+
+    def _fallback_response(self, user_message: str, reason: str) -> dict:
+        """Generate a fallback when planning produces no actions."""
+        self.memory.add_message("user", user_message)
+        response = (
+            f"No pude determinar que datos consultar para tu pregunta. {reason}\n\n"
+            "Puedes intentar preguntar cosas como:\n"
+        )
+        for q in self.get_suggested_questions()[:3]:
+            response += f"- {q}\n"
+
+        self.memory.add_message("assistant", response)
+        return {
+            "response": response,
+            "charts": [],
+            "raw_data": [],
+            "actions_executed": [],
+            "error": None,
+        }
