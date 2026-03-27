@@ -1,0 +1,37 @@
+# Environment
+.env
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Data
+data/raw/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Outputs (optional, uncomment if you want to ignore)
+# outputs/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Playwright
+playwright-report/
+test-results/
