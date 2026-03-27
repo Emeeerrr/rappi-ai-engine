@@ -21,12 +21,12 @@ OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY", "")
 OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
 
 # --- Default Model ---
-DEFAULT_MODEL = os.getenv("DEFAULT_MODEL", "anthropic/claude-sonnet-4-20250514")
+DEFAULT_MODEL = os.getenv("DEFAULT_MODEL", "anthropic/claude-sonnet-4.6")
 
 # --- Available Models for UI selector ---
 AVAILABLE_MODELS = [
-    {"id": "anthropic/claude-sonnet-4-20250514", "label": "Claude Sonnet 4.6"},
-    {"id": "anthropic/claude-haiku-4-5-20251001", "label": "Haiku 4.5"},
+    {"id": "anthropic/claude-sonnet-4.6", "label": "Claude Sonnet 4.6"},
+    {"id": "anthropic/claude-haiku-4.5", "label": "Haiku 4.5"},
     {"id": "openai/gpt-4o", "label": "GPT-4o"},
     {"id": "google/gemini-2.5-flash", "label": "Gemini 2.5 Flash"},
     {"id": "meta-llama/llama-4-maverick", "label": "Llama 4 Maverick"},
