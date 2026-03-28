@@ -190,10 +190,10 @@ with st.sidebar:
     st.markdown("# Rappi AI Engine")
     case = st.radio(
         "Selecciona el caso:",
-        options=["Analisis de Operaciones", "Competitive Intelligence"],
+        options=["Análisis de Operaciones", "Competitive Intelligence"],
     )
     st.divider()
-    if st.button("Limpiar conversacion", width="stretch"):
+    if st.button("Limpiar conversación", width="stretch"):
         st.session_state.chat_history = []
         if st.session_state.chat_engine is not None:
             st.session_state.chat_engine.clear_memory()
@@ -201,7 +201,7 @@ with st.sidebar:
     st.markdown("---")
     n_msgs = len([m for m in st.session_state.chat_history if m["role"] == "user"])
     model_label = next((m["label"] for m in AVAILABLE_MODELS if m["id"] == st.session_state.selected_model), st.session_state.selected_model)
-    st.caption("Prueba Tecnica Rappi Emerson")
+    st.caption("Prueba Técnica Rappi Emerson")
 
 
 # ------------------------------------------------------------------
@@ -239,9 +239,9 @@ def _render_assistant_message(msg: dict, msg_index: int):
                     key=f"hist_dl_{msg_index}_{j}",
                 )
         if msg.get("actions"):
-            with st.expander("Ver detalle tecnico"):
+            with st.expander("Ver detalle técnico"):
                 st.markdown(f"**Modelo:** `{st.session_state.selected_model}`")
-                st.markdown(f"**Metodos ejecutados:** {', '.join(msg['actions'])}")
+                st.markdown(f"**Métodos ejecutados:** {', '.join(msg['actions'])}")
 
 
 # ------------------------------------------------------------------
@@ -277,11 +277,11 @@ if st.session_state.pending_message is not None:
 # ------------------------------------------------------------------
 # Main content
 # ------------------------------------------------------------------
-if case == "Analisis de Operaciones":
+if case == "Análisis de Operaciones":
     st.title("Rappi AI Intelligence Engine")
-    st.caption("Analiza metricas operacionales: 9 paises, 964 zonas, 13 metricas, 9 semanas")
+    st.caption("Analiza métricas operacionales: 9 países, 964 zonas, 13 métricas, 9 semanas")
 
-    tab_chat, tab_insights = st.tabs(["Chat", "Insights Automaticos"])
+    tab_chat, tab_insights = st.tabs(["Chat", "Insights Automáticos"])
 
     # ==================================================================
     # TAB: Chat
@@ -355,7 +355,7 @@ if case == "Analisis de Operaciones":
             st.rerun()
 
     # ==================================================================
-    # TAB: Insights Automaticos
+    # TAB: Insights Automáticos
     # ==================================================================
     with tab_insights:
         if st.button("Generar Reporte de Insights", type="primary", key="gen_insights"):
@@ -389,7 +389,7 @@ if case == "Analisis de Operaciones":
 
             cols = st.columns(5)
             cat_labels = {
-                "anomaly": "Anomalias", "trend": "Tendencias",
+                "anomaly": "Anomalías", "trend": "Tendencias",
                 "benchmark": "Benchmarking", "correlation": "Correlaciones",
                 "opportunity": "Oportunidades",
             }
@@ -398,7 +398,7 @@ if case == "Analisis de Operaciones":
 
             st.markdown(
                 f"**Total:** {len(all_insights)} insights | "
-                f"Criticos: {sev_counts.get('critical', 0)}, "
+                f"Críticos: {sev_counts.get('critical', 0)}, "
                 f"Altos: {sev_counts.get('high', 0)}, "
                 f"Medios: {sev_counts.get('medium', 0)}, "
                 f"Bajos: {sev_counts.get('low', 0)}"
@@ -446,21 +446,21 @@ if case == "Analisis de Operaciones":
                 for ins in st.session_state.insights_data:
                     table_data.append({
                         "Severidad": ins["severity"],
-                        "Categoria": ins["category"],
+                        "Categoría": ins["category"],
                         "Titulo": ins["title"],
                         "Zonas": ", ".join(ins["zones"][:3]) if ins["zones"] else "-",
-                        "Metricas": ", ".join(ins["metrics"][:2]),
+                        "Métricas": ", ".join(ins["metrics"][:2]),
                     })
                 st.dataframe(pd.DataFrame(table_data), use_container_width=True)
 
 else:
     st.title("Competitive Intelligence")
-    st.caption("Rappi vs Uber Eats vs DiDi Food - Comparacion de precios, fees y tiempos en Mexico")
+    st.caption("Rappi vs Uber Eats vs DiDi Food - Comparación de precios, fees y tiempos en Mexico")
 
     st.info(
         "El scraping se ejecuta via script por temas de tiempo y bloqueo de plataformas. "
         "Ejecuta `python scripts/run_scraping.py --use-fallback` para generar datos de demo, "
-        "o usa el boton de abajo."
+        "o usa el botón de abajo."
     )
 
     # Session state for competitive data
@@ -550,10 +550,10 @@ else:
         PLAT_COLORS = {"rappi": "#FF441F", "ubereats": "#06C167", "didi": "#FF8C00"}
 
         # ==============================================
-        # Analisis Rapido (metrics)
+        # Análisis Rápido (metrics)
         # ==============================================
         st.divider()
-        st.subheader("Analisis Rapido")
+        st.subheader("Análisis Rápido")
 
         costs = analyzer.total_cost_analysis()
         fees = analyzer.fee_structure_analysis()

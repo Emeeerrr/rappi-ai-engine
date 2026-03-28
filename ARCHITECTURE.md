@@ -6,97 +6,97 @@
 Usuario escribe pregunta
         │
         v
-┌─────────────────────────────────────────────┐
-│  PASO 1: PLANIFICACION                       │
-│                                              │
-│  Input:  system_prompt + function_schema     │
-│          + historial + pregunta              │
-│  LLM ->  JSON {                              │
+┌───────────────────────────────────────────────┐
+│  PASO 1: PLANIFICACIÓN                        │
+│                                               │
+│  Input:  system_prompt + function_schema      │
+│          + historial + pregunta               │
+│  LLM ->  JSON {                               │
 │            thinking: "...",                   │
 │            actions: [                         │
 │              {function: "top_zones_by_metric",│
-│               params: {metric: "...", n: 5}} │
-│            ],                                │
+│               params: {metric: "...", n: 5}}  │
+│            ],                                 │
 │            direct_response: null              │
-│          }                                   │
-└─────────────────┬───────────────────────────┘
+│          }                                    │
+└─────────────────┬─────────────────────────────┘
                   │
                   v
-┌─────────────────────────────────────────────┐
-│  PASO 2: EJECUCION                           │
+┌──────────────────────────────────────────────┐
+│  PASO 2: EJECUCIÓN                           │
 │                                              │
-│  Para cada accion en el plan:                │
-│    DataQueryEngine.metodo(**params)           │
+│  Para cada acción en el plan:                │
+│    DataQueryEngine.metodo(**params)          │
 │    -> {success, data, summary, chart_data}   │
 │                                              │
 │  Los datos vienen de Pandas DataFrames       │
 │  (nunca del LLM = no hay alucinaciones)      │
-└─────────────────┬───────────────────────────┘
+└─────────────────┬────────────────────────────┘
                   │
                   v
-┌─────────────────────────────────────────────┐
-│  PASO 3: GENERACION DE RESPUESTA             │
+┌──────────────────────────────────────────────┐
+│  PASO 3: GENERACIÓN DE RESPUESTA             │
 │                                              │
 │  Input:  summaries de las queries            │
 │          + pregunta original                 │
-│          + instrucciones de formato           │
+│          + instrucciones de formato          │
 │  LLM ->  Respuesta en lenguaje natural       │
 │          con datos reales, contextualizada   │
-└─────────────────┬───────────────────────────┘
+└─────────────────┬────────────────────────────┘
                   │
                   v
-        UI muestra: texto + graficos + export CSV
+        UI muestra: texto + gráficos + export CSV
 ```
 
 ### Por que 2 pasos
 
-El LLM **nunca toca los datos directamente**. Solo decide que consultar (paso 1) y como redactar la respuesta (paso 3). La ejecucion real (paso 2) es determinista via Pandas. Esto:
+El LLM **nunca toca los datos directamente**. Solo decide que consultar (paso 1) y como redactar la respuesta (paso 3). La ejecución real (paso 2) es determinista via Pandas. Esto:
 
-- Elimina alucinaciones en datos numericos
+- Elimina alucinaciones en datos numéricos
 - Permite auditar exactamente que se consulto
-- Hace el sistema extensible (agregar un metodo al DataQueryEngine lo hace disponible al chatbot automaticamente)
+- Hace el sistema extensible (agregar un método al DataQueryEngine lo hace disponible al chatbot automáticamente)
 
 ---
 
-## Flujo de Insights Automaticos (Caso 1)
+## Flujo de Insights Automáticos (Caso 1)
 
 ```
 Click "Generar Reporte"
         │
         v
-┌─────────────────────────────────────────────┐
-│  InsightsAnalyzer.analyze_all()              │
-│                                              │
-│  5 categorias de deteccion:                  │
-│  a) Anomalias     (L0W vs L1W, >10% cambio) │
-│  b) Tendencias    (deterioro 3+ semanas)     │
-│  c) Benchmarking  (zona vs peers, >1.5 std)  │
-│  d) Correlaciones (pares r > 0.5)            │
-│  e) Oportunidades (alto volumen + baja calidad│
-│                    paises bajo promedio, etc.)│
-│                                              │
-│  Output: lista de insights ordenados         │
+┌────────────────────────────────────────────────┐
+│  InsightsAnalyzer.analyze_all()                │
+│                                                │
+│  5 categorías de detección:                    │
+│  a) Anomalías     (L0W vs L1W, >10% cambio)    │
+│  b) Tendencias    (deterioro 3+ semanas)       │
+│  c) Benchmarking  (zona vs peers, >1.5 std)    │
+│  d) Correlaciones (pares r > 0.5)              │
+│  e) Oportunidades (alto volumen + baja calidad │
+│                    países bajo promedio, etc.) │
+│                                                │
+│  Output: lista de insights ordenados           │
 │          por severidad (critical > high > ...) │
-└─────────────────┬───────────────────────────┘
+└─────────────────┬──────────────────────────────┘
                   │
                   v
-┌─────────────────────────────────────────────┐
-│  ReportGenerator.generate_executive_report()  │
+┌──────────────────────────────────────────────┐
+│  ReportGenerator.generate_executive_report() │
 │                                              │
 │  LLM recibe los insights crudos y genera:    │
 │  - Resumen ejecutivo                         │
-│  - Secciones por categoria                   │
+│  - Secciones por categoría                   │
 │  - Recomendaciones prioritarias              │
 │  - Formato Markdown ejecutivo                │
-└─────────────────┬───────────────────────────┘
+└─────────────────┬────────────────────────────┘
                   │
                   v
-        UI muestra: metricas + reporte + descarga
+        UI muestra: métricas + reporte + descarga
 ```
 
 ---
 
-## Flujo de Scraping + Analisis (Caso 2)
+## Flujo de Scraping + Análisis (Caso 2)
 
 ```
 scripts/run_scraping.py
@@ -116,18 +116,18 @@ scripts/run_scraping.py
                                └── competitive_data.csv
                                         │
                                         v
-                            ┌───────────────────────────┐
+                            ┌────────────────────────────┐
                             │  CompetitiveAnalyzer       │
-                            │                           │
-                            │  7 analisis:              │
-                            │  - price_comparison       │
+                            │                            │
+                            │  7 análisis:               │
+                            │  - price_comparison        │
                             │  - fee_structure_analysis  │
                             │  - delivery_time_comparison│
-                            │  - promotion_analysis     │
-                            │  - geographic_analysis    │
-                            │  - total_cost_analysis    │
-                            │  - generate_top_insights  │
-                            └─────────────┬─────────────┘
+                            │  - promotion_analysis      │
+                            │  - geographic_analysis     │
+                            │  - total_cost_analysis     │
+                            │  - generate_top_insights   │
+                            └─────────────┬──────────────┘
                                           │
                                           v
                             CompetitiveReportGenerator
@@ -136,9 +136,9 @@ scripts/run_scraping.py
 
 ---
 
-## DataQueryEngine - 20 metodos disponibles
+## DataQueryEngine - 20 métodos disponibles
 
-| Categoria | Metodos |
+| Categoría | Métodos |
 |---|---|
 | Filtrado y Ranking | `top_zones_by_metric`, `bottom_zones_by_metric`, `filter_zones` |
 | Comparaciones | `compare_metric_by_group`, `compare_zones` |
@@ -148,4 +148,4 @@ scripts/run_scraping.py
 | Ordenes | `get_orders_trend`, `top_zones_by_orders`, `orders_growth` |
 | Utilidades | `list_countries`, `list_cities`, `list_zones`, `list_metrics`, `search_zone`, `get_week_columns` |
 
-Cada metodo retorna: `{success: bool, data: DataFrame|value, summary: str, chart_data: dict|None}`
+Cada método retorna: `{success: bool, data: DataFrame|value, summary: str, chart_data: dict|None}`
