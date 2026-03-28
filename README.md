@@ -87,7 +87,7 @@ Sistema de inteligencia operacional y competitiva para Rappi, potenciado por IA.
 ```bash
 # 1. Clonar el repositorio
 git clone <repo-url>
-cd rappi-ai
+cd rappi-ai-engine
 
 # 2. Crear virtual environment
 python -m venv .venv
@@ -237,7 +237,7 @@ Costos aproximados por sesion via OpenRouter (marzo 2026):
 ## Estructura del Proyecto
 
 ```
-rappi-ai/
+rappi-ai-engine/
 ├── app/
 │   ├── main.py                    # Entry point Streamlit (UI completa)
 │   ├── config.py                  # Variables de entorno, constantes, modelos
