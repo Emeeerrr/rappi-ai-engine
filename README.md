@@ -87,7 +87,7 @@ Sistema de inteligencia operacional y competitiva para Rappi, potenciado por IA.
 ```bash
 # 1. Clonar el repositorio
 git clone <repo-url>
-cd rappi-ai-engine
+cd rappi-ai
 
 # 2. Crear virtual environment
 python -m venv .venv
