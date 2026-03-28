@@ -7,19 +7,19 @@ Run order: start simple, build complexity, end with wow factor.
 DEMO_QUESTIONS = [
     # --- WARM UP (simple, fast) ---
     {
-        "question": "Que metricas estan disponibles?",
+        "question": "¿Qué metricas estan disponibles?",
         "expected": "Lista de 13 metricas con descripciones. Prueba que el bot entiende preguntas basicas.",
         "type": "utilidad",
     },
     {
-        "question": "Cuantos paises hay y cuales son?",
+        "question": "¿Cuántos paises hay y cuales son?",
         "expected": "9 paises: AR, BR, CL, CO, CR, EC, MX, PE, UY",
         "type": "utilidad",
     },
 
     # --- FILTRADO Y RANKING ---
     {
-        "question": "Cuales son las 5 zonas con peor Perfect Orders esta semana?",
+        "question": "¿Cuáles son las 5 zonas con peor Perfect Orders esta semana?",
         "expected": "Lista de 5 zonas con peor Perfect Orders (L0W_ROLL). Deberia incluir grafico de barras.",
         "type": "ranking",
     },
@@ -36,33 +36,33 @@ DEMO_QUESTIONS = [
         "type": "comparacion",
     },
     {
-        "question": "Cual es el promedio de Perfect Orders por pais?",
+        "question": "¿Cuál es el promedio de Perfect Orders por pais?",
         "expected": "Tabla con promedio por pais. UY el mejor (~0.90), CR el peor (~0.63).",
         "type": "agregacion",
     },
 
     # --- TENDENCIAS ---
     {
-        "question": "Como ha evolucionado el Perfect Orders promedio en MX las ultimas 8 semanas?",
+        "question": "¿Cómo ha evolucionado el Perfect Orders promedio en MX las ultimas 8 semanas?",
         "expected": "Serie temporal con tendencia ligeramente al alza. Grafico de linea.",
         "type": "tendencia",
     },
 
     # --- MULTIVARIABLE (avanzado) ---
     {
-        "question": "Que zonas tienen Lead Penetration mayor a 0.7 pero Perfect Orders menor a 0.5?",
+        "question": "¿Qué zonas tienen Lead Penetration mayor a 0.7 pero Perfect Orders menor a 0.5?",
         "expected": "Filtro multivariable. Deberia encontrar 1-2 zonas que cumplen ambas condiciones.",
         "type": "multivariable",
     },
     {
-        "question": "Que correlacion hay entre Perfect Orders y Lead Penetration?",
+        "question": "¿Qué correlacion hay entre Perfect Orders y Lead Penetration?",
         "expected": "Correlacion debil positiva (r~0.04). Scatter plot. Insight: no hay relacion fuerte.",
         "type": "correlacion",
     },
 
     # --- CONTEXTO DE NEGOCIO (wow factor) ---
     {
-        "question": "Cuales son las zonas mas problematicas en Colombia y que recomiendas?",
+        "question": "¿Cuáles son las zonas mas problemáticas en Colombia y qué recomiendas?",
         "expected": "El bot deberia identificar zonas con peor performance en CO y sugerir analisis adicionales. Muestra capacidad de inferencia.",
         "type": "inferencia",
     },

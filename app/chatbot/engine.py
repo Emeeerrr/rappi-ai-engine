@@ -179,14 +179,14 @@ class ChatEngine:
         """Return 6 suggested questions organized by type."""
         return [
             # Overview
-            "Cuales son las zonas mas problematicas esta semana?",
-            "Como esta el panorama de Perfect Orders por pais?",
+            "¿Cuáles son las zonas mas problemáticas esta semana?",
+            "¿Cómo esta el panorama de Perfect Orders por pais?",
             # Specific
             "Top 5 zonas con mayor Lead Penetration en CO",
             "Compara Perfect Orders entre Wealthy y Non Wealthy en MX",
             # Analysis
-            "Que zonas tienen alto volumen de ordenes pero bajo Perfect Orders?",
-            "Cuales son las zonas con mayor crecimiento en ordenes?",
+            "¿Qué zonas tienen alto volumen de ordenes pero bajo Perfect Orders?",
+            "¿Cuáles son las zonas con mayor crecimiento en ordenes?",
         ]
 
     def set_model(self, model: str) -> None:
