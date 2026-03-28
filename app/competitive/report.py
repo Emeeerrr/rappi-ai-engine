@@ -130,6 +130,13 @@ class CompetitiveReportGenerator:
         return "\n".join(lines)
 
     @staticmethod
+    def generate_pdf_report(markdown_content: str) -> bytes:
+        """Convert Markdown report to branded PDF. Returns bytes."""
+        from app.utils.pdf import markdown_to_pdf
+        subtitle = f"{date.today().strftime('%d de %B de %Y')} | Rappi vs Uber Eats vs DiDi Food - Mexico"
+        return markdown_to_pdf("Rappi Competitive Intelligence Report", subtitle, markdown_content)
+
+    @staticmethod
     def generate_html_report(markdown_content: str) -> str:
         """Convert Markdown report to styled HTML with Rappi branding."""
         try:

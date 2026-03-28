@@ -374,10 +374,10 @@ if case == "Analisis de Operaciones":
             with st.spinner("Generando reporte ejecutivo con IA..."):
                 gen = ReportGenerator(model=st.session_state.selected_model)
                 report_md = gen.generate_executive_report(all_insights)
-                report_html = gen.generate_html_report(report_md)
+                report_pdf = gen.generate_pdf_report(report_md)
 
             st.session_state.insights_report_md = report_md
-            st.session_state.insights_report_html = report_html
+            st.session_state.insights_report_pdf = report_pdf
             st.rerun()
 
         # Show cached results if available
@@ -409,13 +409,24 @@ if case == "Analisis de Operaciones":
             st.markdown(st.session_state.insights_report_md)
 
             st.divider()
-            st.download_button(
-                label="Descargar Reporte",
-                data=st.session_state.insights_report_md,
-                file_name="rappi_insights_report.md",
-                mime="text/markdown",
-                key="dl_md_report",
-            )
+            dl_col_md, dl_col_pdf = st.columns(2)
+            with dl_col_md:
+                st.download_button(
+                    label="Descargar Markdown",
+                    data=st.session_state.insights_report_md,
+                    file_name="rappi_insights_report.md",
+                    mime="text/markdown",
+                    key="dl_md_report",
+                )
+            with dl_col_pdf:
+                if "insights_report_pdf" in st.session_state and st.session_state.insights_report_pdf:
+                    st.download_button(
+                        label="Descargar PDF",
+                        data=st.session_state.insights_report_pdf,
+                        file_name="rappi_insights_report.pdf",
+                        mime="application/pdf",
+                        key="dl_pdf_report",
+                    )
 
             # Charts from insights
             chart_insights = [
@@ -466,7 +477,16 @@ else:
             json_path = data_dir / "competitive_data.json"
             if json_path.exists():
                 with open(json_path, encoding="utf-8") as f:
-                    st.session_state.competitive_data = json.load(f)
+                    loaded = json.load(f)
+                # Auto-fallback: if all records failed, use demo data instead
+                failed = sum(1 for r in loaded if r.get("scrape_status") == "failed")
+                if loaded and failed == len(loaded):
+                    st.warning("Todos los registros tienen status 'failed'. Cargando datos de demo como backup...")
+                    from app.scraping.fallback_data import generate_fallback_data
+                    from app.scraping.base import BaseScraper
+                    loaded = generate_fallback_data()
+                    BaseScraper.save_results(loaded, "data/competitive")
+                st.session_state.competitive_data = loaded
                 st.rerun()
             else:
                 st.warning("No se encontraron datos en data/competitive/. Genera datos de demo primero.")
@@ -661,25 +681,36 @@ else:
 
         if "comp_report_md" not in st.session_state:
             st.session_state.comp_report_md = None
-            st.session_state.comp_report_html = None
+            st.session_state.comp_report_pdf = None
 
         if st.button("Generar Informe Completo", type="primary", key="gen_comp_report"):
             from app.competitive.report import CompetitiveReportGenerator
             gen = CompetitiveReportGenerator(model=st.session_state.selected_model)
             with st.spinner("Generando informe competitivo con IA..."):
                 report_md = gen.generate_report(analyzer)
-                report_html = gen.generate_html_report(report_md)
+                report_pdf = gen.generate_pdf_report(report_md)
             st.session_state.comp_report_md = report_md
-            st.session_state.comp_report_html = report_html
+            st.session_state.comp_report_pdf = report_pdf
             st.rerun()
 
         if st.session_state.comp_report_md:
             st.markdown(st.session_state.comp_report_md)
             st.divider()
-            st.download_button(
-                label="Descargar Informe",
-                data=st.session_state.comp_report_md,
-                file_name="rappi_competitive_report.md",
-                mime="text/markdown",
-                key="dl_comp_report",
-            )
+            comp_dl_md, comp_dl_pdf = st.columns(2)
+            with comp_dl_md:
+                st.download_button(
+                    label="Descargar Markdown",
+                    data=st.session_state.comp_report_md,
+                    file_name="rappi_competitive_report.md",
+                    mime="text/markdown",
+                    key="dl_comp_report",
+                )
+            with comp_dl_pdf:
+                if st.session_state.comp_report_pdf:
+                    st.download_button(
+                        label="Descargar PDF",
+                        data=st.session_state.comp_report_pdf,
+                        file_name="rappi_competitive_report.pdf",
+                        mime="application/pdf",
+                        key="dl_comp_pdf",
+                    )
