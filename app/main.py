@@ -199,8 +199,9 @@ with st.sidebar:
             st.session_state.chat_engine.clear_memory()
         st.rerun()
     st.markdown("---")
-    st.caption("Powered by OpenRouter")
-    st.caption("Prueba Tecnica Rappi 2025")
+    n_msgs = len([m for m in st.session_state.chat_history if m["role"] == "user"])
+    model_label = next((m["label"] for m in AVAILABLE_MODELS if m["id"] == st.session_state.selected_model), st.session_state.selected_model)
+    st.caption("Prueba Tecnica Rappi Emerson")
 
 
 # ------------------------------------------------------------------
@@ -255,8 +256,13 @@ if st.session_state.pending_message is not None:
         "charts": [], "raw_data": [], "actions": [],
     })
     engine = _get_engine()
-    with st.spinner("Analizando..."):
+    with st.status("Procesando tu pregunta...", expanded=True) as status:
+        st.write("Analizando pregunta...")
         result = engine.process_query(_pending)
+        actions = result.get("actions_executed", [])
+        if actions:
+            st.write(f"Consultas ejecutadas: {', '.join(actions)}")
+        status.update(label="Listo", state="complete", expanded=False)
 
     st.session_state.chat_history.append({
         "role": "assistant",
@@ -285,17 +291,27 @@ if case == "Analisis de Operaciones":
         with chat_area:
             if not st.session_state.chat_history:
                 st.markdown("")
-                st.markdown("")
                 st.markdown("#### Prueba alguna de estas preguntas:")
                 engine = _get_engine()
                 suggestions = engine.get_suggested_questions()
                 st.markdown('<div class="suggestion-row">', unsafe_allow_html=True)
-                cols = st.columns(len(suggestions))
-                for idx, (col, question) in enumerate(zip(cols, suggestions)):
-                    with col:
-                        if st.button(question, key=f"sug_{idx}", width="stretch"):
-                            st.session_state.pending_message = question
-                            st.rerun()
+                # Row 1
+                row1 = st.columns(3)
+                for idx, col in enumerate(row1):
+                    if idx < len(suggestions):
+                        with col:
+                            if st.button(suggestions[idx], key=f"sug_{idx}", width="stretch"):
+                                st.session_state.pending_message = suggestions[idx]
+                                st.rerun()
+                # Row 2
+                row2 = st.columns(3)
+                for idx, col in enumerate(row2):
+                    s_idx = idx + 3
+                    if s_idx < len(suggestions):
+                        with col:
+                            if st.button(suggestions[s_idx], key=f"sug_{s_idx}", width="stretch"):
+                                st.session_state.pending_message = suggestions[s_idx]
+                                st.rerun()
                 st.markdown('</div>', unsafe_allow_html=True)
             else:
                 for i, msg in enumerate(st.session_state.chat_history):

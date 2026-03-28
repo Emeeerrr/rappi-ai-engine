@@ -25,43 +25,75 @@ from app.utils.llm import chat_completion
 
 logger = logging.getLogger(__name__)
 
-# Methods that the LLM is allowed to call on DataQueryEngine
 _ALLOWED_METHODS = {fn["name"] for fn in FUNCTION_SCHEMA}
 
 
 def _extract_json(text: str) -> dict | None:
-    """Extract a JSON object from LLM output that may contain surrounding text."""
-    # Try direct parse first
+    """Robustly extract a JSON object from LLM output.
+
+    Tries in order: direct parse, markdown code fence, outermost braces,
+    outermost brackets.
+    """
     text = text.strip()
+
+    # 1. Direct parse
     try:
         return json.loads(text)
     except json.JSONDecodeError:
         pass
 
-    # Try to find JSON block in markdown code fence
-    m = re.search(r"```(?:json)?\s*(\{.*?\})\s*```", text, re.DOTALL)
+    # 2. Markdown code fence (```json ... ``` or ``` ... ```)
+    m = re.search(r"```(?:json)?\s*(\{[\s\S]*?\})\s*```", text)
     if m:
         try:
             return json.loads(m.group(1))
         except json.JSONDecodeError:
             pass
 
-    # Try to find the outermost { ... }
+    # 3. Outermost { ... } with brace counting
     start = text.find("{")
-    if start == -1:
-        return None
-    depth = 0
-    for i in range(start, len(text)):
-        if text[i] == "{":
-            depth += 1
-        elif text[i] == "}":
-            depth -= 1
-            if depth == 0:
-                try:
-                    return json.loads(text[start:i + 1])
-                except json.JSONDecodeError:
-                    return None
+    if start != -1:
+        depth = 0
+        for i in range(start, len(text)):
+            if text[i] == "{":
+                depth += 1
+            elif text[i] == "}":
+                depth -= 1
+                if depth == 0:
+                    try:
+                        return json.loads(text[start:i + 1])
+                    except json.JSONDecodeError:
+                        break
+
+    # 4. Outermost [ ... ] (array fallback)
+    start = text.find("[")
+    if start != -1:
+        depth = 0
+        for i in range(start, len(text)):
+            if text[i] == "[":
+                depth += 1
+            elif text[i] == "]":
+                depth -= 1
+                if depth == 0:
+                    try:
+                        parsed = json.loads(text[start:i + 1])
+                        if isinstance(parsed, list):
+                            return {"thinking": "", "actions": parsed, "direct_response": None}
+                    except json.JSONDecodeError:
+                        break
+
     return None
+
+
+def _post_process_response(response: str) -> str:
+    """Clean up LLM response artifacts."""
+    if not response or not response.strip():
+        return "No pude generar una respuesta. Por favor intenta reformular tu pregunta."
+
+    # Clean excessive blank lines
+    response = re.sub(r"\n{4,}", "\n\n\n", response)
+
+    return response.strip()
 
 
 class ChatEngine:
@@ -83,24 +115,18 @@ class ChatEngine:
     # ------------------------------------------------------------------
 
     def process_query(self, user_message: str) -> dict:
-        """Process a user message through the full planning -> execution -> response pipeline.
+        """Process a user message through the full pipeline.
 
         Returns:
-            {
-                "response": str,
-                "charts": list[dict],
-                "raw_data": list,
-                "actions_executed": list[str],
-                "error": str | None,
-            }
+            {"response", "charts", "raw_data", "actions_executed", "error"}
         """
         try:
             # Step 1: Planning
             plan = self._plan(user_message)
 
-            # Handle direct responses (greetings, meta-questions)
+            # Handle direct responses (greetings, meta-questions, metric definitions)
             if plan.get("direct_response"):
-                response_text = plan["direct_response"]
+                response_text = _post_process_response(plan["direct_response"])
                 self.memory.add_message("user", user_message)
                 self.memory.add_message("assistant", response_text)
                 return {
@@ -114,12 +140,13 @@ class ChatEngine:
             # Step 2: Execute actions
             actions = plan.get("actions", [])
             if not actions:
-                return self._fallback_response(user_message, "No se identificaron acciones para ejecutar.")
+                return self._fallback_response(user_message, "No se identificaron consultas para esta pregunta.")
 
             results, charts, raw_data, executed = self._execute_actions(actions)
 
             # Step 3: Generate response
             response_text = self._generate_response(user_message, results)
+            response_text = _post_process_response(response_text)
 
             self.memory.add_message("user", user_message)
             self.memory.add_message("assistant", response_text)
@@ -135,7 +162,13 @@ class ChatEngine:
         except Exception as e:
             logger.exception("Error processing query: %s", e)
             return {
-                "response": f"Ocurrio un error al procesar tu pregunta. Por favor intenta reformularla.\nDetalle: {e}",
+                "response": (
+                    "Ocurrio un error al procesar tu pregunta. Por favor intenta reformularla.\n\n"
+                    f"**Detalle tecnico:** {e}\n\n"
+                    "**Preguntas sugeridas:**\n"
+                    "- Cuales son las 5 zonas con peor Perfect Orders?\n"
+                    "- Cual es el promedio de Lead Penetration por pais?"
+                ),
                 "charts": [],
                 "raw_data": [],
                 "actions_executed": [],
@@ -143,21 +176,17 @@ class ChatEngine:
             }
 
     def get_suggested_questions(self) -> list[str]:
-        """Return a list of suggested questions based on the available data."""
-        countries = self.query_engine.list_countries()["data"]
-        metrics = self.query_engine.list_metrics()["data"]
-
-        # Pick a couple of metrics and countries for variety
-        m1 = metrics[6] if len(metrics) > 6 else metrics[0]  # Perfect Orders
-        m2 = metrics[3] if len(metrics) > 3 else metrics[-1]  # Lead Penetration
-        c1 = countries[3] if len(countries) > 3 else countries[0]  # CO
-
+        """Return 6 suggested questions organized by type."""
         return [
-            f"Cuales son las 5 zonas con peor {m1} esta semana?",
-            f"Como ha evolucionado el {m2} promedio en {c1} en las ultimas 8 semanas?",
-            f"Compara {m1} entre zonas Wealthy y Non Wealthy",
-            "Cuales son las 10 zonas con mayor crecimiento en ordenes?",
-            f"Que correlacion hay entre {m1} y {m2}?",
+            # Overview
+            "Cuales son las zonas mas problematicas esta semana?",
+            "Como esta el panorama de Perfect Orders por pais?",
+            # Specific
+            "Top 5 zonas con mayor Lead Penetration en CO",
+            "Compara Perfect Orders entre Wealthy y Non Wealthy en MX",
+            # Analysis
+            "Que zonas tienen alto volumen de ordenes pero bajo Perfect Orders?",
+            "Cuales son las zonas con mayor crecimiento en ordenes?",
         ]
 
     def set_model(self, model: str) -> None:
@@ -186,15 +215,16 @@ class ChatEngine:
         if plan is not None:
             return plan
 
-        # Retry once with a more explicit prompt
+        # Retry once with explicit instruction
         logger.warning("First planning attempt did not return valid JSON. Retrying...")
         messages.append({"role": "assistant", "content": raw})
         messages.append({
             "role": "user",
             "content": (
                 "Tu respuesta anterior no fue un JSON valido. "
-                "Por favor responde UNICAMENTE con un JSON valido con las claves: "
-                "thinking, actions, direct_response. Sin texto adicional."
+                "Responde UNICAMENTE con un JSON valido: "
+                "{\"thinking\": \"...\", \"actions\": [...], \"direct_response\": null}. "
+                "Sin texto adicional, sin markdown."
             ),
         })
 
@@ -204,16 +234,12 @@ class ChatEngine:
         if plan is not None:
             return plan
 
-        # If still failing, treat as direct response
-        logger.warning("Retry also failed to produce JSON. Falling back to direct response.")
+        # Final fallback: treat the original response as a direct response
+        logger.warning("Retry also failed. Using raw text as direct response.")
         return {"thinking": "", "actions": [], "direct_response": raw}
 
     def _execute_actions(self, actions: list[dict]) -> tuple[list[dict], list[dict], list, list[str]]:
-        """Step 2: Execute each planned action on the DataQueryEngine.
-
-        Returns:
-            (results, charts, raw_data_list, executed_method_names)
-        """
+        """Step 2: Execute each planned action on the DataQueryEngine."""
         results = []
         charts = []
         raw_data = []
@@ -226,7 +252,7 @@ class ChatEngine:
             if fn_name not in _ALLOWED_METHODS:
                 results.append({
                     "success": False,
-                    "summary": f"Metodo '{fn_name}' no reconocido.",
+                    "summary": f"Metodo '{fn_name}' no reconocido. Metodos disponibles: {', '.join(sorted(_ALLOWED_METHODS)[:5])}...",
                     "chart_data": None,
                 })
                 continue
@@ -235,7 +261,7 @@ class ChatEngine:
             if method is None:
                 results.append({
                     "success": False,
-                    "summary": f"Metodo '{fn_name}' no encontrado en el motor de consultas.",
+                    "summary": f"Metodo '{fn_name}' no encontrado.",
                     "chart_data": None,
                 })
                 continue
@@ -245,6 +271,13 @@ class ChatEngine:
 
             try:
                 result = method(**clean_params)
+            except TypeError as e:
+                logger.warning("Parameter error in %s(%s): %s", fn_name, clean_params, e)
+                result = {
+                    "success": False,
+                    "summary": f"Error de parametros en {fn_name}: {e}. Verifica los parametros enviados.",
+                    "chart_data": None,
+                }
             except Exception as e:
                 logger.warning("Error executing %s(%s): %s", fn_name, clean_params, e)
                 result = {
@@ -271,12 +304,19 @@ class ChatEngine:
     def _fallback_response(self, user_message: str, reason: str) -> dict:
         """Generate a fallback when planning produces no actions."""
         self.memory.add_message("user", user_message)
+        suggestions = self.get_suggested_questions()[:3]
         response = (
             f"No pude determinar que datos consultar para tu pregunta. {reason}\n\n"
-            "Puedes intentar preguntar cosas como:\n"
+            "Intenta preguntar algo como:\n"
         )
-        for q in self.get_suggested_questions()[:3]:
+        for q in suggestions:
             response += f"- {q}\n"
+
+        response += (
+            "\n**Preguntas sugeridas:**\n"
+            f"- {suggestions[0]}\n"
+            f"- {suggestions[1]}\n"
+        )
 
         self.memory.add_message("assistant", response)
         return {
