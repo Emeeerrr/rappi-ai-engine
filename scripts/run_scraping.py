@@ -33,6 +33,10 @@ def main():
         "--output-dir", default="data/competitive/",
         help="Output directory (default: data/competitive/)",
     )
+    parser.add_argument(
+        "--no-auto-fallback", action="store_true",
+        help="Disable automatic fallback to demo data when scraping fails",
+    )
     args = parser.parse_args()
 
     logging.basicConfig(
@@ -65,6 +69,19 @@ def main():
         for scraper in scrapers:
             logger.info("Running %s scraper on %d addresses...", scraper.platform_name, len(ADDRESSES))
             results.extend(scraper.run_all(ADDRESSES))
+
+        # Auto-fallback: if >50% failed, switch to demo data
+        if results and not args.no_auto_fallback:
+            failed_count = sum(1 for r in results if r["scrape_status"] == "failed")
+            failure_rate = failed_count / len(results)
+            if failure_rate > 0.5:
+                logger.warning(
+                    "Failure rate %.0f%% > 50%%. Switching to fallback demo data.",
+                    failure_rate * 100,
+                )
+                from app.scraping.fallback_data import generate_fallback_data
+                results = generate_fallback_data(ADDRESSES)
+                logger.info("Fallback data generated: %d records.", len(results))
 
     # Save results
     BaseScraper.save_results(results, str(output))

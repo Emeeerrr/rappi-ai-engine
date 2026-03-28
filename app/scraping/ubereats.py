@@ -92,6 +92,19 @@ class UberEatsScraper(BaseScraper):
                 if time_el.is_visible(timeout=3000):
                     result["estimated_delivery_time"] = time_el.text_content().strip()
 
+                # Capture screenshot as evidence
+                try:
+                    import time
+                    from pathlib import Path
+                    shots_dir = Path("data/competitive/screenshots")
+                    shots_dir.mkdir(parents=True, exist_ok=True)
+                    shot_path = str(shots_dir / f"ubereats_{address['id']}_{int(time.time())}.png")
+                    page.screenshot(path=shot_path)
+                    result["screenshot_path"] = shot_path
+                    logger.info("[ubereats] Screenshot saved: %s", shot_path)
+                except Exception as ss_err:
+                    logger.warning("[ubereats] Screenshot failed: %s", ss_err)
+
                 result["scrape_status"] = "partial"
                 browser.close()
 
