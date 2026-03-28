@@ -1,0 +1,451 @@
+platform,address_id,address_label,city,zone_type,timestamp,restaurant,delivery_fee,service_fee,estimated_delivery_time,promotions,total_price_big_mac_combo,scrape_status,error,product_name,product_price,product_available
+rappi,cdmx_polanco,"Polanco, CDMX",CDMX,premium,2026-03-27T19:25:24.913922,McDonalds,19.17,8.89,20-34 min,2x1 en McFlurry; Cashback 10% en Rappi creditos,130.34,success,,Big Mac,102.28,True
+rappi,cdmx_polanco,"Polanco, CDMX",CDMX,premium,2026-03-27T19:25:24.913922,McDonalds,19.17,8.89,20-34 min,2x1 en McFlurry; Cashback 10% en Rappi creditos,130.34,success,,Combo Mediano McDonalds,166.59,True
+rappi,cdmx_polanco,"Polanco, CDMX",CDMX,premium,2026-03-27T19:25:24.913922,McDonalds,19.17,8.89,20-34 min,2x1 en McFlurry; Cashback 10% en Rappi creditos,130.34,success,,McNuggets 10 piezas,124.44,True
+rappi,cdmx_polanco,"Polanco, CDMX",CDMX,premium,2026-03-27T19:25:24.913922,McDonalds,19.17,8.89,20-34 min,2x1 en McFlurry; Cashback 10% en Rappi creditos,130.34,success,,Coca-Cola 500ml,29.85,True
+rappi,cdmx_polanco,"Polanco, CDMX",CDMX,premium,2026-03-27T19:25:24.913922,McDonalds,19.17,8.89,20-34 min,2x1 en McFlurry; Cashback 10% en Rappi creditos,130.34,success,,Agua Natural 1L,19.09,True
+ubereats,cdmx_polanco,"Polanco, CDMX",CDMX,premium,2026-03-27T19:25:24.913922,McDonalds,19.33,6.91,21-27 min,Envio gratis con Uber One; $70 off en tu primera orden,129.73,success,,Big Mac,103.49,True
+ubereats,cdmx_polanco,"Polanco, CDMX",CDMX,premium,2026-03-27T19:25:24.913922,McDonalds,19.33,6.91,21-27 min,Envio gratis con Uber One; $70 off en tu primera orden,129.73,success,,Combo Mediano McDonalds,187.85,True
+ubereats,cdmx_polanco,"Polanco, CDMX",CDMX,premium,2026-03-27T19:25:24.913922,McDonalds,19.33,6.91,21-27 min,Envio gratis con Uber One; $70 off en tu primera orden,129.73,success,,McNuggets 10 piezas,126.76,True
+ubereats,cdmx_polanco,"Polanco, CDMX",CDMX,premium,2026-03-27T19:25:24.913922,McDonalds,19.33,6.91,21-27 min,Envio gratis con Uber One; $70 off en tu primera orden,129.73,success,,Coca-Cola 500ml,29.03,True
+ubereats,cdmx_polanco,"Polanco, CDMX",CDMX,premium,2026-03-27T19:25:24.913922,McDonalds,19.33,6.91,21-27 min,Envio gratis con Uber One; $70 off en tu primera orden,129.73,success,,Agua Natural 1L,19.4,True
+didi,cdmx_polanco,"Polanco, CDMX",CDMX,premium,2026-03-27T19:25:24.913922,McDonalds,14.63,6.46,28-36 min,,120.22,success,,Big Mac,99.13,True
+didi,cdmx_polanco,"Polanco, CDMX",CDMX,premium,2026-03-27T19:25:24.913922,McDonalds,14.63,6.46,28-36 min,,120.22,success,,Combo Mediano McDonalds,170.66,True
+didi,cdmx_polanco,"Polanco, CDMX",CDMX,premium,2026-03-27T19:25:24.913922,McDonalds,14.63,6.46,28-36 min,,120.22,success,,McNuggets 10 piezas,119.54,True
+didi,cdmx_polanco,"Polanco, CDMX",CDMX,premium,2026-03-27T19:25:24.913922,McDonalds,14.63,6.46,28-36 min,,120.22,success,,Coca-Cola 500ml,26.23,True
+didi,cdmx_polanco,"Polanco, CDMX",CDMX,premium,2026-03-27T19:25:24.913922,McDonalds,14.63,6.46,28-36 min,,120.22,success,,Agua Natural 1L,17.88,True
+rappi,cdmx_condesa,"Condesa, CDMX",CDMX,premium,2026-03-27T19:25:24.913922,McDonalds,29.73,6.44,26-31 min,,138.85,success,,Big Mac,102.68,True
+rappi,cdmx_condesa,"Condesa, CDMX",CDMX,premium,2026-03-27T19:25:24.913922,McDonalds,29.73,6.44,26-31 min,,138.85,success,,Combo Mediano McDonalds,175.57,True
+rappi,cdmx_condesa,"Condesa, CDMX",CDMX,premium,2026-03-27T19:25:24.913922,McDonalds,29.73,6.44,26-31 min,,138.85,success,,McNuggets 10 piezas,122.87,True
+rappi,cdmx_condesa,"Condesa, CDMX",CDMX,premium,2026-03-27T19:25:24.913922,McDonalds,29.73,6.44,26-31 min,,138.85,success,,Coca-Cola 500ml,27.49,True
+rappi,cdmx_condesa,"Condesa, CDMX",CDMX,premium,2026-03-27T19:25:24.913922,McDonalds,29.73,6.44,26-31 min,,138.85,success,,Agua Natural 1L,18.72,True
+ubereats,cdmx_condesa,"Condesa, CDMX",CDMX,premium,2026-03-27T19:25:24.913922,McDonalds,31.83,7.49,21-32 min,30% off maximo $80; 2x1 en bebidas seleccionadas,142.14,success,,Big Mac,102.82,True
+ubereats,cdmx_condesa,"Condesa, CDMX",CDMX,premium,2026-03-27T19:25:24.913922,McDonalds,31.83,7.49,21-32 min,30% off maximo $80; 2x1 en bebidas seleccionadas,142.14,success,,Combo Mediano McDonalds,177.53,True
+ubereats,cdmx_condesa,"Condesa, CDMX",CDMX,premium,2026-03-27T19:25:24.913922,McDonalds,31.83,7.49,21-32 min,30% off maximo $80; 2x1 en bebidas seleccionadas,142.14,success,,McNuggets 10 piezas,123.29,True
+ubereats,cdmx_condesa,"Condesa, CDMX",CDMX,premium,2026-03-27T19:25:24.913922,McDonalds,31.83,7.49,21-32 min,30% off maximo $80; 2x1 en bebidas seleccionadas,142.14,success,,Coca-Cola 500ml,31.58,True
+ubereats,cdmx_condesa,"Condesa, CDMX",CDMX,premium,2026-03-27T19:25:24.913922,McDonalds,31.83,7.49,21-32 min,30% off maximo $80; 2x1 en bebidas seleccionadas,142.14,success,,Agua Natural 1L,20.85,True
+didi,cdmx_condesa,"Condesa, CDMX",CDMX,premium,2026-03-27T19:25:24.913922,McDonalds,18.48,3.91,33-48 min,,,partial,,Big Mac,,False
+didi,cdmx_condesa,"Condesa, CDMX",CDMX,premium,2026-03-27T19:25:24.913922,McDonalds,18.48,3.91,33-48 min,,,partial,,Combo Mediano McDonalds,160.32,True
+didi,cdmx_condesa,"Condesa, CDMX",CDMX,premium,2026-03-27T19:25:24.913922,McDonalds,18.48,3.91,33-48 min,,,partial,,McNuggets 10 piezas,122.25,True
+didi,cdmx_condesa,"Condesa, CDMX",CDMX,premium,2026-03-27T19:25:24.913922,McDonalds,18.48,3.91,33-48 min,,,partial,,Coca-Cola 500ml,26.61,True
+didi,cdmx_condesa,"Condesa, CDMX",CDMX,premium,2026-03-27T19:25:24.913922,McDonalds,18.48,3.91,33-48 min,,,partial,,Agua Natural 1L,19.13,True
+rappi,cdmx_roma,"Roma Norte, CDMX",CDMX,premium,2026-03-27T19:25:24.913922,McDonalds,20.18,8.95,23-38 min,,132.46,success,,Big Mac,103.33,True
+rappi,cdmx_roma,"Roma Norte, CDMX",CDMX,premium,2026-03-27T19:25:24.913922,McDonalds,20.18,8.95,23-38 min,,132.46,success,,Combo Mediano McDonalds,172.35,True
+rappi,cdmx_roma,"Roma Norte, CDMX",CDMX,premium,2026-03-27T19:25:24.913922,McDonalds,20.18,8.95,23-38 min,,132.46,success,,McNuggets 10 piezas,122.97,True
+rappi,cdmx_roma,"Roma Norte, CDMX",CDMX,premium,2026-03-27T19:25:24.913922,McDonalds,20.18,8.95,23-38 min,,132.46,success,,Coca-Cola 500ml,28.18,True
+rappi,cdmx_roma,"Roma Norte, CDMX",CDMX,premium,2026-03-27T19:25:24.913922,McDonalds,20.18,8.95,23-38 min,,132.46,success,,Agua Natural 1L,20.41,True
+ubereats,cdmx_roma,"Roma Norte, CDMX",CDMX,premium,2026-03-27T19:25:24.913922,McDonalds,11.69,10.83,33-42 min,,126.28,success,,Big Mac,103.76,True
+ubereats,cdmx_roma,"Roma Norte, CDMX",CDMX,premium,2026-03-27T19:25:24.913922,McDonalds,11.69,10.83,33-42 min,,126.28,success,,Combo Mediano McDonalds,184.36,True
+ubereats,cdmx_roma,"Roma Norte, CDMX",CDMX,premium,2026-03-27T19:25:24.913922,McDonalds,11.69,10.83,33-42 min,,126.28,success,,McNuggets 10 piezas,132.34,True
+ubereats,cdmx_roma,"Roma Norte, CDMX",CDMX,premium,2026-03-27T19:25:24.913922,McDonalds,11.69,10.83,33-42 min,,126.28,success,,Coca-Cola 500ml,31.2,True
+ubereats,cdmx_roma,"Roma Norte, CDMX",CDMX,premium,2026-03-27T19:25:24.913922,McDonalds,11.69,10.83,33-42 min,,126.28,success,,Agua Natural 1L,19.13,True
+didi,cdmx_roma,"Roma Norte, CDMX",CDMX,premium,2026-03-27T19:25:24.913922,McDonalds,19.69,6.31,43-51 min,,121.19,success,,Big Mac,95.19,True
+didi,cdmx_roma,"Roma Norte, CDMX",CDMX,premium,2026-03-27T19:25:24.913922,McDonalds,19.69,6.31,43-51 min,,121.19,success,,Combo Mediano McDonalds,169.55,True
+didi,cdmx_roma,"Roma Norte, CDMX",CDMX,premium,2026-03-27T19:25:24.913922,McDonalds,19.69,6.31,43-51 min,,121.19,success,,McNuggets 10 piezas,121.89,True
+didi,cdmx_roma,"Roma Norte, CDMX",CDMX,premium,2026-03-27T19:25:24.913922,McDonalds,19.69,6.31,43-51 min,,121.19,success,,Coca-Cola 500ml,29.56,True
+didi,cdmx_roma,"Roma Norte, CDMX",CDMX,premium,2026-03-27T19:25:24.913922,McDonalds,19.69,6.31,43-51 min,,121.19,success,,Agua Natural 1L,19.29,True
+rappi,cdmx_santafe,"Santa Fe, CDMX",CDMX,premium,2026-03-27T19:25:24.913922,McDonalds,27.49,4.58,34-44 min,Envio gratis en tu primer pedido,135.3,success,,Big Mac,103.23,True
+rappi,cdmx_santafe,"Santa Fe, CDMX",CDMX,premium,2026-03-27T19:25:24.913922,McDonalds,27.49,4.58,34-44 min,Envio gratis en tu primer pedido,135.3,success,,Combo Mediano McDonalds,175.31,True
+rappi,cdmx_santafe,"Santa Fe, CDMX",CDMX,premium,2026-03-27T19:25:24.913922,McDonalds,27.49,4.58,34-44 min,Envio gratis en tu primer pedido,135.3,success,,McNuggets 10 piezas,126.97,True
+rappi,cdmx_santafe,"Santa Fe, CDMX",CDMX,premium,2026-03-27T19:25:24.913922,McDonalds,27.49,4.58,34-44 min,Envio gratis en tu primer pedido,135.3,success,,Coca-Cola 500ml,27.5,True
+rappi,cdmx_santafe,"Santa Fe, CDMX",CDMX,premium,2026-03-27T19:25:24.913922,McDonalds,27.49,4.58,34-44 min,Envio gratis en tu primer pedido,135.3,success,,Agua Natural 1L,18.1,True
+ubereats,cdmx_santafe,"Santa Fe, CDMX",CDMX,premium,2026-03-27T19:25:24.913922,McDonalds,15.53,5.22,24-36 min,,121.41,success,,Big Mac,100.66,True
+ubereats,cdmx_santafe,"Santa Fe, CDMX",CDMX,premium,2026-03-27T19:25:24.913922,McDonalds,15.53,5.22,24-36 min,,121.41,success,,Combo Mediano McDonalds,185.76,True
+ubereats,cdmx_santafe,"Santa Fe, CDMX",CDMX,premium,2026-03-27T19:25:24.913922,McDonalds,15.53,5.22,24-36 min,,121.41,success,,McNuggets 10 piezas,122.0,True
+ubereats,cdmx_santafe,"Santa Fe, CDMX",CDMX,premium,2026-03-27T19:25:24.913922,McDonalds,15.53,5.22,24-36 min,,121.41,success,,Coca-Cola 500ml,30.4,True
+ubereats,cdmx_santafe,"Santa Fe, CDMX",CDMX,premium,2026-03-27T19:25:24.913922,McDonalds,15.53,5.22,24-36 min,,121.41,success,,Agua Natural 1L,21.19,True
+didi,cdmx_santafe,"Santa Fe, CDMX",CDMX,premium,2026-03-27T19:25:24.913922,McDonalds,18.37,7.92,21-34 min,,129.35,success,,Big Mac,103.06,True
+didi,cdmx_santafe,"Santa Fe, CDMX",CDMX,premium,2026-03-27T19:25:24.913922,McDonalds,18.37,7.92,21-34 min,,129.35,success,,Combo Mediano McDonalds,171.41,True
+didi,cdmx_santafe,"Santa Fe, CDMX",CDMX,premium,2026-03-27T19:25:24.913922,McDonalds,18.37,7.92,21-34 min,,129.35,success,,McNuggets 10 piezas,111.71,True
+didi,cdmx_santafe,"Santa Fe, CDMX",CDMX,premium,2026-03-27T19:25:24.913922,McDonalds,18.37,7.92,21-34 min,,129.35,success,,Coca-Cola 500ml,28.92,True
+didi,cdmx_santafe,"Santa Fe, CDMX",CDMX,premium,2026-03-27T19:25:24.913922,McDonalds,18.37,7.92,21-34 min,,129.35,success,,Agua Natural 1L,18.99,True
+rappi,cdmx_coyoacan,"Coyoacan, CDMX",CDMX,middle,2026-03-27T19:25:24.913922,McDonalds,46.07,5.7,25-38 min,15% descuento con RappiPrime; Cashback 10% en Rappi creditos,147.08,success,,Big Mac,95.31,True
+rappi,cdmx_coyoacan,"Coyoacan, CDMX",CDMX,middle,2026-03-27T19:25:24.913922,McDonalds,46.07,5.7,25-38 min,15% descuento con RappiPrime; Cashback 10% en Rappi creditos,147.08,success,,Combo Mediano McDonalds,172.43,True
+rappi,cdmx_coyoacan,"Coyoacan, CDMX",CDMX,middle,2026-03-27T19:25:24.913922,McDonalds,46.07,5.7,25-38 min,15% descuento con RappiPrime; Cashback 10% en Rappi creditos,147.08,success,,McNuggets 10 piezas,114.49,True
+rappi,cdmx_coyoacan,"Coyoacan, CDMX",CDMX,middle,2026-03-27T19:25:24.913922,McDonalds,46.07,5.7,25-38 min,15% descuento con RappiPrime; Cashback 10% en Rappi creditos,147.08,success,,Coca-Cola 500ml,27.46,True
+rappi,cdmx_coyoacan,"Coyoacan, CDMX",CDMX,middle,2026-03-27T19:25:24.913922,McDonalds,46.07,5.7,25-38 min,15% descuento con RappiPrime; Cashback 10% en Rappi creditos,147.08,success,,Agua Natural 1L,19.24,True
+ubereats,cdmx_coyoacan,"Coyoacan, CDMX",CDMX,middle,2026-03-27T19:25:24.913922,McDonalds,42.58,7.88,21-28 min,,159.18,success,,Big Mac,108.72,True
+ubereats,cdmx_coyoacan,"Coyoacan, CDMX",CDMX,middle,2026-03-27T19:25:24.913922,McDonalds,42.58,7.88,21-28 min,,159.18,success,,Combo Mediano McDonalds,174.61,True
+ubereats,cdmx_coyoacan,"Coyoacan, CDMX",CDMX,middle,2026-03-27T19:25:24.913922,McDonalds,42.58,7.88,21-28 min,,159.18,success,,McNuggets 10 piezas,120.79,True
+ubereats,cdmx_coyoacan,"Coyoacan, CDMX",CDMX,middle,2026-03-27T19:25:24.913922,McDonalds,42.58,7.88,21-28 min,,159.18,success,,Coca-Cola 500ml,28.43,True
+ubereats,cdmx_coyoacan,"Coyoacan, CDMX",CDMX,middle,2026-03-27T19:25:24.913922,McDonalds,42.58,7.88,21-28 min,,159.18,success,,Agua Natural 1L,19.26,True
+didi,cdmx_coyoacan,"Coyoacan, CDMX",CDMX,middle,2026-03-27T19:25:24.913922,McDonalds,19.04,6.79,34-46 min,Descuento de bienvenida $80,118.86,success,,Big Mac,93.03,True
+didi,cdmx_coyoacan,"Coyoacan, CDMX",CDMX,middle,2026-03-27T19:25:24.913922,McDonalds,19.04,6.79,34-46 min,Descuento de bienvenida $80,118.86,success,,Combo Mediano McDonalds,175.89,True
+didi,cdmx_coyoacan,"Coyoacan, CDMX",CDMX,middle,2026-03-27T19:25:24.913922,McDonalds,19.04,6.79,34-46 min,Descuento de bienvenida $80,118.86,success,,McNuggets 10 piezas,125.06,True
+didi,cdmx_coyoacan,"Coyoacan, CDMX",CDMX,middle,2026-03-27T19:25:24.913922,McDonalds,19.04,6.79,34-46 min,Descuento de bienvenida $80,118.86,success,,Coca-Cola 500ml,28.13,True
+didi,cdmx_coyoacan,"Coyoacan, CDMX",CDMX,middle,2026-03-27T19:25:24.913922,McDonalds,19.04,6.79,34-46 min,Descuento de bienvenida $80,118.86,success,,Agua Natural 1L,19.28,True
+rappi,cdmx_tlalpan,"Tlalpan, CDMX",CDMX,middle,2026-03-27T19:25:24.913922,McDonalds,45.43,13.2,34-39 min,$50 de descuento en pedidos +$200; Combo familiar con 20% off,156.75,partial,,Big Mac,98.12,True
+rappi,cdmx_tlalpan,"Tlalpan, CDMX",CDMX,middle,2026-03-27T19:25:24.913922,McDonalds,45.43,13.2,34-39 min,$50 de descuento en pedidos +$200; Combo familiar con 20% off,156.75,partial,,Combo Mediano McDonalds,162.14,True
+rappi,cdmx_tlalpan,"Tlalpan, CDMX",CDMX,middle,2026-03-27T19:25:24.913922,McDonalds,45.43,13.2,34-39 min,$50 de descuento en pedidos +$200; Combo familiar con 20% off,156.75,partial,,McNuggets 10 piezas,,False
+rappi,cdmx_tlalpan,"Tlalpan, CDMX",CDMX,middle,2026-03-27T19:25:24.913922,McDonalds,45.43,13.2,34-39 min,$50 de descuento en pedidos +$200; Combo familiar con 20% off,156.75,partial,,Coca-Cola 500ml,26.87,True
+rappi,cdmx_tlalpan,"Tlalpan, CDMX",CDMX,middle,2026-03-27T19:25:24.913922,McDonalds,45.43,13.2,34-39 min,$50 de descuento en pedidos +$200; Combo familiar con 20% off,156.75,partial,,Agua Natural 1L,,False
+ubereats,cdmx_tlalpan,"Tlalpan, CDMX",CDMX,middle,2026-03-27T19:25:24.913922,McDonalds,21.32,7.19,37-50 min,,137.31,success,,Big Mac,108.8,True
+ubereats,cdmx_tlalpan,"Tlalpan, CDMX",CDMX,middle,2026-03-27T19:25:24.913922,McDonalds,21.32,7.19,37-50 min,,137.31,success,,Combo Mediano McDonalds,191.88,True
+ubereats,cdmx_tlalpan,"Tlalpan, CDMX",CDMX,middle,2026-03-27T19:25:24.913922,McDonalds,21.32,7.19,37-50 min,,137.31,success,,McNuggets 10 piezas,134.23,True
+ubereats,cdmx_tlalpan,"Tlalpan, CDMX",CDMX,middle,2026-03-27T19:25:24.913922,McDonalds,21.32,7.19,37-50 min,,137.31,success,,Coca-Cola 500ml,31.63,True
+ubereats,cdmx_tlalpan,"Tlalpan, CDMX",CDMX,middle,2026-03-27T19:25:24.913922,McDonalds,21.32,7.19,37-50 min,,137.31,success,,Agua Natural 1L,19.54,True
+didi,cdmx_tlalpan,"Tlalpan, CDMX",CDMX,middle,2026-03-27T19:25:24.913922,McDonalds,23.55,2.67,27-34 min,,124.55,success,,Big Mac,98.33,True
+didi,cdmx_tlalpan,"Tlalpan, CDMX",CDMX,middle,2026-03-27T19:25:24.913922,McDonalds,23.55,2.67,27-34 min,,124.55,success,,Combo Mediano McDonalds,175.56,True
+didi,cdmx_tlalpan,"Tlalpan, CDMX",CDMX,middle,2026-03-27T19:25:24.913922,McDonalds,23.55,2.67,27-34 min,,124.55,success,,McNuggets 10 piezas,117.21,True
+didi,cdmx_tlalpan,"Tlalpan, CDMX",CDMX,middle,2026-03-27T19:25:24.913922,McDonalds,23.55,2.67,27-34 min,,124.55,success,,Coca-Cola 500ml,26.08,True
+didi,cdmx_tlalpan,"Tlalpan, CDMX",CDMX,middle,2026-03-27T19:25:24.913922,McDonalds,23.55,2.67,27-34 min,,124.55,success,,Agua Natural 1L,18.32,True
+rappi,cdmx_iztapalapa,"Iztapalapa, CDMX",CDMX,popular,2026-03-27T19:25:24.913922,McDonalds,31.63,7.95,31-42 min,,,partial,,Big Mac,,False
+rappi,cdmx_iztapalapa,"Iztapalapa, CDMX",CDMX,popular,2026-03-27T19:25:24.913922,McDonalds,31.63,7.95,31-42 min,,,partial,,Combo Mediano McDonalds,173.35,True
+rappi,cdmx_iztapalapa,"Iztapalapa, CDMX",CDMX,popular,2026-03-27T19:25:24.913922,McDonalds,31.63,7.95,31-42 min,,,partial,,McNuggets 10 piezas,115.02,True
+rappi,cdmx_iztapalapa,"Iztapalapa, CDMX",CDMX,popular,2026-03-27T19:25:24.913922,McDonalds,31.63,7.95,31-42 min,,,partial,,Coca-Cola 500ml,29.87,True
+rappi,cdmx_iztapalapa,"Iztapalapa, CDMX",CDMX,popular,2026-03-27T19:25:24.913922,McDonalds,31.63,7.95,31-42 min,,,partial,,Agua Natural 1L,,False
+ubereats,cdmx_iztapalapa,"Iztapalapa, CDMX",CDMX,popular,2026-03-27T19:25:24.913922,McDonalds,48.09,8.99,42-50 min,,170.06,partial,,Big Mac,112.98,True
+ubereats,cdmx_iztapalapa,"Iztapalapa, CDMX",CDMX,popular,2026-03-27T19:25:24.913922,McDonalds,48.09,8.99,42-50 min,,170.06,partial,,Combo Mediano McDonalds,191.74,True
+ubereats,cdmx_iztapalapa,"Iztapalapa, CDMX",CDMX,popular,2026-03-27T19:25:24.913922,McDonalds,48.09,8.99,42-50 min,,170.06,partial,,McNuggets 10 piezas,122.5,True
+ubereats,cdmx_iztapalapa,"Iztapalapa, CDMX",CDMX,popular,2026-03-27T19:25:24.913922,McDonalds,48.09,8.99,42-50 min,,170.06,partial,,Coca-Cola 500ml,28.88,True
+ubereats,cdmx_iztapalapa,"Iztapalapa, CDMX",CDMX,popular,2026-03-27T19:25:24.913922,McDonalds,48.09,8.99,42-50 min,,170.06,partial,,Agua Natural 1L,,False
+didi,cdmx_iztapalapa,"Iztapalapa, CDMX",CDMX,popular,2026-03-27T19:25:24.913922,McDonalds,21.52,3.55,58-67 min,,120.6,partial,,Big Mac,95.53,True
+didi,cdmx_iztapalapa,"Iztapalapa, CDMX",CDMX,popular,2026-03-27T19:25:24.913922,McDonalds,21.52,3.55,58-67 min,,120.6,partial,,Combo Mediano McDonalds,,False
+didi,cdmx_iztapalapa,"Iztapalapa, CDMX",CDMX,popular,2026-03-27T19:25:24.913922,McDonalds,21.52,3.55,58-67 min,,120.6,partial,,McNuggets 10 piezas,123.81,True
+didi,cdmx_iztapalapa,"Iztapalapa, CDMX",CDMX,popular,2026-03-27T19:25:24.913922,McDonalds,21.52,3.55,58-67 min,,120.6,partial,,Coca-Cola 500ml,28.98,True
+didi,cdmx_iztapalapa,"Iztapalapa, CDMX",CDMX,popular,2026-03-27T19:25:24.913922,McDonalds,21.52,3.55,58-67 min,,120.6,partial,,Agua Natural 1L,19.61,True
+rappi,cdmx_xochimilco,"Xochimilco, CDMX",CDMX,popular,2026-03-27T19:25:24.913922,McDonalds,25.18,9.01,38-49 min,,132.76,partial,,Big Mac,98.57,True
+rappi,cdmx_xochimilco,"Xochimilco, CDMX",CDMX,popular,2026-03-27T19:25:24.913922,McDonalds,25.18,9.01,38-49 min,,132.76,partial,,Combo Mediano McDonalds,,False
+rappi,cdmx_xochimilco,"Xochimilco, CDMX",CDMX,popular,2026-03-27T19:25:24.913922,McDonalds,25.18,9.01,38-49 min,,132.76,partial,,McNuggets 10 piezas,118.17,True
+rappi,cdmx_xochimilco,"Xochimilco, CDMX",CDMX,popular,2026-03-27T19:25:24.913922,McDonalds,25.18,9.01,38-49 min,,132.76,partial,,Coca-Cola 500ml,29.79,True
+rappi,cdmx_xochimilco,"Xochimilco, CDMX",CDMX,popular,2026-03-27T19:25:24.913922,McDonalds,25.18,9.01,38-49 min,,132.76,partial,,Agua Natural 1L,,False
+ubereats,cdmx_xochimilco,"Xochimilco, CDMX",CDMX,popular,2026-03-27T19:25:24.913922,McDonalds,46.57,10.46,33-39 min,2x1 en bebidas seleccionadas; 30% off maximo $80,164.99,partial,,Big Mac,107.96,True
+ubereats,cdmx_xochimilco,"Xochimilco, CDMX",CDMX,popular,2026-03-27T19:25:24.913922,McDonalds,46.57,10.46,33-39 min,2x1 en bebidas seleccionadas; 30% off maximo $80,164.99,partial,,Combo Mediano McDonalds,179.15,True
+ubereats,cdmx_xochimilco,"Xochimilco, CDMX",CDMX,popular,2026-03-27T19:25:24.913922,McDonalds,46.57,10.46,33-39 min,2x1 en bebidas seleccionadas; 30% off maximo $80,164.99,partial,,McNuggets 10 piezas,124.01,True
+ubereats,cdmx_xochimilco,"Xochimilco, CDMX",CDMX,popular,2026-03-27T19:25:24.913922,McDonalds,46.57,10.46,33-39 min,2x1 en bebidas seleccionadas; 30% off maximo $80,164.99,partial,,Coca-Cola 500ml,,False
+ubereats,cdmx_xochimilco,"Xochimilco, CDMX",CDMX,popular,2026-03-27T19:25:24.913922,McDonalds,46.57,10.46,33-39 min,2x1 en bebidas seleccionadas; 30% off maximo $80,164.99,partial,,Agua Natural 1L,20.54,True
+didi,cdmx_xochimilco,"Xochimilco, CDMX",CDMX,popular,2026-03-27T19:25:24.913922,McDonalds,25.16,6.86,28-40 min,Descuento de bienvenida $80; 50% descuento hasta $100,133.27,partial,,Big Mac,101.25,True
+didi,cdmx_xochimilco,"Xochimilco, CDMX",CDMX,popular,2026-03-27T19:25:24.913922,McDonalds,25.16,6.86,28-40 min,Descuento de bienvenida $80; 50% descuento hasta $100,133.27,partial,,Combo Mediano McDonalds,164.0,True
+didi,cdmx_xochimilco,"Xochimilco, CDMX",CDMX,popular,2026-03-27T19:25:24.913922,McDonalds,25.16,6.86,28-40 min,Descuento de bienvenida $80; 50% descuento hasta $100,133.27,partial,,McNuggets 10 piezas,116.89,True
+didi,cdmx_xochimilco,"Xochimilco, CDMX",CDMX,popular,2026-03-27T19:25:24.913922,McDonalds,25.16,6.86,28-40 min,Descuento de bienvenida $80; 50% descuento hasta $100,133.27,partial,,Coca-Cola 500ml,,False
+didi,cdmx_xochimilco,"Xochimilco, CDMX",CDMX,popular,2026-03-27T19:25:24.913922,McDonalds,25.16,6.86,28-40 min,Descuento de bienvenida $80; 50% descuento hasta $100,133.27,partial,,Agua Natural 1L,19.33,True
+rappi,gdl_providencia,"Providencia, Guadalajara",Guadalajara,premium,2026-03-27T19:25:24.913922,McDonalds,32.66,11.07,33-38 min,2x1 en McFlurry,143.47,success,,Big Mac,99.74,True
+rappi,gdl_providencia,"Providencia, Guadalajara",Guadalajara,premium,2026-03-27T19:25:24.913922,McDonalds,32.66,11.07,33-38 min,2x1 en McFlurry,143.47,success,,Combo Mediano McDonalds,170.95,True
+rappi,gdl_providencia,"Providencia, Guadalajara",Guadalajara,premium,2026-03-27T19:25:24.913922,McDonalds,32.66,11.07,33-38 min,2x1 en McFlurry,143.47,success,,McNuggets 10 piezas,125.36,True
+rappi,gdl_providencia,"Providencia, Guadalajara",Guadalajara,premium,2026-03-27T19:25:24.913922,McDonalds,32.66,11.07,33-38 min,2x1 en McFlurry,143.47,success,,Coca-Cola 500ml,26.91,True
+rappi,gdl_providencia,"Providencia, Guadalajara",Guadalajara,premium,2026-03-27T19:25:24.913922,McDonalds,32.66,11.07,33-38 min,2x1 en McFlurry,143.47,success,,Agua Natural 1L,19.61,True
+ubereats,gdl_providencia,"Providencia, Guadalajara",Guadalajara,premium,2026-03-27T19:25:24.913922,McDonalds,14.57,8.89,33-39 min,,,partial,,Big Mac,,False
+ubereats,gdl_providencia,"Providencia, Guadalajara",Guadalajara,premium,2026-03-27T19:25:24.913922,McDonalds,14.57,8.89,33-39 min,,,partial,,Combo Mediano McDonalds,184.42,True
+ubereats,gdl_providencia,"Providencia, Guadalajara",Guadalajara,premium,2026-03-27T19:25:24.913922,McDonalds,14.57,8.89,33-39 min,,,partial,,McNuggets 10 piezas,127.3,True
+ubereats,gdl_providencia,"Providencia, Guadalajara",Guadalajara,premium,2026-03-27T19:25:24.913922,McDonalds,14.57,8.89,33-39 min,,,partial,,Coca-Cola 500ml,30.42,True
+ubereats,gdl_providencia,"Providencia, Guadalajara",Guadalajara,premium,2026-03-27T19:25:24.913922,McDonalds,14.57,8.89,33-39 min,,,partial,,Agua Natural 1L,20.14,True
+didi,gdl_providencia,"Providencia, Guadalajara",Guadalajara,premium,2026-03-27T19:25:24.913922,McDonalds,15.43,7.34,30-43 min,,124.76,success,,Big Mac,101.99,True
+didi,gdl_providencia,"Providencia, Guadalajara",Guadalajara,premium,2026-03-27T19:25:24.913922,McDonalds,15.43,7.34,30-43 min,,124.76,success,,Combo Mediano McDonalds,174.65,True
+didi,gdl_providencia,"Providencia, Guadalajara",Guadalajara,premium,2026-03-27T19:25:24.913922,McDonalds,15.43,7.34,30-43 min,,124.76,success,,McNuggets 10 piezas,117.83,True
+didi,gdl_providencia,"Providencia, Guadalajara",Guadalajara,premium,2026-03-27T19:25:24.913922,McDonalds,15.43,7.34,30-43 min,,124.76,success,,Coca-Cola 500ml,29.34,True
+didi,gdl_providencia,"Providencia, Guadalajara",Guadalajara,premium,2026-03-27T19:25:24.913922,McDonalds,15.43,7.34,30-43 min,,124.76,success,,Agua Natural 1L,18.81,True
+rappi,gdl_chapultepec,"Chapultepec, Guadalajara",Guadalajara,premium,2026-03-27T19:25:24.913922,McDonalds,25.15,6.57,28-36 min,,131.26,success,,Big Mac,99.54,True
+rappi,gdl_chapultepec,"Chapultepec, Guadalajara",Guadalajara,premium,2026-03-27T19:25:24.913922,McDonalds,25.15,6.57,28-36 min,,131.26,success,,Combo Mediano McDonalds,170.35,True
+rappi,gdl_chapultepec,"Chapultepec, Guadalajara",Guadalajara,premium,2026-03-27T19:25:24.913922,McDonalds,25.15,6.57,28-36 min,,131.26,success,,McNuggets 10 piezas,126.38,True
+rappi,gdl_chapultepec,"Chapultepec, Guadalajara",Guadalajara,premium,2026-03-27T19:25:24.913922,McDonalds,25.15,6.57,28-36 min,,131.26,success,,Coca-Cola 500ml,29.34,True
+rappi,gdl_chapultepec,"Chapultepec, Guadalajara",Guadalajara,premium,2026-03-27T19:25:24.913922,McDonalds,25.15,6.57,28-36 min,,131.26,success,,Agua Natural 1L,18.73,True
+ubereats,gdl_chapultepec,"Chapultepec, Guadalajara",Guadalajara,premium,2026-03-27T19:25:24.913922,McDonalds,20.6,5.94,24-38 min,,129.94,success,,Big Mac,103.4,True
+ubereats,gdl_chapultepec,"Chapultepec, Guadalajara",Guadalajara,premium,2026-03-27T19:25:24.913922,McDonalds,20.6,5.94,24-38 min,,129.94,success,,Combo Mediano McDonalds,182.76,True
+ubereats,gdl_chapultepec,"Chapultepec, Guadalajara",Guadalajara,premium,2026-03-27T19:25:24.913922,McDonalds,20.6,5.94,24-38 min,,129.94,success,,McNuggets 10 piezas,123.63,True
+ubereats,gdl_chapultepec,"Chapultepec, Guadalajara",Guadalajara,premium,2026-03-27T19:25:24.913922,McDonalds,20.6,5.94,24-38 min,,129.94,success,,Coca-Cola 500ml,30.92,True
+ubereats,gdl_chapultepec,"Chapultepec, Guadalajara",Guadalajara,premium,2026-03-27T19:25:24.913922,McDonalds,20.6,5.94,24-38 min,,129.94,success,,Agua Natural 1L,20.2,True
+didi,gdl_chapultepec,"Chapultepec, Guadalajara",Guadalajara,premium,2026-03-27T19:25:24.913922,McDonalds,25.2,12.33,31-41 min,Envio GRATIS sin minimo; 50% descuento hasta $100,141.63,partial,,Big Mac,104.1,True
+didi,gdl_chapultepec,"Chapultepec, Guadalajara",Guadalajara,premium,2026-03-27T19:25:24.913922,McDonalds,25.2,12.33,31-41 min,Envio GRATIS sin minimo; 50% descuento hasta $100,141.63,partial,,Combo Mediano McDonalds,176.3,True
+didi,gdl_chapultepec,"Chapultepec, Guadalajara",Guadalajara,premium,2026-03-27T19:25:24.913922,McDonalds,25.2,12.33,31-41 min,Envio GRATIS sin minimo; 50% descuento hasta $100,141.63,partial,,McNuggets 10 piezas,118.02,True
+didi,gdl_chapultepec,"Chapultepec, Guadalajara",Guadalajara,premium,2026-03-27T19:25:24.913922,McDonalds,25.2,12.33,31-41 min,Envio GRATIS sin minimo; 50% descuento hasta $100,141.63,partial,,Coca-Cola 500ml,,False
+didi,gdl_chapultepec,"Chapultepec, Guadalajara",Guadalajara,premium,2026-03-27T19:25:24.913922,McDonalds,25.2,12.33,31-41 min,Envio GRATIS sin minimo; 50% descuento hasta $100,141.63,partial,,Agua Natural 1L,,False
+rappi,gdl_zapopan,"Zapopan Centro, Guadalajara",Guadalajara,middle,2026-03-27T19:25:24.913922,McDonalds,21.52,7.6,46-54 min,Cashback 10% en Rappi creditos; 15% descuento con RappiPrime,131.78,partial,,Big Mac,102.66,True
+rappi,gdl_zapopan,"Zapopan Centro, Guadalajara",Guadalajara,middle,2026-03-27T19:25:24.913922,McDonalds,21.52,7.6,46-54 min,Cashback 10% en Rappi creditos; 15% descuento con RappiPrime,131.78,partial,,Combo Mediano McDonalds,176.46,True
+rappi,gdl_zapopan,"Zapopan Centro, Guadalajara",Guadalajara,middle,2026-03-27T19:25:24.913922,McDonalds,21.52,7.6,46-54 min,Cashback 10% en Rappi creditos; 15% descuento con RappiPrime,131.78,partial,,McNuggets 10 piezas,,False
+rappi,gdl_zapopan,"Zapopan Centro, Guadalajara",Guadalajara,middle,2026-03-27T19:25:24.913922,McDonalds,21.52,7.6,46-54 min,Cashback 10% en Rappi creditos; 15% descuento con RappiPrime,131.78,partial,,Coca-Cola 500ml,28.54,True
+rappi,gdl_zapopan,"Zapopan Centro, Guadalajara",Guadalajara,middle,2026-03-27T19:25:24.913922,McDonalds,21.52,7.6,46-54 min,Cashback 10% en Rappi creditos; 15% descuento con RappiPrime,131.78,partial,,Agua Natural 1L,19.51,True
+ubereats,gdl_zapopan,"Zapopan Centro, Guadalajara",Guadalajara,middle,2026-03-27T19:25:24.913922,McDonalds,43.56,6.37,21-26 min,,155.83,success,,Big Mac,105.9,True
+ubereats,gdl_zapopan,"Zapopan Centro, Guadalajara",Guadalajara,middle,2026-03-27T19:25:24.913922,McDonalds,43.56,6.37,21-26 min,,155.83,success,,Combo Mediano McDonalds,190.67,True
+ubereats,gdl_zapopan,"Zapopan Centro, Guadalajara",Guadalajara,middle,2026-03-27T19:25:24.913922,McDonalds,43.56,6.37,21-26 min,,155.83,success,,McNuggets 10 piezas,135.43,True
+ubereats,gdl_zapopan,"Zapopan Centro, Guadalajara",Guadalajara,middle,2026-03-27T19:25:24.913922,McDonalds,43.56,6.37,21-26 min,,155.83,success,,Coca-Cola 500ml,31.42,True
+ubereats,gdl_zapopan,"Zapopan Centro, Guadalajara",Guadalajara,middle,2026-03-27T19:25:24.913922,McDonalds,43.56,6.37,21-26 min,,155.83,success,,Agua Natural 1L,21.09,True
+didi,gdl_zapopan,"Zapopan Centro, Guadalajara",Guadalajara,middle,2026-03-27T19:25:24.913922,McDonalds,28.4,6.64,28-37 min,,,partial,,Big Mac,,False
+didi,gdl_zapopan,"Zapopan Centro, Guadalajara",Guadalajara,middle,2026-03-27T19:25:24.913922,McDonalds,28.4,6.64,28-37 min,,,partial,,Combo Mediano McDonalds,161.63,True
+didi,gdl_zapopan,"Zapopan Centro, Guadalajara",Guadalajara,middle,2026-03-27T19:25:24.913922,McDonalds,28.4,6.64,28-37 min,,,partial,,McNuggets 10 piezas,113.1,True
+didi,gdl_zapopan,"Zapopan Centro, Guadalajara",Guadalajara,middle,2026-03-27T19:25:24.913922,McDonalds,28.4,6.64,28-37 min,,,partial,,Coca-Cola 500ml,28.46,True
+didi,gdl_zapopan,"Zapopan Centro, Guadalajara",Guadalajara,middle,2026-03-27T19:25:24.913922,McDonalds,28.4,6.64,28-37 min,,,partial,,Agua Natural 1L,19.38,True
+rappi,gdl_tlaquepaque,"Tlaquepaque, Guadalajara",Guadalajara,popular,2026-03-27T19:25:24.913922,McDonalds,27.57,11.19,53-59 min,,134.2,success,,Big Mac,95.44,True
+rappi,gdl_tlaquepaque,"Tlaquepaque, Guadalajara",Guadalajara,popular,2026-03-27T19:25:24.913922,McDonalds,27.57,11.19,53-59 min,,134.2,success,,Combo Mediano McDonalds,167.4,True
+rappi,gdl_tlaquepaque,"Tlaquepaque, Guadalajara",Guadalajara,popular,2026-03-27T19:25:24.913922,McDonalds,27.57,11.19,53-59 min,,134.2,success,,McNuggets 10 piezas,127.87,True
+rappi,gdl_tlaquepaque,"Tlaquepaque, Guadalajara",Guadalajara,popular,2026-03-27T19:25:24.913922,McDonalds,27.57,11.19,53-59 min,,134.2,success,,Coca-Cola 500ml,29.2,True
+rappi,gdl_tlaquepaque,"Tlaquepaque, Guadalajara",Guadalajara,popular,2026-03-27T19:25:24.913922,McDonalds,27.57,11.19,53-59 min,,134.2,success,,Agua Natural 1L,19.76,True
+ubereats,gdl_tlaquepaque,"Tlaquepaque, Guadalajara",Guadalajara,popular,2026-03-27T19:25:24.913922,McDonalds,35.01,6.98,48-55 min,,152.55,success,,Big Mac,110.56,True
+ubereats,gdl_tlaquepaque,"Tlaquepaque, Guadalajara",Guadalajara,popular,2026-03-27T19:25:24.913922,McDonalds,35.01,6.98,48-55 min,,152.55,success,,Combo Mediano McDonalds,171.14,True
+ubereats,gdl_tlaquepaque,"Tlaquepaque, Guadalajara",Guadalajara,popular,2026-03-27T19:25:24.913922,McDonalds,35.01,6.98,48-55 min,,152.55,success,,McNuggets 10 piezas,130.68,True
+ubereats,gdl_tlaquepaque,"Tlaquepaque, Guadalajara",Guadalajara,popular,2026-03-27T19:25:24.913922,McDonalds,35.01,6.98,48-55 min,,152.55,success,,Coca-Cola 500ml,30.69,True
+ubereats,gdl_tlaquepaque,"Tlaquepaque, Guadalajara",Guadalajara,popular,2026-03-27T19:25:24.913922,McDonalds,35.01,6.98,48-55 min,,152.55,success,,Agua Natural 1L,20.23,True
+didi,gdl_tlaquepaque,"Tlaquepaque, Guadalajara",Guadalajara,popular,2026-03-27T19:25:24.913922,McDonalds,17.92,12.19,37-51 min,,127.77,partial,,Big Mac,97.66,True
+didi,gdl_tlaquepaque,"Tlaquepaque, Guadalajara",Guadalajara,popular,2026-03-27T19:25:24.913922,McDonalds,17.92,12.19,37-51 min,,127.77,partial,,Combo Mediano McDonalds,178.13,True
+didi,gdl_tlaquepaque,"Tlaquepaque, Guadalajara",Guadalajara,popular,2026-03-27T19:25:24.913922,McDonalds,17.92,12.19,37-51 min,,127.77,partial,,McNuggets 10 piezas,123.04,True
+didi,gdl_tlaquepaque,"Tlaquepaque, Guadalajara",Guadalajara,popular,2026-03-27T19:25:24.913922,McDonalds,17.92,12.19,37-51 min,,127.77,partial,,Coca-Cola 500ml,,False
+didi,gdl_tlaquepaque,"Tlaquepaque, Guadalajara",Guadalajara,popular,2026-03-27T19:25:24.913922,McDonalds,17.92,12.19,37-51 min,,127.77,partial,,Agua Natural 1L,,False
+rappi,mty_sanpedro,"San Pedro, Monterrey",Monterrey,premium,2026-03-27T19:25:24.913922,McDonalds,26.76,8.98,23-31 min,Cashback 10% en Rappi creditos; $50 de descuento en pedidos +$200,138.39,success,,Big Mac,102.65,True
+rappi,mty_sanpedro,"San Pedro, Monterrey",Monterrey,premium,2026-03-27T19:25:24.913922,McDonalds,26.76,8.98,23-31 min,Cashback 10% en Rappi creditos; $50 de descuento en pedidos +$200,138.39,success,,Combo Mediano McDonalds,171.41,True
+rappi,mty_sanpedro,"San Pedro, Monterrey",Monterrey,premium,2026-03-27T19:25:24.913922,McDonalds,26.76,8.98,23-31 min,Cashback 10% en Rappi creditos; $50 de descuento en pedidos +$200,138.39,success,,McNuggets 10 piezas,120.59,True
+rappi,mty_sanpedro,"San Pedro, Monterrey",Monterrey,premium,2026-03-27T19:25:24.913922,McDonalds,26.76,8.98,23-31 min,Cashback 10% en Rappi creditos; $50 de descuento en pedidos +$200,138.39,success,,Coca-Cola 500ml,27.54,True
+rappi,mty_sanpedro,"San Pedro, Monterrey",Monterrey,premium,2026-03-27T19:25:24.913922,McDonalds,26.76,8.98,23-31 min,Cashback 10% en Rappi creditos; $50 de descuento en pedidos +$200,138.39,success,,Agua Natural 1L,19.52,True
+ubereats,mty_sanpedro,"San Pedro, Monterrey",Monterrey,premium,2026-03-27T19:25:24.913922,McDonalds,23.2,7.4,30-42 min,,139.71,success,,Big Mac,109.11,True
+ubereats,mty_sanpedro,"San Pedro, Monterrey",Monterrey,premium,2026-03-27T19:25:24.913922,McDonalds,23.2,7.4,30-42 min,,139.71,success,,Combo Mediano McDonalds,181.61,True
+ubereats,mty_sanpedro,"San Pedro, Monterrey",Monterrey,premium,2026-03-27T19:25:24.913922,McDonalds,23.2,7.4,30-42 min,,139.71,success,,McNuggets 10 piezas,121.36,True
+ubereats,mty_sanpedro,"San Pedro, Monterrey",Monterrey,premium,2026-03-27T19:25:24.913922,McDonalds,23.2,7.4,30-42 min,,139.71,success,,Coca-Cola 500ml,30.87,True
+ubereats,mty_sanpedro,"San Pedro, Monterrey",Monterrey,premium,2026-03-27T19:25:24.913922,McDonalds,23.2,7.4,30-42 min,,139.71,success,,Agua Natural 1L,20.66,True
+didi,mty_sanpedro,"San Pedro, Monterrey",Monterrey,premium,2026-03-27T19:25:24.913922,McDonalds,19.62,4.94,22-29 min,Descuento de bienvenida $80,120.15,partial,,Big Mac,95.59,True
+didi,mty_sanpedro,"San Pedro, Monterrey",Monterrey,premium,2026-03-27T19:25:24.913922,McDonalds,19.62,4.94,22-29 min,Descuento de bienvenida $80,120.15,partial,,Combo Mediano McDonalds,159.94,True
+didi,mty_sanpedro,"San Pedro, Monterrey",Monterrey,premium,2026-03-27T19:25:24.913922,McDonalds,19.62,4.94,22-29 min,Descuento de bienvenida $80,120.15,partial,,McNuggets 10 piezas,112.6,True
+didi,mty_sanpedro,"San Pedro, Monterrey",Monterrey,premium,2026-03-27T19:25:24.913922,McDonalds,19.62,4.94,22-29 min,Descuento de bienvenida $80,120.15,partial,,Coca-Cola 500ml,28.79,True
+didi,mty_sanpedro,"San Pedro, Monterrey",Monterrey,premium,2026-03-27T19:25:24.913922,McDonalds,19.62,4.94,22-29 min,Descuento de bienvenida $80,120.15,partial,,Agua Natural 1L,,False
+rappi,mty_valle,"Valle, Monterrey",Monterrey,middle,2026-03-27T19:25:24.913922,McDonalds,19.37,6.67,36-48 min,15% descuento con RappiPrime,123.98,success,,Big Mac,97.94,True
+rappi,mty_valle,"Valle, Monterrey",Monterrey,middle,2026-03-27T19:25:24.913922,McDonalds,19.37,6.67,36-48 min,15% descuento con RappiPrime,123.98,success,,Combo Mediano McDonalds,163.33,True
+rappi,mty_valle,"Valle, Monterrey",Monterrey,middle,2026-03-27T19:25:24.913922,McDonalds,19.37,6.67,36-48 min,15% descuento con RappiPrime,123.98,success,,McNuggets 10 piezas,113.89,True
+rappi,mty_valle,"Valle, Monterrey",Monterrey,middle,2026-03-27T19:25:24.913922,McDonalds,19.37,6.67,36-48 min,15% descuento con RappiPrime,123.98,success,,Coca-Cola 500ml,30.04,True
+rappi,mty_valle,"Valle, Monterrey",Monterrey,middle,2026-03-27T19:25:24.913922,McDonalds,19.37,6.67,36-48 min,15% descuento con RappiPrime,123.98,success,,Agua Natural 1L,19.91,True
+ubereats,mty_valle,"Valle, Monterrey",Monterrey,middle,2026-03-27T19:25:24.913922,McDonalds,31.74,8.57,34-47 min,,141.56,partial,,Big Mac,101.25,True
+ubereats,mty_valle,"Valle, Monterrey",Monterrey,middle,2026-03-27T19:25:24.913922,McDonalds,31.74,8.57,34-47 min,,141.56,partial,,Combo Mediano McDonalds,181.63,True
+ubereats,mty_valle,"Valle, Monterrey",Monterrey,middle,2026-03-27T19:25:24.913922,McDonalds,31.74,8.57,34-47 min,,141.56,partial,,McNuggets 10 piezas,131.09,True
+ubereats,mty_valle,"Valle, Monterrey",Monterrey,middle,2026-03-27T19:25:24.913922,McDonalds,31.74,8.57,34-47 min,,141.56,partial,,Coca-Cola 500ml,,False
+ubereats,mty_valle,"Valle, Monterrey",Monterrey,middle,2026-03-27T19:25:24.913922,McDonalds,31.74,8.57,34-47 min,,141.56,partial,,Agua Natural 1L,19.36,True
+didi,mty_valle,"Valle, Monterrey",Monterrey,middle,2026-03-27T19:25:24.913922,McDonalds,14.19,3.97,41-55 min,Cupon DiDi: COMIDAMX; Descuento de bienvenida $80,115.13,success,,Big Mac,96.97,True
+didi,mty_valle,"Valle, Monterrey",Monterrey,middle,2026-03-27T19:25:24.913922,McDonalds,14.19,3.97,41-55 min,Cupon DiDi: COMIDAMX; Descuento de bienvenida $80,115.13,success,,Combo Mediano McDonalds,163.74,True
+didi,mty_valle,"Valle, Monterrey",Monterrey,middle,2026-03-27T19:25:24.913922,McDonalds,14.19,3.97,41-55 min,Cupon DiDi: COMIDAMX; Descuento de bienvenida $80,115.13,success,,McNuggets 10 piezas,117.29,True
+didi,mty_valle,"Valle, Monterrey",Monterrey,middle,2026-03-27T19:25:24.913922,McDonalds,14.19,3.97,41-55 min,Cupon DiDi: COMIDAMX; Descuento de bienvenida $80,115.13,success,,Coca-Cola 500ml,26.28,True
+didi,mty_valle,"Valle, Monterrey",Monterrey,middle,2026-03-27T19:25:24.913922,McDonalds,14.19,3.97,41-55 min,Cupon DiDi: COMIDAMX; Descuento de bienvenida $80,115.13,success,,Agua Natural 1L,19.54,True
+rappi,mty_centro,"Centro, Monterrey",Monterrey,middle,2026-03-27T19:25:24.913922,McDonalds,43.12,6.15,27-34 min,15% descuento con RappiPrime,149.37,success,,Big Mac,100.1,True
+rappi,mty_centro,"Centro, Monterrey",Monterrey,middle,2026-03-27T19:25:24.913922,McDonalds,43.12,6.15,27-34 min,15% descuento con RappiPrime,149.37,success,,Combo Mediano McDonalds,166.88,True
+rappi,mty_centro,"Centro, Monterrey",Monterrey,middle,2026-03-27T19:25:24.913922,McDonalds,43.12,6.15,27-34 min,15% descuento con RappiPrime,149.37,success,,McNuggets 10 piezas,126.35,True
+rappi,mty_centro,"Centro, Monterrey",Monterrey,middle,2026-03-27T19:25:24.913922,McDonalds,43.12,6.15,27-34 min,15% descuento con RappiPrime,149.37,success,,Coca-Cola 500ml,27.45,True
+rappi,mty_centro,"Centro, Monterrey",Monterrey,middle,2026-03-27T19:25:24.913922,McDonalds,43.12,6.15,27-34 min,15% descuento con RappiPrime,149.37,success,,Agua Natural 1L,20.0,True
+ubereats,mty_centro,"Centro, Monterrey",Monterrey,middle,2026-03-27T19:25:24.913922,McDonalds,30.01,9.21,22-31 min,2x1 en bebidas seleccionadas; 30% off maximo $80,139.89,partial,,Big Mac,100.67,True
+ubereats,mty_centro,"Centro, Monterrey",Monterrey,middle,2026-03-27T19:25:24.913922,McDonalds,30.01,9.21,22-31 min,2x1 en bebidas seleccionadas; 30% off maximo $80,139.89,partial,,Combo Mediano McDonalds,177.35,True
+ubereats,mty_centro,"Centro, Monterrey",Monterrey,middle,2026-03-27T19:25:24.913922,McDonalds,30.01,9.21,22-31 min,2x1 en bebidas seleccionadas; 30% off maximo $80,139.89,partial,,McNuggets 10 piezas,129.17,True
+ubereats,mty_centro,"Centro, Monterrey",Monterrey,middle,2026-03-27T19:25:24.913922,McDonalds,30.01,9.21,22-31 min,2x1 en bebidas seleccionadas; 30% off maximo $80,139.89,partial,,Coca-Cola 500ml,28.68,True
+ubereats,mty_centro,"Centro, Monterrey",Monterrey,middle,2026-03-27T19:25:24.913922,McDonalds,30.01,9.21,22-31 min,2x1 en bebidas seleccionadas; 30% off maximo $80,139.89,partial,,Agua Natural 1L,,False
+didi,mty_centro,"Centro, Monterrey",Monterrey,middle,2026-03-27T19:25:24.913922,McDonalds,23.94,4.28,54-66 min,,120.72,success,,Big Mac,92.5,True
+didi,mty_centro,"Centro, Monterrey",Monterrey,middle,2026-03-27T19:25:24.913922,McDonalds,23.94,4.28,54-66 min,,120.72,success,,Combo Mediano McDonalds,171.86,True
+didi,mty_centro,"Centro, Monterrey",Monterrey,middle,2026-03-27T19:25:24.913922,McDonalds,23.94,4.28,54-66 min,,120.72,success,,McNuggets 10 piezas,119.69,True
+didi,mty_centro,"Centro, Monterrey",Monterrey,middle,2026-03-27T19:25:24.913922,McDonalds,23.94,4.28,54-66 min,,120.72,success,,Coca-Cola 500ml,28.8,True
+didi,mty_centro,"Centro, Monterrey",Monterrey,middle,2026-03-27T19:25:24.913922,McDonalds,23.94,4.28,54-66 min,,120.72,success,,Agua Natural 1L,19.54,True
+rappi,mty_cumbres,"Cumbres, Monterrey",Monterrey,middle,2026-03-27T19:25:24.913922,McDonalds,41.81,4.71,27-40 min,Cashback 10% en Rappi creditos,153.04,success,,Big Mac,106.52,True
+rappi,mty_cumbres,"Cumbres, Monterrey",Monterrey,middle,2026-03-27T19:25:24.913922,McDonalds,41.81,4.71,27-40 min,Cashback 10% en Rappi creditos,153.04,success,,Combo Mediano McDonalds,169.52,True
+rappi,mty_cumbres,"Cumbres, Monterrey",Monterrey,middle,2026-03-27T19:25:24.913922,McDonalds,41.81,4.71,27-40 min,Cashback 10% en Rappi creditos,153.04,success,,McNuggets 10 piezas,114.67,True
+rappi,mty_cumbres,"Cumbres, Monterrey",Monterrey,middle,2026-03-27T19:25:24.913922,McDonalds,41.81,4.71,27-40 min,Cashback 10% en Rappi creditos,153.04,success,,Coca-Cola 500ml,28.1,True
+rappi,mty_cumbres,"Cumbres, Monterrey",Monterrey,middle,2026-03-27T19:25:24.913922,McDonalds,41.81,4.71,27-40 min,Cashback 10% en Rappi creditos,153.04,success,,Agua Natural 1L,19.69,True
+ubereats,mty_cumbres,"Cumbres, Monterrey",Monterrey,middle,2026-03-27T19:25:24.913922,McDonalds,23.01,5.6,27-39 min,,139.56,success,,Big Mac,110.95,True
+ubereats,mty_cumbres,"Cumbres, Monterrey",Monterrey,middle,2026-03-27T19:25:24.913922,McDonalds,23.01,5.6,27-39 min,,139.56,success,,Combo Mediano McDonalds,190.43,True
+ubereats,mty_cumbres,"Cumbres, Monterrey",Monterrey,middle,2026-03-27T19:25:24.913922,McDonalds,23.01,5.6,27-39 min,,139.56,success,,McNuggets 10 piezas,120.72,True
+ubereats,mty_cumbres,"Cumbres, Monterrey",Monterrey,middle,2026-03-27T19:25:24.913922,McDonalds,23.01,5.6,27-39 min,,139.56,success,,Coca-Cola 500ml,30.6,True
+ubereats,mty_cumbres,"Cumbres, Monterrey",Monterrey,middle,2026-03-27T19:25:24.913922,McDonalds,23.01,5.6,27-39 min,,139.56,success,,Agua Natural 1L,20.29,True
+didi,mty_cumbres,"Cumbres, Monterrey",Monterrey,middle,2026-03-27T19:25:24.913922,McDonalds,34.47,6.57,46-55 min,,,partial,,Big Mac,,False
+didi,mty_cumbres,"Cumbres, Monterrey",Monterrey,middle,2026-03-27T19:25:24.913922,McDonalds,34.47,6.57,46-55 min,,,partial,,Combo Mediano McDonalds,170.45,True
+didi,mty_cumbres,"Cumbres, Monterrey",Monterrey,middle,2026-03-27T19:25:24.913922,McDonalds,34.47,6.57,46-55 min,,,partial,,McNuggets 10 piezas,113.19,True
+didi,mty_cumbres,"Cumbres, Monterrey",Monterrey,middle,2026-03-27T19:25:24.913922,McDonalds,34.47,6.57,46-55 min,,,partial,,Coca-Cola 500ml,,False
+didi,mty_cumbres,"Cumbres, Monterrey",Monterrey,middle,2026-03-27T19:25:24.913922,McDonalds,34.47,6.57,46-55 min,,,partial,,Agua Natural 1L,19.9,True
+rappi,can_hotelera,"Zona Hotelera, Cancun",Cancun,premium,2026-03-27T19:25:24.913922,McDonalds,31.64,11.72,26-35 min,,142.76,success,,Big Mac,99.4,True
+rappi,can_hotelera,"Zona Hotelera, Cancun",Cancun,premium,2026-03-27T19:25:24.913922,McDonalds,31.64,11.72,26-35 min,,142.76,success,,Combo Mediano McDonalds,170.92,True
+rappi,can_hotelera,"Zona Hotelera, Cancun",Cancun,premium,2026-03-27T19:25:24.913922,McDonalds,31.64,11.72,26-35 min,,142.76,success,,McNuggets 10 piezas,115.29,True
+rappi,can_hotelera,"Zona Hotelera, Cancun",Cancun,premium,2026-03-27T19:25:24.913922,McDonalds,31.64,11.72,26-35 min,,142.76,success,,Coca-Cola 500ml,28.78,True
+rappi,can_hotelera,"Zona Hotelera, Cancun",Cancun,premium,2026-03-27T19:25:24.913922,McDonalds,31.64,11.72,26-35 min,,142.76,success,,Agua Natural 1L,18.39,True
+ubereats,can_hotelera,"Zona Hotelera, Cancun",Cancun,premium,2026-03-27T19:25:24.913922,McDonalds,23.48,7.75,22-30 min,30% off maximo $80,142.12,success,,Big Mac,110.89,True
+ubereats,can_hotelera,"Zona Hotelera, Cancun",Cancun,premium,2026-03-27T19:25:24.913922,McDonalds,23.48,7.75,22-30 min,30% off maximo $80,142.12,success,,Combo Mediano McDonalds,177.14,True
+ubereats,can_hotelera,"Zona Hotelera, Cancun",Cancun,premium,2026-03-27T19:25:24.913922,McDonalds,23.48,7.75,22-30 min,30% off maximo $80,142.12,success,,McNuggets 10 piezas,136.21,True
+ubereats,can_hotelera,"Zona Hotelera, Cancun",Cancun,premium,2026-03-27T19:25:24.913922,McDonalds,23.48,7.75,22-30 min,30% off maximo $80,142.12,success,,Coca-Cola 500ml,28.77,True
+ubereats,can_hotelera,"Zona Hotelera, Cancun",Cancun,premium,2026-03-27T19:25:24.913922,McDonalds,23.48,7.75,22-30 min,30% off maximo $80,142.12,success,,Agua Natural 1L,20.04,True
+didi,can_hotelera,"Zona Hotelera, Cancun",Cancun,premium,2026-03-27T19:25:24.913922,McDonalds,28.55,4.68,22-28 min,,136.2,success,,Big Mac,102.97,True
+didi,can_hotelera,"Zona Hotelera, Cancun",Cancun,premium,2026-03-27T19:25:24.913922,McDonalds,28.55,4.68,22-28 min,,136.2,success,,Combo Mediano McDonalds,164.19,True
+didi,can_hotelera,"Zona Hotelera, Cancun",Cancun,premium,2026-03-27T19:25:24.913922,McDonalds,28.55,4.68,22-28 min,,136.2,success,,McNuggets 10 piezas,124.64,True
+didi,can_hotelera,"Zona Hotelera, Cancun",Cancun,premium,2026-03-27T19:25:24.913922,McDonalds,28.55,4.68,22-28 min,,136.2,success,,Coca-Cola 500ml,29.59,True
+didi,can_hotelera,"Zona Hotelera, Cancun",Cancun,premium,2026-03-27T19:25:24.913922,McDonalds,28.55,4.68,22-28 min,,136.2,success,,Agua Natural 1L,18.06,True
+rappi,can_centro,"Centro, Cancun",Cancun,middle,2026-03-27T19:25:24.913922,McDonalds,38.5,14.17,46-57 min,,153.49,partial,,Big Mac,100.82,True
+rappi,can_centro,"Centro, Cancun",Cancun,middle,2026-03-27T19:25:24.913922,McDonalds,38.5,14.17,46-57 min,,153.49,partial,,Combo Mediano McDonalds,176.42,True
+rappi,can_centro,"Centro, Cancun",Cancun,middle,2026-03-27T19:25:24.913922,McDonalds,38.5,14.17,46-57 min,,153.49,partial,,McNuggets 10 piezas,123.18,True
+rappi,can_centro,"Centro, Cancun",Cancun,middle,2026-03-27T19:25:24.913922,McDonalds,38.5,14.17,46-57 min,,153.49,partial,,Coca-Cola 500ml,,False
+rappi,can_centro,"Centro, Cancun",Cancun,middle,2026-03-27T19:25:24.913922,McDonalds,38.5,14.17,46-57 min,,153.49,partial,,Agua Natural 1L,18.89,True
+ubereats,can_centro,"Centro, Cancun",Cancun,middle,2026-03-27T19:25:24.913922,McDonalds,17.71,11.4,39-45 min,,141.82,success,,Big Mac,112.71,True
+ubereats,can_centro,"Centro, Cancun",Cancun,middle,2026-03-27T19:25:24.913922,McDonalds,17.71,11.4,39-45 min,,141.82,success,,Combo Mediano McDonalds,190.85,True
+ubereats,can_centro,"Centro, Cancun",Cancun,middle,2026-03-27T19:25:24.913922,McDonalds,17.71,11.4,39-45 min,,141.82,success,,McNuggets 10 piezas,128.7,True
+ubereats,can_centro,"Centro, Cancun",Cancun,middle,2026-03-27T19:25:24.913922,McDonalds,17.71,11.4,39-45 min,,141.82,success,,Coca-Cola 500ml,29.1,True
+ubereats,can_centro,"Centro, Cancun",Cancun,middle,2026-03-27T19:25:24.913922,McDonalds,17.71,11.4,39-45 min,,141.82,success,,Agua Natural 1L,19.89,True
+didi,can_centro,"Centro, Cancun",Cancun,middle,2026-03-27T19:25:24.913922,McDonalds,14.13,8.07,43-55 min,50% descuento hasta $100,119.96,success,,Big Mac,97.76,True
+didi,can_centro,"Centro, Cancun",Cancun,middle,2026-03-27T19:25:24.913922,McDonalds,14.13,8.07,43-55 min,50% descuento hasta $100,119.96,success,,Combo Mediano McDonalds,176.79,True
+didi,can_centro,"Centro, Cancun",Cancun,middle,2026-03-27T19:25:24.913922,McDonalds,14.13,8.07,43-55 min,50% descuento hasta $100,119.96,success,,McNuggets 10 piezas,122.86,True
+didi,can_centro,"Centro, Cancun",Cancun,middle,2026-03-27T19:25:24.913922,McDonalds,14.13,8.07,43-55 min,50% descuento hasta $100,119.96,success,,Coca-Cola 500ml,27.41,True
+didi,can_centro,"Centro, Cancun",Cancun,middle,2026-03-27T19:25:24.913922,McDonalds,14.13,8.07,43-55 min,50% descuento hasta $100,119.96,success,,Agua Natural 1L,19.06,True
+rappi,can_juarez,"Puerto Juarez, Cancun",Cancun,popular,2026-03-27T19:25:24.913922,McDonalds,34.97,12.24,48-57 min,,149.47,partial,,Big Mac,102.26,True
+rappi,can_juarez,"Puerto Juarez, Cancun",Cancun,popular,2026-03-27T19:25:24.913922,McDonalds,34.97,12.24,48-57 min,,149.47,partial,,Combo Mediano McDonalds,,False
+rappi,can_juarez,"Puerto Juarez, Cancun",Cancun,popular,2026-03-27T19:25:24.913922,McDonalds,34.97,12.24,48-57 min,,149.47,partial,,McNuggets 10 piezas,120.25,True
+rappi,can_juarez,"Puerto Juarez, Cancun",Cancun,popular,2026-03-27T19:25:24.913922,McDonalds,34.97,12.24,48-57 min,,149.47,partial,,Coca-Cola 500ml,28.59,True
+rappi,can_juarez,"Puerto Juarez, Cancun",Cancun,popular,2026-03-27T19:25:24.913922,McDonalds,34.97,12.24,48-57 min,,149.47,partial,,Agua Natural 1L,,False
+ubereats,can_juarez,"Puerto Juarez, Cancun",Cancun,popular,2026-03-27T19:25:24.913922,McDonalds,29.04,8.37,42-47 min,,139.82,success,,Big Mac,102.41,True
+ubereats,can_juarez,"Puerto Juarez, Cancun",Cancun,popular,2026-03-27T19:25:24.913922,McDonalds,29.04,8.37,42-47 min,,139.82,success,,Combo Mediano McDonalds,181.44,True
+ubereats,can_juarez,"Puerto Juarez, Cancun",Cancun,popular,2026-03-27T19:25:24.913922,McDonalds,29.04,8.37,42-47 min,,139.82,success,,McNuggets 10 piezas,129.21,True
+ubereats,can_juarez,"Puerto Juarez, Cancun",Cancun,popular,2026-03-27T19:25:24.913922,McDonalds,29.04,8.37,42-47 min,,139.82,success,,Coca-Cola 500ml,32.03,True
+ubereats,can_juarez,"Puerto Juarez, Cancun",Cancun,popular,2026-03-27T19:25:24.913922,McDonalds,29.04,8.37,42-47 min,,139.82,success,,Agua Natural 1L,21.69,True
+didi,can_juarez,"Puerto Juarez, Cancun",Cancun,popular,2026-03-27T19:25:24.913922,McDonalds,37.98,3.37,32-37 min,,145.0,partial,,Big Mac,103.65,True
+didi,can_juarez,"Puerto Juarez, Cancun",Cancun,popular,2026-03-27T19:25:24.913922,McDonalds,37.98,3.37,32-37 min,,145.0,partial,,Combo Mediano McDonalds,,False
+didi,can_juarez,"Puerto Juarez, Cancun",Cancun,popular,2026-03-27T19:25:24.913922,McDonalds,37.98,3.37,32-37 min,,145.0,partial,,McNuggets 10 piezas,122.55,True
+didi,can_juarez,"Puerto Juarez, Cancun",Cancun,popular,2026-03-27T19:25:24.913922,McDonalds,37.98,3.37,32-37 min,,145.0,partial,,Coca-Cola 500ml,28.93,True
+didi,can_juarez,"Puerto Juarez, Cancun",Cancun,popular,2026-03-27T19:25:24.913922,McDonalds,37.98,3.37,32-37 min,,145.0,partial,,Agua Natural 1L,,False
+rappi,pue_centro,"Centro, Puebla",Puebla,middle,2026-03-27T19:25:24.913922,McDonalds,48.14,8.94,47-56 min,,155.11,success,,Big Mac,98.03,True
+rappi,pue_centro,"Centro, Puebla",Puebla,middle,2026-03-27T19:25:24.913922,McDonalds,48.14,8.94,47-56 min,,155.11,success,,Combo Mediano McDonalds,173.28,True
+rappi,pue_centro,"Centro, Puebla",Puebla,middle,2026-03-27T19:25:24.913922,McDonalds,48.14,8.94,47-56 min,,155.11,success,,McNuggets 10 piezas,114.44,True
+rappi,pue_centro,"Centro, Puebla",Puebla,middle,2026-03-27T19:25:24.913922,McDonalds,48.14,8.94,47-56 min,,155.11,success,,Coca-Cola 500ml,29.32,True
+rappi,pue_centro,"Centro, Puebla",Puebla,middle,2026-03-27T19:25:24.913922,McDonalds,48.14,8.94,47-56 min,,155.11,success,,Agua Natural 1L,18.38,True
+ubereats,pue_centro,"Centro, Puebla",Puebla,middle,2026-03-27T19:25:24.913922,McDonalds,35.29,9.18,29-42 min,,,partial,,Big Mac,,False
+ubereats,pue_centro,"Centro, Puebla",Puebla,middle,2026-03-27T19:25:24.913922,McDonalds,35.29,9.18,29-42 min,,,partial,,Combo Mediano McDonalds,192.71,True
+ubereats,pue_centro,"Centro, Puebla",Puebla,middle,2026-03-27T19:25:24.913922,McDonalds,35.29,9.18,29-42 min,,,partial,,McNuggets 10 piezas,134.11,True
+ubereats,pue_centro,"Centro, Puebla",Puebla,middle,2026-03-27T19:25:24.913922,McDonalds,35.29,9.18,29-42 min,,,partial,,Coca-Cola 500ml,30.0,True
+ubereats,pue_centro,"Centro, Puebla",Puebla,middle,2026-03-27T19:25:24.913922,McDonalds,35.29,9.18,29-42 min,,,partial,,Agua Natural 1L,21.11,True
+didi,pue_centro,"Centro, Puebla",Puebla,middle,2026-03-27T19:25:24.913922,McDonalds,12.68,9.01,41-49 min,,118.47,partial,,Big Mac,96.78,True
+didi,pue_centro,"Centro, Puebla",Puebla,middle,2026-03-27T19:25:24.913922,McDonalds,12.68,9.01,41-49 min,,118.47,partial,,Combo Mediano McDonalds,157.64,True
+didi,pue_centro,"Centro, Puebla",Puebla,middle,2026-03-27T19:25:24.913922,McDonalds,12.68,9.01,41-49 min,,118.47,partial,,McNuggets 10 piezas,117.68,True
+didi,pue_centro,"Centro, Puebla",Puebla,middle,2026-03-27T19:25:24.913922,McDonalds,12.68,9.01,41-49 min,,118.47,partial,,Coca-Cola 500ml,,False
+didi,pue_centro,"Centro, Puebla",Puebla,middle,2026-03-27T19:25:24.913922,McDonalds,12.68,9.01,41-49 min,,118.47,partial,,Agua Natural 1L,19.97,True
+rappi,pue_angelopolis,"Angelopolis, Puebla",Puebla,premium,2026-03-27T19:25:24.913922,McDonalds,19.53,9.2,27-38 min,$50 de descuento en pedidos +$200; 2x1 en McFlurry,131.12,success,,Big Mac,102.39,True
+rappi,pue_angelopolis,"Angelopolis, Puebla",Puebla,premium,2026-03-27T19:25:24.913922,McDonalds,19.53,9.2,27-38 min,$50 de descuento en pedidos +$200; 2x1 en McFlurry,131.12,success,,Combo Mediano McDonalds,170.75,True
+rappi,pue_angelopolis,"Angelopolis, Puebla",Puebla,premium,2026-03-27T19:25:24.913922,McDonalds,19.53,9.2,27-38 min,$50 de descuento en pedidos +$200; 2x1 en McFlurry,131.12,success,,McNuggets 10 piezas,123.09,True
+rappi,pue_angelopolis,"Angelopolis, Puebla",Puebla,premium,2026-03-27T19:25:24.913922,McDonalds,19.53,9.2,27-38 min,$50 de descuento en pedidos +$200; 2x1 en McFlurry,131.12,success,,Coca-Cola 500ml,26.77,True
+rappi,pue_angelopolis,"Angelopolis, Puebla",Puebla,premium,2026-03-27T19:25:24.913922,McDonalds,19.53,9.2,27-38 min,$50 de descuento en pedidos +$200; 2x1 en McFlurry,131.12,success,,Agua Natural 1L,20.51,True
+ubereats,pue_angelopolis,"Angelopolis, Puebla",Puebla,premium,2026-03-27T19:25:24.913922,McDonalds,33.32,7.06,34-39 min,,149.01,success,,Big Mac,108.63,True
+ubereats,pue_angelopolis,"Angelopolis, Puebla",Puebla,premium,2026-03-27T19:25:24.913922,McDonalds,33.32,7.06,34-39 min,,149.01,success,,Combo Mediano McDonalds,184.52,True
+ubereats,pue_angelopolis,"Angelopolis, Puebla",Puebla,premium,2026-03-27T19:25:24.913922,McDonalds,33.32,7.06,34-39 min,,149.01,success,,McNuggets 10 piezas,124.42,True
+ubereats,pue_angelopolis,"Angelopolis, Puebla",Puebla,premium,2026-03-27T19:25:24.913922,McDonalds,33.32,7.06,34-39 min,,149.01,success,,Coca-Cola 500ml,29.03,True
+ubereats,pue_angelopolis,"Angelopolis, Puebla",Puebla,premium,2026-03-27T19:25:24.913922,McDonalds,33.32,7.06,34-39 min,,149.01,success,,Agua Natural 1L,19.75,True
+didi,pue_angelopolis,"Angelopolis, Puebla",Puebla,premium,2026-03-27T19:25:24.913922,McDonalds,20.43,2.94,38-48 min,50% descuento hasta $100,120.56,success,,Big Mac,97.19,True
+didi,pue_angelopolis,"Angelopolis, Puebla",Puebla,premium,2026-03-27T19:25:24.913922,McDonalds,20.43,2.94,38-48 min,50% descuento hasta $100,120.56,success,,Combo Mediano McDonalds,159.97,True
+didi,pue_angelopolis,"Angelopolis, Puebla",Puebla,premium,2026-03-27T19:25:24.913922,McDonalds,20.43,2.94,38-48 min,50% descuento hasta $100,120.56,success,,McNuggets 10 piezas,117.68,True
+didi,pue_angelopolis,"Angelopolis, Puebla",Puebla,premium,2026-03-27T19:25:24.913922,McDonalds,20.43,2.94,38-48 min,50% descuento hasta $100,120.56,success,,Coca-Cola 500ml,28.36,True
+didi,pue_angelopolis,"Angelopolis, Puebla",Puebla,premium,2026-03-27T19:25:24.913922,McDonalds,20.43,2.94,38-48 min,50% descuento hasta $100,120.56,success,,Agua Natural 1L,19.59,True
+rappi,pue_cholula,"Cholula, Puebla",Puebla,middle,2026-03-27T19:25:24.913922,McDonalds,22.95,6.96,44-49 min,,133.93,partial,,Big Mac,104.02,True
+rappi,pue_cholula,"Cholula, Puebla",Puebla,middle,2026-03-27T19:25:24.913922,McDonalds,22.95,6.96,44-49 min,,133.93,partial,,Combo Mediano McDonalds,173.64,True
+rappi,pue_cholula,"Cholula, Puebla",Puebla,middle,2026-03-27T19:25:24.913922,McDonalds,22.95,6.96,44-49 min,,133.93,partial,,McNuggets 10 piezas,,False
+rappi,pue_cholula,"Cholula, Puebla",Puebla,middle,2026-03-27T19:25:24.913922,McDonalds,22.95,6.96,44-49 min,,133.93,partial,,Coca-Cola 500ml,28.57,True
+rappi,pue_cholula,"Cholula, Puebla",Puebla,middle,2026-03-27T19:25:24.913922,McDonalds,22.95,6.96,44-49 min,,133.93,partial,,Agua Natural 1L,18.32,True
+ubereats,pue_cholula,"Cholula, Puebla",Puebla,middle,2026-03-27T19:25:24.913922,McDonalds,43.36,5.01,39-52 min,,150.44,success,,Big Mac,102.07,True
+ubereats,pue_cholula,"Cholula, Puebla",Puebla,middle,2026-03-27T19:25:24.913922,McDonalds,43.36,5.01,39-52 min,,150.44,success,,Combo Mediano McDonalds,187.46,True
+ubereats,pue_cholula,"Cholula, Puebla",Puebla,middle,2026-03-27T19:25:24.913922,McDonalds,43.36,5.01,39-52 min,,150.44,success,,McNuggets 10 piezas,132.06,True
+ubereats,pue_cholula,"Cholula, Puebla",Puebla,middle,2026-03-27T19:25:24.913922,McDonalds,43.36,5.01,39-52 min,,150.44,success,,Coca-Cola 500ml,31.2,True
+ubereats,pue_cholula,"Cholula, Puebla",Puebla,middle,2026-03-27T19:25:24.913922,McDonalds,43.36,5.01,39-52 min,,150.44,success,,Agua Natural 1L,19.42,True
+didi,pue_cholula,"Cholula, Puebla",Puebla,middle,2026-03-27T19:25:24.913922,McDonalds,15.41,4.9,42-53 min,,116.28,partial,,Big Mac,95.97,True
+didi,pue_cholula,"Cholula, Puebla",Puebla,middle,2026-03-27T19:25:24.913922,McDonalds,15.41,4.9,42-53 min,,116.28,partial,,Combo Mediano McDonalds,,False
+didi,pue_cholula,"Cholula, Puebla",Puebla,middle,2026-03-27T19:25:24.913922,McDonalds,15.41,4.9,42-53 min,,116.28,partial,,McNuggets 10 piezas,123.63,True
+didi,pue_cholula,"Cholula, Puebla",Puebla,middle,2026-03-27T19:25:24.913922,McDonalds,15.41,4.9,42-53 min,,116.28,partial,,Coca-Cola 500ml,26.45,True
+didi,pue_cholula,"Cholula, Puebla",Puebla,middle,2026-03-27T19:25:24.913922,McDonalds,15.41,4.9,42-53 min,,116.28,partial,,Agua Natural 1L,19.87,True
+rappi,mer_centro,"Centro, Merida",Merida,middle,2026-03-27T19:25:24.913922,McDonalds,25.45,8.4,30-36 min,Cashback 10% en Rappi creditos; Combo familiar con 20% off,140.7,success,,Big Mac,106.85,True
+rappi,mer_centro,"Centro, Merida",Merida,middle,2026-03-27T19:25:24.913922,McDonalds,25.45,8.4,30-36 min,Cashback 10% en Rappi creditos; Combo familiar con 20% off,140.7,success,,Combo Mediano McDonalds,170.52,True
+rappi,mer_centro,"Centro, Merida",Merida,middle,2026-03-27T19:25:24.913922,McDonalds,25.45,8.4,30-36 min,Cashback 10% en Rappi creditos; Combo familiar con 20% off,140.7,success,,McNuggets 10 piezas,114.58,True
+rappi,mer_centro,"Centro, Merida",Merida,middle,2026-03-27T19:25:24.913922,McDonalds,25.45,8.4,30-36 min,Cashback 10% en Rappi creditos; Combo familiar con 20% off,140.7,success,,Coca-Cola 500ml,29.7,True
+rappi,mer_centro,"Centro, Merida",Merida,middle,2026-03-27T19:25:24.913922,McDonalds,25.45,8.4,30-36 min,Cashback 10% en Rappi creditos; Combo familiar con 20% off,140.7,success,,Agua Natural 1L,19.95,True
+ubereats,mer_centro,"Centro, Merida",Merida,middle,2026-03-27T19:25:24.913922,McDonalds,26.18,4.19,21-34 min,,134.33,partial,,Big Mac,103.96,True
+ubereats,mer_centro,"Centro, Merida",Merida,middle,2026-03-27T19:25:24.913922,McDonalds,26.18,4.19,21-34 min,,134.33,partial,,Combo Mediano McDonalds,,False
+ubereats,mer_centro,"Centro, Merida",Merida,middle,2026-03-27T19:25:24.913922,McDonalds,26.18,4.19,21-34 min,,134.33,partial,,McNuggets 10 piezas,131.1,True
+ubereats,mer_centro,"Centro, Merida",Merida,middle,2026-03-27T19:25:24.913922,McDonalds,26.18,4.19,21-34 min,,134.33,partial,,Coca-Cola 500ml,28.55,True
+ubereats,mer_centro,"Centro, Merida",Merida,middle,2026-03-27T19:25:24.913922,McDonalds,26.18,4.19,21-34 min,,134.33,partial,,Agua Natural 1L,20.26,True
+didi,mer_centro,"Centro, Merida",Merida,middle,2026-03-27T19:25:24.913922,McDonalds,29.73,3.94,28-38 min,,130.0,success,,Big Mac,96.33,True
+didi,mer_centro,"Centro, Merida",Merida,middle,2026-03-27T19:25:24.913922,McDonalds,29.73,3.94,28-38 min,,130.0,success,,Combo Mediano McDonalds,164.95,True
+didi,mer_centro,"Centro, Merida",Merida,middle,2026-03-27T19:25:24.913922,McDonalds,29.73,3.94,28-38 min,,130.0,success,,McNuggets 10 piezas,122.16,True
+didi,mer_centro,"Centro, Merida",Merida,middle,2026-03-27T19:25:24.913922,McDonalds,29.73,3.94,28-38 min,,130.0,success,,Coca-Cola 500ml,28.64,True
+didi,mer_centro,"Centro, Merida",Merida,middle,2026-03-27T19:25:24.913922,McDonalds,29.73,3.94,28-38 min,,130.0,success,,Agua Natural 1L,18.54,True
+rappi,mer_altabrisa,"Altabrisa, Merida",Merida,premium,2026-03-27T19:25:24.913922,McDonalds,29.05,10.29,20-25 min,15% descuento con RappiPrime; Combo familiar con 20% off,134.87,success,,Big Mac,95.53,True
+rappi,mer_altabrisa,"Altabrisa, Merida",Merida,premium,2026-03-27T19:25:24.913922,McDonalds,29.05,10.29,20-25 min,15% descuento con RappiPrime; Combo familiar con 20% off,134.87,success,,Combo Mediano McDonalds,165.52,True
+rappi,mer_altabrisa,"Altabrisa, Merida",Merida,premium,2026-03-27T19:25:24.913922,McDonalds,29.05,10.29,20-25 min,15% descuento con RappiPrime; Combo familiar con 20% off,134.87,success,,McNuggets 10 piezas,121.73,True
+rappi,mer_altabrisa,"Altabrisa, Merida",Merida,premium,2026-03-27T19:25:24.913922,McDonalds,29.05,10.29,20-25 min,15% descuento con RappiPrime; Combo familiar con 20% off,134.87,success,,Coca-Cola 500ml,28.86,True
+rappi,mer_altabrisa,"Altabrisa, Merida",Merida,premium,2026-03-27T19:25:24.913922,McDonalds,29.05,10.29,20-25 min,15% descuento con RappiPrime; Combo familiar con 20% off,134.87,success,,Agua Natural 1L,19.43,True
+ubereats,mer_altabrisa,"Altabrisa, Merida",Merida,premium,2026-03-27T19:25:24.913922,McDonalds,14.79,6.73,22-36 min,,123.69,success,,Big Mac,102.17,True
+ubereats,mer_altabrisa,"Altabrisa, Merida",Merida,premium,2026-03-27T19:25:24.913922,McDonalds,14.79,6.73,22-36 min,,123.69,success,,Combo Mediano McDonalds,185.49,True
+ubereats,mer_altabrisa,"Altabrisa, Merida",Merida,premium,2026-03-27T19:25:24.913922,McDonalds,14.79,6.73,22-36 min,,123.69,success,,McNuggets 10 piezas,131.98,True
+ubereats,mer_altabrisa,"Altabrisa, Merida",Merida,premium,2026-03-27T19:25:24.913922,McDonalds,14.79,6.73,22-36 min,,123.69,success,,Coca-Cola 500ml,28.55,True
+ubereats,mer_altabrisa,"Altabrisa, Merida",Merida,premium,2026-03-27T19:25:24.913922,McDonalds,14.79,6.73,22-36 min,,123.69,success,,Agua Natural 1L,20.12,True
+didi,mer_altabrisa,"Altabrisa, Merida",Merida,premium,2026-03-27T19:25:24.913922,McDonalds,17.71,4.2,36-51 min,,115.15,success,,Big Mac,93.24,True
+didi,mer_altabrisa,"Altabrisa, Merida",Merida,premium,2026-03-27T19:25:24.913922,McDonalds,17.71,4.2,36-51 min,,115.15,success,,Combo Mediano McDonalds,160.73,True
+didi,mer_altabrisa,"Altabrisa, Merida",Merida,premium,2026-03-27T19:25:24.913922,McDonalds,17.71,4.2,36-51 min,,115.15,success,,McNuggets 10 piezas,121.01,True
+didi,mer_altabrisa,"Altabrisa, Merida",Merida,premium,2026-03-27T19:25:24.913922,McDonalds,17.71,4.2,36-51 min,,115.15,success,,Coca-Cola 500ml,28.43,True
+didi,mer_altabrisa,"Altabrisa, Merida",Merida,premium,2026-03-27T19:25:24.913922,McDonalds,17.71,4.2,36-51 min,,115.15,success,,Agua Natural 1L,18.35,True
+rappi,mer_montejo,"Paseo Montejo, Merida",Merida,premium,2026-03-27T19:25:24.913922,McDonalds,25.44,8.27,22-30 min,,131.73,success,,Big Mac,98.02,True
+rappi,mer_montejo,"Paseo Montejo, Merida",Merida,premium,2026-03-27T19:25:24.913922,McDonalds,25.44,8.27,22-30 min,,131.73,success,,Combo Mediano McDonalds,182.18,True
+rappi,mer_montejo,"Paseo Montejo, Merida",Merida,premium,2026-03-27T19:25:24.913922,McDonalds,25.44,8.27,22-30 min,,131.73,success,,McNuggets 10 piezas,116.21,True
+rappi,mer_montejo,"Paseo Montejo, Merida",Merida,premium,2026-03-27T19:25:24.913922,McDonalds,25.44,8.27,22-30 min,,131.73,success,,Coca-Cola 500ml,29.39,True
+rappi,mer_montejo,"Paseo Montejo, Merida",Merida,premium,2026-03-27T19:25:24.913922,McDonalds,25.44,8.27,22-30 min,,131.73,success,,Agua Natural 1L,18.76,True
+ubereats,mer_montejo,"Paseo Montejo, Merida",Merida,premium,2026-03-27T19:25:24.913922,McDonalds,24.15,9.55,24-31 min,2x1 en bebidas seleccionadas,140.22,success,,Big Mac,106.52,True
+ubereats,mer_montejo,"Paseo Montejo, Merida",Merida,premium,2026-03-27T19:25:24.913922,McDonalds,24.15,9.55,24-31 min,2x1 en bebidas seleccionadas,140.22,success,,Combo Mediano McDonalds,188.96,True
+ubereats,mer_montejo,"Paseo Montejo, Merida",Merida,premium,2026-03-27T19:25:24.913922,McDonalds,24.15,9.55,24-31 min,2x1 en bebidas seleccionadas,140.22,success,,McNuggets 10 piezas,133.96,True
+ubereats,mer_montejo,"Paseo Montejo, Merida",Merida,premium,2026-03-27T19:25:24.913922,McDonalds,24.15,9.55,24-31 min,2x1 en bebidas seleccionadas,140.22,success,,Coca-Cola 500ml,28.27,True
+ubereats,mer_montejo,"Paseo Montejo, Merida",Merida,premium,2026-03-27T19:25:24.913922,McDonalds,24.15,9.55,24-31 min,2x1 en bebidas seleccionadas,140.22,success,,Agua Natural 1L,21.39,True
+didi,mer_montejo,"Paseo Montejo, Merida",Merida,premium,2026-03-27T19:25:24.913922,McDonalds,15.74,3.64,32-42 min,Descuento de bienvenida $80,121.66,success,,Big Mac,102.28,True
+didi,mer_montejo,"Paseo Montejo, Merida",Merida,premium,2026-03-27T19:25:24.913922,McDonalds,15.74,3.64,32-42 min,Descuento de bienvenida $80,121.66,success,,Combo Mediano McDonalds,175.25,True
+didi,mer_montejo,"Paseo Montejo, Merida",Merida,premium,2026-03-27T19:25:24.913922,McDonalds,15.74,3.64,32-42 min,Descuento de bienvenida $80,121.66,success,,McNuggets 10 piezas,112.13,True
+didi,mer_montejo,"Paseo Montejo, Merida",Merida,premium,2026-03-27T19:25:24.913922,McDonalds,15.74,3.64,32-42 min,Descuento de bienvenida $80,121.66,success,,Coca-Cola 500ml,26.94,True
+didi,mer_montejo,"Paseo Montejo, Merida",Merida,premium,2026-03-27T19:25:24.913922,McDonalds,15.74,3.64,32-42 min,Descuento de bienvenida $80,121.66,success,,Agua Natural 1L,18.65,True
+rappi,tij_zonario,"Zona Rio, Tijuana",Tijuana,premium,2026-03-27T19:25:24.913922,McDonalds,31.64,8.86,35-47 min,,143.91,success,,Big Mac,103.41,True
+rappi,tij_zonario,"Zona Rio, Tijuana",Tijuana,premium,2026-03-27T19:25:24.913922,McDonalds,31.64,8.86,35-47 min,,143.91,success,,Combo Mediano McDonalds,178.46,True
+rappi,tij_zonario,"Zona Rio, Tijuana",Tijuana,premium,2026-03-27T19:25:24.913922,McDonalds,31.64,8.86,35-47 min,,143.91,success,,McNuggets 10 piezas,115.32,True
+rappi,tij_zonario,"Zona Rio, Tijuana",Tijuana,premium,2026-03-27T19:25:24.913922,McDonalds,31.64,8.86,35-47 min,,143.91,success,,Coca-Cola 500ml,28.79,True
+rappi,tij_zonario,"Zona Rio, Tijuana",Tijuana,premium,2026-03-27T19:25:24.913922,McDonalds,31.64,8.86,35-47 min,,143.91,success,,Agua Natural 1L,19.67,True
+ubereats,tij_zonario,"Zona Rio, Tijuana",Tijuana,premium,2026-03-27T19:25:24.913922,McDonalds,29.17,6.49,23-28 min,30% off maximo $80; Envio gratis con Uber One,144.65,partial,,Big Mac,108.99,True
+ubereats,tij_zonario,"Zona Rio, Tijuana",Tijuana,premium,2026-03-27T19:25:24.913922,McDonalds,29.17,6.49,23-28 min,30% off maximo $80; Envio gratis con Uber One,144.65,partial,,Combo Mediano McDonalds,,False
+ubereats,tij_zonario,"Zona Rio, Tijuana",Tijuana,premium,2026-03-27T19:25:24.913922,McDonalds,29.17,6.49,23-28 min,30% off maximo $80; Envio gratis con Uber One,144.65,partial,,McNuggets 10 piezas,125.13,True
+ubereats,tij_zonario,"Zona Rio, Tijuana",Tijuana,premium,2026-03-27T19:25:24.913922,McDonalds,29.17,6.49,23-28 min,30% off maximo $80; Envio gratis con Uber One,144.65,partial,,Coca-Cola 500ml,29.42,True
+ubereats,tij_zonario,"Zona Rio, Tijuana",Tijuana,premium,2026-03-27T19:25:24.913922,McDonalds,29.17,6.49,23-28 min,30% off maximo $80; Envio gratis con Uber One,144.65,partial,,Agua Natural 1L,20.36,True
+didi,tij_zonario,"Zona Rio, Tijuana",Tijuana,premium,2026-03-27T19:25:24.913922,McDonalds,20.58,5.47,34-39 min,,122.87,partial,,Big Mac,96.82,True
+didi,tij_zonario,"Zona Rio, Tijuana",Tijuana,premium,2026-03-27T19:25:24.913922,McDonalds,20.58,5.47,34-39 min,,122.87,partial,,Combo Mediano McDonalds,171.22,True
+didi,tij_zonario,"Zona Rio, Tijuana",Tijuana,premium,2026-03-27T19:25:24.913922,McDonalds,20.58,5.47,34-39 min,,122.87,partial,,McNuggets 10 piezas,112.16,True
+didi,tij_zonario,"Zona Rio, Tijuana",Tijuana,premium,2026-03-27T19:25:24.913922,McDonalds,20.58,5.47,34-39 min,,122.87,partial,,Coca-Cola 500ml,,False
+didi,tij_zonario,"Zona Rio, Tijuana",Tijuana,premium,2026-03-27T19:25:24.913922,McDonalds,20.58,5.47,34-39 min,,122.87,partial,,Agua Natural 1L,,False
+rappi,tij_playas,"Playas, Tijuana",Tijuana,middle,2026-03-27T19:25:24.913922,McDonalds,37.29,5.65,47-52 min,Combo familiar con 20% off; $50 de descuento en pedidos +$200,142.79,partial,,Big Mac,99.85,True
+rappi,tij_playas,"Playas, Tijuana",Tijuana,middle,2026-03-27T19:25:24.913922,McDonalds,37.29,5.65,47-52 min,Combo familiar con 20% off; $50 de descuento en pedidos +$200,142.79,partial,,Combo Mediano McDonalds,,False
+rappi,tij_playas,"Playas, Tijuana",Tijuana,middle,2026-03-27T19:25:24.913922,McDonalds,37.29,5.65,47-52 min,Combo familiar con 20% off; $50 de descuento en pedidos +$200,142.79,partial,,McNuggets 10 piezas,114.35,True
+rappi,tij_playas,"Playas, Tijuana",Tijuana,middle,2026-03-27T19:25:24.913922,McDonalds,37.29,5.65,47-52 min,Combo familiar con 20% off; $50 de descuento en pedidos +$200,142.79,partial,,Coca-Cola 500ml,26.74,True
+rappi,tij_playas,"Playas, Tijuana",Tijuana,middle,2026-03-27T19:25:24.913922,McDonalds,37.29,5.65,47-52 min,Combo familiar con 20% off; $50 de descuento en pedidos +$200,142.79,partial,,Agua Natural 1L,20.5,True
+ubereats,tij_playas,"Playas, Tijuana",Tijuana,middle,2026-03-27T19:25:24.913922,McDonalds,25.0,8.46,23-38 min,,143.92,success,,Big Mac,110.46,True
+ubereats,tij_playas,"Playas, Tijuana",Tijuana,middle,2026-03-27T19:25:24.913922,McDonalds,25.0,8.46,23-38 min,,143.92,success,,Combo Mediano McDonalds,171.72,True
+ubereats,tij_playas,"Playas, Tijuana",Tijuana,middle,2026-03-27T19:25:24.913922,McDonalds,25.0,8.46,23-38 min,,143.92,success,,McNuggets 10 piezas,130.96,True
+ubereats,tij_playas,"Playas, Tijuana",Tijuana,middle,2026-03-27T19:25:24.913922,McDonalds,25.0,8.46,23-38 min,,143.92,success,,Coca-Cola 500ml,30.99,True
+ubereats,tij_playas,"Playas, Tijuana",Tijuana,middle,2026-03-27T19:25:24.913922,McDonalds,25.0,8.46,23-38 min,,143.92,success,,Agua Natural 1L,21.51,True
+didi,tij_playas,"Playas, Tijuana",Tijuana,middle,2026-03-27T19:25:24.913922,McDonalds,26.21,4.98,37-47 min,,132.17,partial,,Big Mac,100.98,True
+didi,tij_playas,"Playas, Tijuana",Tijuana,middle,2026-03-27T19:25:24.913922,McDonalds,26.21,4.98,37-47 min,,132.17,partial,,Combo Mediano McDonalds,,False
+didi,tij_playas,"Playas, Tijuana",Tijuana,middle,2026-03-27T19:25:24.913922,McDonalds,26.21,4.98,37-47 min,,132.17,partial,,McNuggets 10 piezas,115.48,True
+didi,tij_playas,"Playas, Tijuana",Tijuana,middle,2026-03-27T19:25:24.913922,McDonalds,26.21,4.98,37-47 min,,132.17,partial,,Coca-Cola 500ml,28.89,True
+didi,tij_playas,"Playas, Tijuana",Tijuana,middle,2026-03-27T19:25:24.913922,McDonalds,26.21,4.98,37-47 min,,132.17,partial,,Agua Natural 1L,19.7,True
+rappi,tij_centro,"Centro, Tijuana",Tijuana,popular,2026-03-27T19:25:24.913922,McDonalds,43.99,8.89,43-57 min,,,partial,,Big Mac,,False
+rappi,tij_centro,"Centro, Tijuana",Tijuana,popular,2026-03-27T19:25:24.913922,McDonalds,43.99,8.89,43-57 min,,,partial,,Combo Mediano McDonalds,168.06,True
+rappi,tij_centro,"Centro, Tijuana",Tijuana,popular,2026-03-27T19:25:24.913922,McDonalds,43.99,8.89,43-57 min,,,partial,,McNuggets 10 piezas,,False
+rappi,tij_centro,"Centro, Tijuana",Tijuana,popular,2026-03-27T19:25:24.913922,McDonalds,43.99,8.89,43-57 min,,,partial,,Coca-Cola 500ml,27.16,True
+rappi,tij_centro,"Centro, Tijuana",Tijuana,popular,2026-03-27T19:25:24.913922,McDonalds,43.99,8.89,43-57 min,,,partial,,Agua Natural 1L,20.0,True
+ubereats,tij_centro,"Centro, Tijuana",Tijuana,popular,2026-03-27T19:25:24.913922,McDonalds,27.66,5.74,31-43 min,,134.88,partial,,Big Mac,101.48,True
+ubereats,tij_centro,"Centro, Tijuana",Tijuana,popular,2026-03-27T19:25:24.913922,McDonalds,27.66,5.74,31-43 min,,134.88,partial,,Combo Mediano McDonalds,,False
+ubereats,tij_centro,"Centro, Tijuana",Tijuana,popular,2026-03-27T19:25:24.913922,McDonalds,27.66,5.74,31-43 min,,134.88,partial,,McNuggets 10 piezas,132.48,True
+ubereats,tij_centro,"Centro, Tijuana",Tijuana,popular,2026-03-27T19:25:24.913922,McDonalds,27.66,5.74,31-43 min,,134.88,partial,,Coca-Cola 500ml,28.83,True
+ubereats,tij_centro,"Centro, Tijuana",Tijuana,popular,2026-03-27T19:25:24.913922,McDonalds,27.66,5.74,31-43 min,,134.88,partial,,Agua Natural 1L,20.21,True
+didi,tij_centro,"Centro, Tijuana",Tijuana,popular,2026-03-27T19:25:24.913922,McDonalds,29.13,3.69,35-44 min,,127.94,success,,Big Mac,95.12,True
+didi,tij_centro,"Centro, Tijuana",Tijuana,popular,2026-03-27T19:25:24.913922,McDonalds,29.13,3.69,35-44 min,,127.94,success,,Combo Mediano McDonalds,178.13,True
+didi,tij_centro,"Centro, Tijuana",Tijuana,popular,2026-03-27T19:25:24.913922,McDonalds,29.13,3.69,35-44 min,,127.94,success,,McNuggets 10 piezas,124.49,True
+didi,tij_centro,"Centro, Tijuana",Tijuana,popular,2026-03-27T19:25:24.913922,McDonalds,29.13,3.69,35-44 min,,127.94,success,,Coca-Cola 500ml,28.49,True
+didi,tij_centro,"Centro, Tijuana",Tijuana,popular,2026-03-27T19:25:24.913922,McDonalds,29.13,3.69,35-44 min,,127.94,success,,Agua Natural 1L,19.55,True
+rappi,qro_centro,"Centro, Queretaro",Queretaro,middle,2026-03-27T19:25:24.913922,McDonalds,34.4,8.79,27-39 min,,137.91,partial,,Big Mac,94.72,True
+rappi,qro_centro,"Centro, Queretaro",Queretaro,middle,2026-03-27T19:25:24.913922,McDonalds,34.4,8.79,27-39 min,,137.91,partial,,Combo Mediano McDonalds,,False
+rappi,qro_centro,"Centro, Queretaro",Queretaro,middle,2026-03-27T19:25:24.913922,McDonalds,34.4,8.79,27-39 min,,137.91,partial,,McNuggets 10 piezas,124.06,True
+rappi,qro_centro,"Centro, Queretaro",Queretaro,middle,2026-03-27T19:25:24.913922,McDonalds,34.4,8.79,27-39 min,,137.91,partial,,Coca-Cola 500ml,27.05,True
+rappi,qro_centro,"Centro, Queretaro",Queretaro,middle,2026-03-27T19:25:24.913922,McDonalds,34.4,8.79,27-39 min,,137.91,partial,,Agua Natural 1L,18.45,True
+ubereats,qro_centro,"Centro, Queretaro",Queretaro,middle,2026-03-27T19:25:24.913922,McDonalds,36.44,6.51,23-35 min,$70 off en tu primera orden; 2x1 en bebidas seleccionadas,,partial,,Big Mac,,False
+ubereats,qro_centro,"Centro, Queretaro",Queretaro,middle,2026-03-27T19:25:24.913922,McDonalds,36.44,6.51,23-35 min,$70 off en tu primera orden; 2x1 en bebidas seleccionadas,,partial,,Combo Mediano McDonalds,179.85,True
+ubereats,qro_centro,"Centro, Queretaro",Queretaro,middle,2026-03-27T19:25:24.913922,McDonalds,36.44,6.51,23-35 min,$70 off en tu primera orden; 2x1 en bebidas seleccionadas,,partial,,McNuggets 10 piezas,125.97,True
+ubereats,qro_centro,"Centro, Queretaro",Queretaro,middle,2026-03-27T19:25:24.913922,McDonalds,36.44,6.51,23-35 min,$70 off en tu primera orden; 2x1 en bebidas seleccionadas,,partial,,Coca-Cola 500ml,28.51,True
+ubereats,qro_centro,"Centro, Queretaro",Queretaro,middle,2026-03-27T19:25:24.913922,McDonalds,36.44,6.51,23-35 min,$70 off en tu primera orden; 2x1 en bebidas seleccionadas,,partial,,Agua Natural 1L,19.97,True
+didi,qro_centro,"Centro, Queretaro",Queretaro,middle,2026-03-27T19:25:24.913922,McDonalds,23.34,7.31,38-51 min,Envio GRATIS sin minimo; Descuento de bienvenida $80,128.48,success,,Big Mac,97.83,True
+didi,qro_centro,"Centro, Queretaro",Queretaro,middle,2026-03-27T19:25:24.913922,McDonalds,23.34,7.31,38-51 min,Envio GRATIS sin minimo; Descuento de bienvenida $80,128.48,success,,Combo Mediano McDonalds,159.04,True
+didi,qro_centro,"Centro, Queretaro",Queretaro,middle,2026-03-27T19:25:24.913922,McDonalds,23.34,7.31,38-51 min,Envio GRATIS sin minimo; Descuento de bienvenida $80,128.48,success,,McNuggets 10 piezas,123.45,True
+didi,qro_centro,"Centro, Queretaro",Queretaro,middle,2026-03-27T19:25:24.913922,McDonalds,23.34,7.31,38-51 min,Envio GRATIS sin minimo; Descuento de bienvenida $80,128.48,success,,Coca-Cola 500ml,28.66,True
+didi,qro_centro,"Centro, Queretaro",Queretaro,middle,2026-03-27T19:25:24.913922,McDonalds,23.34,7.31,38-51 min,Envio GRATIS sin minimo; Descuento de bienvenida $80,128.48,success,,Agua Natural 1L,18.39,True
+rappi,qro_juriquilla,"Juriquilla, Queretaro",Queretaro,premium,2026-03-27T19:25:24.913922,McDonalds,35.7,9.05,35-40 min,,146.2,success,,Big Mac,101.45,True
+rappi,qro_juriquilla,"Juriquilla, Queretaro",Queretaro,premium,2026-03-27T19:25:24.913922,McDonalds,35.7,9.05,35-40 min,,146.2,success,,Combo Mediano McDonalds,166.95,True
+rappi,qro_juriquilla,"Juriquilla, Queretaro",Queretaro,premium,2026-03-27T19:25:24.913922,McDonalds,35.7,9.05,35-40 min,,146.2,success,,McNuggets 10 piezas,118.51,True
+rappi,qro_juriquilla,"Juriquilla, Queretaro",Queretaro,premium,2026-03-27T19:25:24.913922,McDonalds,35.7,9.05,35-40 min,,146.2,success,,Coca-Cola 500ml,27.28,True
+rappi,qro_juriquilla,"Juriquilla, Queretaro",Queretaro,premium,2026-03-27T19:25:24.913922,McDonalds,35.7,9.05,35-40 min,,146.2,success,,Agua Natural 1L,19.34,True
+ubereats,qro_juriquilla,"Juriquilla, Queretaro",Queretaro,premium,2026-03-27T19:25:24.913922,McDonalds,28.61,7.14,22-34 min,$70 off en tu primera orden; 2x1 en bebidas seleccionadas,140.77,partial,,Big Mac,105.02,True
+ubereats,qro_juriquilla,"Juriquilla, Queretaro",Queretaro,premium,2026-03-27T19:25:24.913922,McDonalds,28.61,7.14,22-34 min,$70 off en tu primera orden; 2x1 en bebidas seleccionadas,140.77,partial,,Combo Mediano McDonalds,,False
+ubereats,qro_juriquilla,"Juriquilla, Queretaro",Queretaro,premium,2026-03-27T19:25:24.913922,McDonalds,28.61,7.14,22-34 min,$70 off en tu primera orden; 2x1 en bebidas seleccionadas,140.77,partial,,McNuggets 10 piezas,123.99,True
+ubereats,qro_juriquilla,"Juriquilla, Queretaro",Queretaro,premium,2026-03-27T19:25:24.913922,McDonalds,28.61,7.14,22-34 min,$70 off en tu primera orden; 2x1 en bebidas seleccionadas,140.77,partial,,Coca-Cola 500ml,31.24,True
+ubereats,qro_juriquilla,"Juriquilla, Queretaro",Queretaro,premium,2026-03-27T19:25:24.913922,McDonalds,28.61,7.14,22-34 min,$70 off en tu primera orden; 2x1 en bebidas seleccionadas,140.77,partial,,Agua Natural 1L,21.05,True
+didi,qro_juriquilla,"Juriquilla, Queretaro",Queretaro,premium,2026-03-27T19:25:24.913922,McDonalds,17.06,8.87,31-41 min,Descuento de bienvenida $80,130.47,partial,,Big Mac,104.54,True
+didi,qro_juriquilla,"Juriquilla, Queretaro",Queretaro,premium,2026-03-27T19:25:24.913922,McDonalds,17.06,8.87,31-41 min,Descuento de bienvenida $80,130.47,partial,,Combo Mediano McDonalds,161.26,True
+didi,qro_juriquilla,"Juriquilla, Queretaro",Queretaro,premium,2026-03-27T19:25:24.913922,McDonalds,17.06,8.87,31-41 min,Descuento de bienvenida $80,130.47,partial,,McNuggets 10 piezas,121.64,True
+didi,qro_juriquilla,"Juriquilla, Queretaro",Queretaro,premium,2026-03-27T19:25:24.913922,McDonalds,17.06,8.87,31-41 min,Descuento de bienvenida $80,130.47,partial,,Coca-Cola 500ml,,False
+didi,qro_juriquilla,"Juriquilla, Queretaro",Queretaro,premium,2026-03-27T19:25:24.913922,McDonalds,17.06,8.87,31-41 min,Descuento de bienvenida $80,130.47,partial,,Agua Natural 1L,19.83,True

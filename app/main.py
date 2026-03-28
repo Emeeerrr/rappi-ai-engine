@@ -198,8 +198,6 @@ with st.sidebar:
         if st.session_state.chat_engine is not None:
             st.session_state.chat_engine.clear_memory()
         st.rerun()
-    st.markdown("---")
-    st.caption("Powered by OpenRouter")
 
 
 # ------------------------------------------------------------------
@@ -274,70 +272,229 @@ if case == "Analisis de Operaciones":
     st.title("Rappi AI Intelligence Engine")
     st.caption("Analiza metricas operacionales: 9 paises, 964 zonas, 13 metricas, 9 semanas")
 
-    # ---- Scrollable chat area ----
-    chat_area = st.container(height=320)
-    with chat_area:
-        if not st.session_state.chat_history:
-            # Suggested questions (centered, ChatGPT-style)
-            st.markdown("")
-            st.markdown("")
-            st.markdown("#### Prueba alguna de estas preguntas:")
-            engine = _get_engine()
-            suggestions = engine.get_suggested_questions()
-            st.markdown('<div class="suggestion-row">', unsafe_allow_html=True)
-            cols = st.columns(len(suggestions))
-            for idx, (col, question) in enumerate(zip(cols, suggestions)):
-                with col:
-                    if st.button(question, key=f"sug_{idx}", width="stretch"):
-                        st.session_state.pending_message = question
-                        st.rerun()
-            st.markdown('</div>', unsafe_allow_html=True)
-        else:
-            # Render all messages
-            for i, msg in enumerate(st.session_state.chat_history):
-                if msg["role"] == "user":
-                    _render_user_message(msg["content"])
-                else:
-                    _render_assistant_message(msg, i)
-                    if msg.get("error"):
-                        st.error(msg["error"])
+    tab_chat, tab_insights = st.tabs(["Chat", "Insights Automaticos"])
 
-    # ---- Input bar (model selector + text input + send) pinned below chat ----
-    st.markdown('<div class="input-bar-area">', unsafe_allow_html=True)
-    col_model, col_input, col_send = st.columns([1.2, 5, 0.4])
+    # ==================================================================
+    # TAB: Chat
+    # ==================================================================
+    with tab_chat:
+        chat_area = st.container(height=320)
+        with chat_area:
+            if not st.session_state.chat_history:
+                st.markdown("")
+                st.markdown("")
+                st.markdown("#### Prueba alguna de estas preguntas:")
+                engine = _get_engine()
+                suggestions = engine.get_suggested_questions()
+                st.markdown('<div class="suggestion-row">', unsafe_allow_html=True)
+                cols = st.columns(len(suggestions))
+                for idx, (col, question) in enumerate(zip(cols, suggestions)):
+                    with col:
+                        if st.button(question, key=f"sug_{idx}", width="stretch"):
+                            st.session_state.pending_message = question
+                            st.rerun()
+                st.markdown('</div>', unsafe_allow_html=True)
+            else:
+                for i, msg in enumerate(st.session_state.chat_history):
+                    if msg["role"] == "user":
+                        _render_user_message(msg["content"])
+                    else:
+                        _render_assistant_message(msg, i)
+                        if msg.get("error"):
+                            st.error(msg["error"])
 
-    model_labels = [m["label"] for m in AVAILABLE_MODELS]
-    model_ids = [m["id"] for m in AVAILABLE_MODELS]
-    default_idx = next((i for i, m in enumerate(AVAILABLE_MODELS)
-                        if m["id"] == st.session_state.selected_model), 0)
+        # Input bar
+        st.markdown('<div class="input-bar-area">', unsafe_allow_html=True)
+        col_model, col_input, col_send = st.columns([1.2, 5, 0.4])
 
-    with col_model:
-        selected_label = st.selectbox(
-            "Modelo", model_labels, index=default_idx, label_visibility="collapsed",
-        )
-        new_model = model_ids[model_labels.index(selected_label)]
-        if new_model != st.session_state.selected_model:
-            st.session_state.selected_model = new_model
-            if st.session_state.chat_engine is not None:
-                st.session_state.chat_engine.set_model(new_model)
-    with col_input:
-        user_input = st.text_input(
-            "Mensaje", placeholder="Pregunta sobre las operaciones de Rappi...",
-            label_visibility="collapsed", key=f"chat_input_{st.session_state.input_key}",
-        )
-    with col_send:
-        send_clicked = st.button("\u27A4", width="stretch")
-    st.markdown('</div>', unsafe_allow_html=True)
+        model_labels = [m["label"] for m in AVAILABLE_MODELS]
+        model_ids = [m["id"] for m in AVAILABLE_MODELS]
+        default_idx = next((i for i, m in enumerate(AVAILABLE_MODELS)
+                            if m["id"] == st.session_state.selected_model), 0)
 
-    if (send_clicked or user_input) and user_input:
-        st.session_state.pending_message = user_input
-        st.session_state.input_key += 1
-        st.rerun()
+        with col_model:
+            selected_label = st.selectbox(
+                "Modelo", model_labels, index=default_idx, label_visibility="collapsed",
+            )
+            new_model = model_ids[model_labels.index(selected_label)]
+            if new_model != st.session_state.selected_model:
+                st.session_state.selected_model = new_model
+                if st.session_state.chat_engine is not None:
+                    st.session_state.chat_engine.set_model(new_model)
+        with col_input:
+            user_input = st.text_input(
+                "Mensaje", placeholder="Pregunta sobre las operaciones de Rappi...",
+                label_visibility="collapsed", key=f"chat_input_{st.session_state.input_key}",
+            )
+        with col_send:
+            send_clicked = st.button("\u27A4", width="stretch")
+        st.markdown('</div>', unsafe_allow_html=True)
+
+        if (send_clicked or user_input) and user_input:
+            st.session_state.pending_message = user_input
+            st.session_state.input_key += 1
+            st.rerun()
+
+    # ==================================================================
+    # TAB: Insights Automaticos
+    # ==================================================================
+    with tab_insights:
+        if st.button("Generar Reporte de Insights", type="primary", key="gen_insights"):
+            from app.data.loader import get_dataframes
+            from app.insights.analyzer import InsightsAnalyzer
+            from app.insights.report import ReportGenerator
+
+            df_m, df_o, _ = get_dataframes()
+            analyzer = InsightsAnalyzer(df_m, df_o)
+
+            with st.spinner("Analizando datos... esto puede tomar unos segundos"):
+                all_insights = analyzer.analyze_all()
+
+            st.session_state.insights_data = all_insights
+
+            with st.spinner("Generando reporte ejecutivo con IA..."):
+                gen = ReportGenerator(model=st.session_state.selected_model)
+                report_md = gen.generate_executive_report(all_insights)
+                report_html = gen.generate_html_report(report_md)
+
+            st.session_state.insights_report_md = report_md
+            st.session_state.insights_report_html = report_html
+            st.rerun()
+
+        # Show cached results if available
+        if "insights_data" in st.session_state and st.session_state.insights_data:
+            all_insights = st.session_state.insights_data
+            from collections import Counter
+            counts = Counter(i["category"] for i in all_insights)
+            sev_counts = Counter(i["severity"] for i in all_insights)
+
+            cols = st.columns(5)
+            cat_labels = {
+                "anomaly": "Anomalias", "trend": "Tendencias",
+                "benchmark": "Benchmarking", "correlation": "Correlaciones",
+                "opportunity": "Oportunidades",
+            }
+            for col_w, (cat, label) in zip(cols, cat_labels.items()):
+                col_w.metric(label, counts.get(cat, 0))
+
+            st.markdown(
+                f"**Total:** {len(all_insights)} insights | "
+                f"Criticos: {sev_counts.get('critical', 0)}, "
+                f"Altos: {sev_counts.get('high', 0)}, "
+                f"Medios: {sev_counts.get('medium', 0)}, "
+                f"Bajos: {sev_counts.get('low', 0)}"
+            )
+            st.divider()
+
+        if "insights_report_md" in st.session_state and st.session_state.insights_report_md:
+            st.markdown(st.session_state.insights_report_md)
+
+            st.divider()
+            st.download_button(
+                label="Descargar Reporte",
+                data=st.session_state.insights_report_md,
+                file_name="rappi_insights_report.md",
+                mime="text/markdown",
+                key="dl_md_report",
+            )
+
+            # Charts from insights
+            chart_insights = [
+                i for i in st.session_state.insights_data if i.get("chart_data")
+            ]
+            if chart_insights:
+                st.divider()
+                st.markdown("### Visualizaciones")
+                for ci_idx, ins in enumerate(chart_insights[:10]):
+                    fig = render_chart(ins["chart_data"])
+                    if fig:
+                        st.plotly_chart(fig, width="stretch", key=f"ins_chart_{ci_idx}")
+
+            # Raw insights table
+            with st.expander("Ver todos los insights (raw)"):
+                table_data = []
+                for ins in st.session_state.insights_data:
+                    table_data.append({
+                        "Severidad": ins["severity"],
+                        "Categoria": ins["category"],
+                        "Titulo": ins["title"],
+                        "Zonas": ", ".join(ins["zones"][:3]) if ins["zones"] else "-",
+                        "Metricas": ", ".join(ins["metrics"][:2]),
+                    })
+                st.dataframe(pd.DataFrame(table_data), use_container_width=True)
 
 else:
     st.title("Competitive Intelligence")
+    st.caption("Rappi vs Uber Eats vs DiDi Food - Comparacion de precios, fees y tiempos en Mexico")
+
     st.info(
-        "Esta seccion esta en desarrollo. Aqui se implementara el scraping competitivo "
-        "de Rappi vs UberEats vs DiDi Food, con comparacion de precios, tiempos de entrega, "
-        "cobertura y promociones."
+        "El scraping se ejecuta via script por temas de tiempo y bloqueo de plataformas. "
+        "Ejecuta `python scripts/run_scraping.py --use-fallback` para generar datos de demo, "
+        "o usa el boton de abajo."
     )
+
+    # Session state for competitive data
+    if "competitive_data" not in st.session_state:
+        st.session_state.competitive_data = None
+
+    col_load, col_gen = st.columns(2)
+
+    with col_load:
+        if st.button("Cargar datos competitivos", width="stretch"):
+            import json
+            from pathlib import Path
+            data_dir = Path("data/competitive")
+            json_path = data_dir / "competitive_data.json"
+            if json_path.exists():
+                with open(json_path, encoding="utf-8") as f:
+                    st.session_state.competitive_data = json.load(f)
+                st.rerun()
+            else:
+                st.warning("No se encontraron datos en data/competitive/. Genera datos de demo primero.")
+
+    with col_gen:
+        if st.button("Generar datos de demo", width="stretch"):
+            with st.spinner("Generando datos de demo..."):
+                from app.scraping.fallback_data import generate_fallback_data
+                from app.scraping.base import BaseScraper
+                results = generate_fallback_data()
+                BaseScraper.save_results(results, "data/competitive")
+                st.session_state.competitive_data = results
+            st.rerun()
+
+    # Display loaded data
+    if st.session_state.competitive_data:
+        data = st.session_state.competitive_data
+        platforms = sorted(set(r["platform"] for r in data))
+        cities = sorted(set(r["city"] for r in data))
+        addresses = sorted(set(r["address_id"] for r in data))
+
+        st.divider()
+        c1, c2, c3, c4 = st.columns(4)
+        c1.metric("Registros", len(data))
+        c2.metric("Plataformas", len(platforms))
+        c3.metric("Ciudades", len(cities))
+        c4.metric("Direcciones", len(addresses))
+
+        # Flatten to DataFrame for preview
+        rows = []
+        for r in data:
+            for p in r.get("products", []):
+                rows.append({
+                    "Plataforma": r["platform"],
+                    "Ciudad": r["city"],
+                    "Zona": r["address_label"],
+                    "Tipo": r["zone_type"],
+                    "Producto": p["name"],
+                    "Precio": p.get("price"),
+                    "Disponible": p.get("available"),
+                    "Delivery Fee": r.get("delivery_fee"),
+                    "Service Fee": r.get("service_fee"),
+                    "Tiempo Entrega": r.get("estimated_delivery_time"),
+                    "Total Big Mac": r.get("total_price_big_mac_combo"),
+                })
+        if rows:
+            df_comp = pd.DataFrame(rows)
+            st.dataframe(df_comp, use_container_width=True, height=400)
+
+        st.caption("El analisis competitivo detallado y reporte se implementaran en la siguiente fase.")

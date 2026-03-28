@@ -1,0 +1,4048 @@
+[
+  {
+    "platform": "rappi",
+    "address_id": "cdmx_polanco",
+    "address_label": "Polanco, CDMX",
+    "city": "CDMX",
+    "zone_type": "premium",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 102.28,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 166.59,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 124.44,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 29.85,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 19.09,
+        "available": true
+      }
+    ],
+    "delivery_fee": 19.17,
+    "service_fee": 8.89,
+    "estimated_delivery_time": "20-34 min",
+    "promotions": [
+      "2x1 en McFlurry",
+      "Cashback 10% en Rappi creditos"
+    ],
+    "total_price_big_mac_combo": 130.34,
+    "screenshot_path": null,
+    "scrape_status": "success",
+    "error": null
+  },
+  {
+    "platform": "ubereats",
+    "address_id": "cdmx_polanco",
+    "address_label": "Polanco, CDMX",
+    "city": "CDMX",
+    "zone_type": "premium",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 103.49,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 187.85,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 126.76,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 29.03,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 19.4,
+        "available": true
+      }
+    ],
+    "delivery_fee": 19.33,
+    "service_fee": 6.91,
+    "estimated_delivery_time": "21-27 min",
+    "promotions": [
+      "Envio gratis con Uber One",
+      "$70 off en tu primera orden"
+    ],
+    "total_price_big_mac_combo": 129.73,
+    "screenshot_path": null,
+    "scrape_status": "success",
+    "error": null
+  },
+  {
+    "platform": "didi",
+    "address_id": "cdmx_polanco",
+    "address_label": "Polanco, CDMX",
+    "city": "CDMX",
+    "zone_type": "premium",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 99.13,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 170.66,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 119.54,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 26.23,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 17.88,
+        "available": true
+      }
+    ],
+    "delivery_fee": 14.63,
+    "service_fee": 6.46,
+    "estimated_delivery_time": "28-36 min",
+    "promotions": [],
+    "total_price_big_mac_combo": 120.22,
+    "screenshot_path": null,
+    "scrape_status": "success",
+    "error": null
+  },
+  {
+    "platform": "rappi",
+    "address_id": "cdmx_condesa",
+    "address_label": "Condesa, CDMX",
+    "city": "CDMX",
+    "zone_type": "premium",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 102.68,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 175.57,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 122.87,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 27.49,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 18.72,
+        "available": true
+      }
+    ],
+    "delivery_fee": 29.73,
+    "service_fee": 6.44,
+    "estimated_delivery_time": "26-31 min",
+    "promotions": [],
+    "total_price_big_mac_combo": 138.85,
+    "screenshot_path": null,
+    "scrape_status": "success",
+    "error": null
+  },
+  {
+    "platform": "ubereats",
+    "address_id": "cdmx_condesa",
+    "address_label": "Condesa, CDMX",
+    "city": "CDMX",
+    "zone_type": "premium",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 102.82,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 177.53,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 123.29,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 31.58,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 20.85,
+        "available": true
+      }
+    ],
+    "delivery_fee": 31.83,
+    "service_fee": 7.49,
+    "estimated_delivery_time": "21-32 min",
+    "promotions": [
+      "30% off maximo $80",
+      "2x1 en bebidas seleccionadas"
+    ],
+    "total_price_big_mac_combo": 142.14,
+    "screenshot_path": null,
+    "scrape_status": "success",
+    "error": null
+  },
+  {
+    "platform": "didi",
+    "address_id": "cdmx_condesa",
+    "address_label": "Condesa, CDMX",
+    "city": "CDMX",
+    "zone_type": "premium",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": null,
+        "available": false
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 160.32,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 122.25,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 26.61,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 19.13,
+        "available": true
+      }
+    ],
+    "delivery_fee": 18.48,
+    "service_fee": 3.91,
+    "estimated_delivery_time": "33-48 min",
+    "promotions": [],
+    "total_price_big_mac_combo": null,
+    "screenshot_path": null,
+    "scrape_status": "partial",
+    "error": null
+  },
+  {
+    "platform": "rappi",
+    "address_id": "cdmx_roma",
+    "address_label": "Roma Norte, CDMX",
+    "city": "CDMX",
+    "zone_type": "premium",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 103.33,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 172.35,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 122.97,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 28.18,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 20.41,
+        "available": true
+      }
+    ],
+    "delivery_fee": 20.18,
+    "service_fee": 8.95,
+    "estimated_delivery_time": "23-38 min",
+    "promotions": [],
+    "total_price_big_mac_combo": 132.46,
+    "screenshot_path": null,
+    "scrape_status": "success",
+    "error": null
+  },
+  {
+    "platform": "ubereats",
+    "address_id": "cdmx_roma",
+    "address_label": "Roma Norte, CDMX",
+    "city": "CDMX",
+    "zone_type": "premium",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 103.76,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 184.36,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 132.34,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 31.2,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 19.13,
+        "available": true
+      }
+    ],
+    "delivery_fee": 11.69,
+    "service_fee": 10.83,
+    "estimated_delivery_time": "33-42 min",
+    "promotions": [],
+    "total_price_big_mac_combo": 126.28,
+    "screenshot_path": null,
+    "scrape_status": "success",
+    "error": null
+  },
+  {
+    "platform": "didi",
+    "address_id": "cdmx_roma",
+    "address_label": "Roma Norte, CDMX",
+    "city": "CDMX",
+    "zone_type": "premium",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 95.19,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 169.55,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 121.89,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 29.56,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 19.29,
+        "available": true
+      }
+    ],
+    "delivery_fee": 19.69,
+    "service_fee": 6.31,
+    "estimated_delivery_time": "43-51 min",
+    "promotions": [],
+    "total_price_big_mac_combo": 121.19,
+    "screenshot_path": null,
+    "scrape_status": "success",
+    "error": null
+  },
+  {
+    "platform": "rappi",
+    "address_id": "cdmx_santafe",
+    "address_label": "Santa Fe, CDMX",
+    "city": "CDMX",
+    "zone_type": "premium",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 103.23,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 175.31,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 126.97,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 27.5,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 18.1,
+        "available": true
+      }
+    ],
+    "delivery_fee": 27.49,
+    "service_fee": 4.58,
+    "estimated_delivery_time": "34-44 min",
+    "promotions": [
+      "Envio gratis en tu primer pedido"
+    ],
+    "total_price_big_mac_combo": 135.3,
+    "screenshot_path": null,
+    "scrape_status": "success",
+    "error": null
+  },
+  {
+    "platform": "ubereats",
+    "address_id": "cdmx_santafe",
+    "address_label": "Santa Fe, CDMX",
+    "city": "CDMX",
+    "zone_type": "premium",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 100.66,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 185.76,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 122.0,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 30.4,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 21.19,
+        "available": true
+      }
+    ],
+    "delivery_fee": 15.53,
+    "service_fee": 5.22,
+    "estimated_delivery_time": "24-36 min",
+    "promotions": [],
+    "total_price_big_mac_combo": 121.41,
+    "screenshot_path": null,
+    "scrape_status": "success",
+    "error": null
+  },
+  {
+    "platform": "didi",
+    "address_id": "cdmx_santafe",
+    "address_label": "Santa Fe, CDMX",
+    "city": "CDMX",
+    "zone_type": "premium",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 103.06,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 171.41,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 111.71,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 28.92,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 18.99,
+        "available": true
+      }
+    ],
+    "delivery_fee": 18.37,
+    "service_fee": 7.92,
+    "estimated_delivery_time": "21-34 min",
+    "promotions": [],
+    "total_price_big_mac_combo": 129.35,
+    "screenshot_path": null,
+    "scrape_status": "success",
+    "error": null
+  },
+  {
+    "platform": "rappi",
+    "address_id": "cdmx_coyoacan",
+    "address_label": "Coyoacan, CDMX",
+    "city": "CDMX",
+    "zone_type": "middle",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 95.31,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 172.43,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 114.49,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 27.46,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 19.24,
+        "available": true
+      }
+    ],
+    "delivery_fee": 46.07,
+    "service_fee": 5.7,
+    "estimated_delivery_time": "25-38 min",
+    "promotions": [
+      "15% descuento con RappiPrime",
+      "Cashback 10% en Rappi creditos"
+    ],
+    "total_price_big_mac_combo": 147.08,
+    "screenshot_path": null,
+    "scrape_status": "success",
+    "error": null
+  },
+  {
+    "platform": "ubereats",
+    "address_id": "cdmx_coyoacan",
+    "address_label": "Coyoacan, CDMX",
+    "city": "CDMX",
+    "zone_type": "middle",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 108.72,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 174.61,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 120.79,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 28.43,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 19.26,
+        "available": true
+      }
+    ],
+    "delivery_fee": 42.58,
+    "service_fee": 7.88,
+    "estimated_delivery_time": "21-28 min",
+    "promotions": [],
+    "total_price_big_mac_combo": 159.18,
+    "screenshot_path": null,
+    "scrape_status": "success",
+    "error": null
+  },
+  {
+    "platform": "didi",
+    "address_id": "cdmx_coyoacan",
+    "address_label": "Coyoacan, CDMX",
+    "city": "CDMX",
+    "zone_type": "middle",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 93.03,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 175.89,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 125.06,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 28.13,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 19.28,
+        "available": true
+      }
+    ],
+    "delivery_fee": 19.04,
+    "service_fee": 6.79,
+    "estimated_delivery_time": "34-46 min",
+    "promotions": [
+      "Descuento de bienvenida $80"
+    ],
+    "total_price_big_mac_combo": 118.86,
+    "screenshot_path": null,
+    "scrape_status": "success",
+    "error": null
+  },
+  {
+    "platform": "rappi",
+    "address_id": "cdmx_tlalpan",
+    "address_label": "Tlalpan, CDMX",
+    "city": "CDMX",
+    "zone_type": "middle",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 98.12,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 162.14,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": null,
+        "available": false
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 26.87,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": null,
+        "available": false
+      }
+    ],
+    "delivery_fee": 45.43,
+    "service_fee": 13.2,
+    "estimated_delivery_time": "34-39 min",
+    "promotions": [
+      "$50 de descuento en pedidos +$200",
+      "Combo familiar con 20% off"
+    ],
+    "total_price_big_mac_combo": 156.75,
+    "screenshot_path": null,
+    "scrape_status": "partial",
+    "error": null
+  },
+  {
+    "platform": "ubereats",
+    "address_id": "cdmx_tlalpan",
+    "address_label": "Tlalpan, CDMX",
+    "city": "CDMX",
+    "zone_type": "middle",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 108.8,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 191.88,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 134.23,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 31.63,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 19.54,
+        "available": true
+      }
+    ],
+    "delivery_fee": 21.32,
+    "service_fee": 7.19,
+    "estimated_delivery_time": "37-50 min",
+    "promotions": [],
+    "total_price_big_mac_combo": 137.31,
+    "screenshot_path": null,
+    "scrape_status": "success",
+    "error": null
+  },
+  {
+    "platform": "didi",
+    "address_id": "cdmx_tlalpan",
+    "address_label": "Tlalpan, CDMX",
+    "city": "CDMX",
+    "zone_type": "middle",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 98.33,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 175.56,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 117.21,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 26.08,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 18.32,
+        "available": true
+      }
+    ],
+    "delivery_fee": 23.55,
+    "service_fee": 2.67,
+    "estimated_delivery_time": "27-34 min",
+    "promotions": [],
+    "total_price_big_mac_combo": 124.55,
+    "screenshot_path": null,
+    "scrape_status": "success",
+    "error": null
+  },
+  {
+    "platform": "rappi",
+    "address_id": "cdmx_iztapalapa",
+    "address_label": "Iztapalapa, CDMX",
+    "city": "CDMX",
+    "zone_type": "popular",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": null,
+        "available": false
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 173.35,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 115.02,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 29.87,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": null,
+        "available": false
+      }
+    ],
+    "delivery_fee": 31.63,
+    "service_fee": 7.95,
+    "estimated_delivery_time": "31-42 min",
+    "promotions": [],
+    "total_price_big_mac_combo": null,
+    "screenshot_path": null,
+    "scrape_status": "partial",
+    "error": null
+  },
+  {
+    "platform": "ubereats",
+    "address_id": "cdmx_iztapalapa",
+    "address_label": "Iztapalapa, CDMX",
+    "city": "CDMX",
+    "zone_type": "popular",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 112.98,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 191.74,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 122.5,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 28.88,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": null,
+        "available": false
+      }
+    ],
+    "delivery_fee": 48.09,
+    "service_fee": 8.99,
+    "estimated_delivery_time": "42-50 min",
+    "promotions": [],
+    "total_price_big_mac_combo": 170.06,
+    "screenshot_path": null,
+    "scrape_status": "partial",
+    "error": null
+  },
+  {
+    "platform": "didi",
+    "address_id": "cdmx_iztapalapa",
+    "address_label": "Iztapalapa, CDMX",
+    "city": "CDMX",
+    "zone_type": "popular",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 95.53,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": null,
+        "available": false
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 123.81,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 28.98,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 19.61,
+        "available": true
+      }
+    ],
+    "delivery_fee": 21.52,
+    "service_fee": 3.55,
+    "estimated_delivery_time": "58-67 min",
+    "promotions": [],
+    "total_price_big_mac_combo": 120.6,
+    "screenshot_path": null,
+    "scrape_status": "partial",
+    "error": null
+  },
+  {
+    "platform": "rappi",
+    "address_id": "cdmx_xochimilco",
+    "address_label": "Xochimilco, CDMX",
+    "city": "CDMX",
+    "zone_type": "popular",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 98.57,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": null,
+        "available": false
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 118.17,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 29.79,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": null,
+        "available": false
+      }
+    ],
+    "delivery_fee": 25.18,
+    "service_fee": 9.01,
+    "estimated_delivery_time": "38-49 min",
+    "promotions": [],
+    "total_price_big_mac_combo": 132.76,
+    "screenshot_path": null,
+    "scrape_status": "partial",
+    "error": null
+  },
+  {
+    "platform": "ubereats",
+    "address_id": "cdmx_xochimilco",
+    "address_label": "Xochimilco, CDMX",
+    "city": "CDMX",
+    "zone_type": "popular",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 107.96,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 179.15,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 124.01,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": null,
+        "available": false
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 20.54,
+        "available": true
+      }
+    ],
+    "delivery_fee": 46.57,
+    "service_fee": 10.46,
+    "estimated_delivery_time": "33-39 min",
+    "promotions": [
+      "2x1 en bebidas seleccionadas",
+      "30% off maximo $80"
+    ],
+    "total_price_big_mac_combo": 164.99,
+    "screenshot_path": null,
+    "scrape_status": "partial",
+    "error": null
+  },
+  {
+    "platform": "didi",
+    "address_id": "cdmx_xochimilco",
+    "address_label": "Xochimilco, CDMX",
+    "city": "CDMX",
+    "zone_type": "popular",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 101.25,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 164.0,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 116.89,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": null,
+        "available": false
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 19.33,
+        "available": true
+      }
+    ],
+    "delivery_fee": 25.16,
+    "service_fee": 6.86,
+    "estimated_delivery_time": "28-40 min",
+    "promotions": [
+      "Descuento de bienvenida $80",
+      "50% descuento hasta $100"
+    ],
+    "total_price_big_mac_combo": 133.27,
+    "screenshot_path": null,
+    "scrape_status": "partial",
+    "error": null
+  },
+  {
+    "platform": "rappi",
+    "address_id": "gdl_providencia",
+    "address_label": "Providencia, Guadalajara",
+    "city": "Guadalajara",
+    "zone_type": "premium",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 99.74,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 170.95,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 125.36,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 26.91,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 19.61,
+        "available": true
+      }
+    ],
+    "delivery_fee": 32.66,
+    "service_fee": 11.07,
+    "estimated_delivery_time": "33-38 min",
+    "promotions": [
+      "2x1 en McFlurry"
+    ],
+    "total_price_big_mac_combo": 143.47,
+    "screenshot_path": null,
+    "scrape_status": "success",
+    "error": null
+  },
+  {
+    "platform": "ubereats",
+    "address_id": "gdl_providencia",
+    "address_label": "Providencia, Guadalajara",
+    "city": "Guadalajara",
+    "zone_type": "premium",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": null,
+        "available": false
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 184.42,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 127.3,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 30.42,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 20.14,
+        "available": true
+      }
+    ],
+    "delivery_fee": 14.57,
+    "service_fee": 8.89,
+    "estimated_delivery_time": "33-39 min",
+    "promotions": [],
+    "total_price_big_mac_combo": null,
+    "screenshot_path": null,
+    "scrape_status": "partial",
+    "error": null
+  },
+  {
+    "platform": "didi",
+    "address_id": "gdl_providencia",
+    "address_label": "Providencia, Guadalajara",
+    "city": "Guadalajara",
+    "zone_type": "premium",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 101.99,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 174.65,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 117.83,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 29.34,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 18.81,
+        "available": true
+      }
+    ],
+    "delivery_fee": 15.43,
+    "service_fee": 7.34,
+    "estimated_delivery_time": "30-43 min",
+    "promotions": [],
+    "total_price_big_mac_combo": 124.76,
+    "screenshot_path": null,
+    "scrape_status": "success",
+    "error": null
+  },
+  {
+    "platform": "rappi",
+    "address_id": "gdl_chapultepec",
+    "address_label": "Chapultepec, Guadalajara",
+    "city": "Guadalajara",
+    "zone_type": "premium",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 99.54,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 170.35,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 126.38,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 29.34,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 18.73,
+        "available": true
+      }
+    ],
+    "delivery_fee": 25.15,
+    "service_fee": 6.57,
+    "estimated_delivery_time": "28-36 min",
+    "promotions": [],
+    "total_price_big_mac_combo": 131.26,
+    "screenshot_path": null,
+    "scrape_status": "success",
+    "error": null
+  },
+  {
+    "platform": "ubereats",
+    "address_id": "gdl_chapultepec",
+    "address_label": "Chapultepec, Guadalajara",
+    "city": "Guadalajara",
+    "zone_type": "premium",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 103.4,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 182.76,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 123.63,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 30.92,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 20.2,
+        "available": true
+      }
+    ],
+    "delivery_fee": 20.6,
+    "service_fee": 5.94,
+    "estimated_delivery_time": "24-38 min",
+    "promotions": [],
+    "total_price_big_mac_combo": 129.94,
+    "screenshot_path": null,
+    "scrape_status": "success",
+    "error": null
+  },
+  {
+    "platform": "didi",
+    "address_id": "gdl_chapultepec",
+    "address_label": "Chapultepec, Guadalajara",
+    "city": "Guadalajara",
+    "zone_type": "premium",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 104.1,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 176.3,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 118.02,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": null,
+        "available": false
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": null,
+        "available": false
+      }
+    ],
+    "delivery_fee": 25.2,
+    "service_fee": 12.33,
+    "estimated_delivery_time": "31-41 min",
+    "promotions": [
+      "Envio GRATIS sin minimo",
+      "50% descuento hasta $100"
+    ],
+    "total_price_big_mac_combo": 141.63,
+    "screenshot_path": null,
+    "scrape_status": "partial",
+    "error": null
+  },
+  {
+    "platform": "rappi",
+    "address_id": "gdl_zapopan",
+    "address_label": "Zapopan Centro, Guadalajara",
+    "city": "Guadalajara",
+    "zone_type": "middle",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 102.66,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 176.46,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": null,
+        "available": false
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 28.54,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 19.51,
+        "available": true
+      }
+    ],
+    "delivery_fee": 21.52,
+    "service_fee": 7.6,
+    "estimated_delivery_time": "46-54 min",
+    "promotions": [
+      "Cashback 10% en Rappi creditos",
+      "15% descuento con RappiPrime"
+    ],
+    "total_price_big_mac_combo": 131.78,
+    "screenshot_path": null,
+    "scrape_status": "partial",
+    "error": null
+  },
+  {
+    "platform": "ubereats",
+    "address_id": "gdl_zapopan",
+    "address_label": "Zapopan Centro, Guadalajara",
+    "city": "Guadalajara",
+    "zone_type": "middle",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 105.9,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 190.67,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 135.43,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 31.42,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 21.09,
+        "available": true
+      }
+    ],
+    "delivery_fee": 43.56,
+    "service_fee": 6.37,
+    "estimated_delivery_time": "21-26 min",
+    "promotions": [],
+    "total_price_big_mac_combo": 155.83,
+    "screenshot_path": null,
+    "scrape_status": "success",
+    "error": null
+  },
+  {
+    "platform": "didi",
+    "address_id": "gdl_zapopan",
+    "address_label": "Zapopan Centro, Guadalajara",
+    "city": "Guadalajara",
+    "zone_type": "middle",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": null,
+        "available": false
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 161.63,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 113.1,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 28.46,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 19.38,
+        "available": true
+      }
+    ],
+    "delivery_fee": 28.4,
+    "service_fee": 6.64,
+    "estimated_delivery_time": "28-37 min",
+    "promotions": [],
+    "total_price_big_mac_combo": null,
+    "screenshot_path": null,
+    "scrape_status": "partial",
+    "error": null
+  },
+  {
+    "platform": "rappi",
+    "address_id": "gdl_tlaquepaque",
+    "address_label": "Tlaquepaque, Guadalajara",
+    "city": "Guadalajara",
+    "zone_type": "popular",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 95.44,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 167.4,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 127.87,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 29.2,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 19.76,
+        "available": true
+      }
+    ],
+    "delivery_fee": 27.57,
+    "service_fee": 11.19,
+    "estimated_delivery_time": "53-59 min",
+    "promotions": [],
+    "total_price_big_mac_combo": 134.2,
+    "screenshot_path": null,
+    "scrape_status": "success",
+    "error": null
+  },
+  {
+    "platform": "ubereats",
+    "address_id": "gdl_tlaquepaque",
+    "address_label": "Tlaquepaque, Guadalajara",
+    "city": "Guadalajara",
+    "zone_type": "popular",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 110.56,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 171.14,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 130.68,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 30.69,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 20.23,
+        "available": true
+      }
+    ],
+    "delivery_fee": 35.01,
+    "service_fee": 6.98,
+    "estimated_delivery_time": "48-55 min",
+    "promotions": [],
+    "total_price_big_mac_combo": 152.55,
+    "screenshot_path": null,
+    "scrape_status": "success",
+    "error": null
+  },
+  {
+    "platform": "didi",
+    "address_id": "gdl_tlaquepaque",
+    "address_label": "Tlaquepaque, Guadalajara",
+    "city": "Guadalajara",
+    "zone_type": "popular",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 97.66,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 178.13,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 123.04,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": null,
+        "available": false
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": null,
+        "available": false
+      }
+    ],
+    "delivery_fee": 17.92,
+    "service_fee": 12.19,
+    "estimated_delivery_time": "37-51 min",
+    "promotions": [],
+    "total_price_big_mac_combo": 127.77,
+    "screenshot_path": null,
+    "scrape_status": "partial",
+    "error": null
+  },
+  {
+    "platform": "rappi",
+    "address_id": "mty_sanpedro",
+    "address_label": "San Pedro, Monterrey",
+    "city": "Monterrey",
+    "zone_type": "premium",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 102.65,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 171.41,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 120.59,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 27.54,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 19.52,
+        "available": true
+      }
+    ],
+    "delivery_fee": 26.76,
+    "service_fee": 8.98,
+    "estimated_delivery_time": "23-31 min",
+    "promotions": [
+      "Cashback 10% en Rappi creditos",
+      "$50 de descuento en pedidos +$200"
+    ],
+    "total_price_big_mac_combo": 138.39,
+    "screenshot_path": null,
+    "scrape_status": "success",
+    "error": null
+  },
+  {
+    "platform": "ubereats",
+    "address_id": "mty_sanpedro",
+    "address_label": "San Pedro, Monterrey",
+    "city": "Monterrey",
+    "zone_type": "premium",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 109.11,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 181.61,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 121.36,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 30.87,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 20.66,
+        "available": true
+      }
+    ],
+    "delivery_fee": 23.2,
+    "service_fee": 7.4,
+    "estimated_delivery_time": "30-42 min",
+    "promotions": [],
+    "total_price_big_mac_combo": 139.71,
+    "screenshot_path": null,
+    "scrape_status": "success",
+    "error": null
+  },
+  {
+    "platform": "didi",
+    "address_id": "mty_sanpedro",
+    "address_label": "San Pedro, Monterrey",
+    "city": "Monterrey",
+    "zone_type": "premium",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 95.59,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 159.94,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 112.6,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 28.79,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": null,
+        "available": false
+      }
+    ],
+    "delivery_fee": 19.62,
+    "service_fee": 4.94,
+    "estimated_delivery_time": "22-29 min",
+    "promotions": [
+      "Descuento de bienvenida $80"
+    ],
+    "total_price_big_mac_combo": 120.15,
+    "screenshot_path": null,
+    "scrape_status": "partial",
+    "error": null
+  },
+  {
+    "platform": "rappi",
+    "address_id": "mty_valle",
+    "address_label": "Valle, Monterrey",
+    "city": "Monterrey",
+    "zone_type": "middle",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 97.94,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 163.33,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 113.89,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 30.04,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 19.91,
+        "available": true
+      }
+    ],
+    "delivery_fee": 19.37,
+    "service_fee": 6.67,
+    "estimated_delivery_time": "36-48 min",
+    "promotions": [
+      "15% descuento con RappiPrime"
+    ],
+    "total_price_big_mac_combo": 123.98,
+    "screenshot_path": null,
+    "scrape_status": "success",
+    "error": null
+  },
+  {
+    "platform": "ubereats",
+    "address_id": "mty_valle",
+    "address_label": "Valle, Monterrey",
+    "city": "Monterrey",
+    "zone_type": "middle",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 101.25,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 181.63,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 131.09,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": null,
+        "available": false
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 19.36,
+        "available": true
+      }
+    ],
+    "delivery_fee": 31.74,
+    "service_fee": 8.57,
+    "estimated_delivery_time": "34-47 min",
+    "promotions": [],
+    "total_price_big_mac_combo": 141.56,
+    "screenshot_path": null,
+    "scrape_status": "partial",
+    "error": null
+  },
+  {
+    "platform": "didi",
+    "address_id": "mty_valle",
+    "address_label": "Valle, Monterrey",
+    "city": "Monterrey",
+    "zone_type": "middle",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 96.97,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 163.74,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 117.29,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 26.28,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 19.54,
+        "available": true
+      }
+    ],
+    "delivery_fee": 14.19,
+    "service_fee": 3.97,
+    "estimated_delivery_time": "41-55 min",
+    "promotions": [
+      "Cupon DiDi: COMIDAMX",
+      "Descuento de bienvenida $80"
+    ],
+    "total_price_big_mac_combo": 115.13,
+    "screenshot_path": null,
+    "scrape_status": "success",
+    "error": null
+  },
+  {
+    "platform": "rappi",
+    "address_id": "mty_centro",
+    "address_label": "Centro, Monterrey",
+    "city": "Monterrey",
+    "zone_type": "middle",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 100.1,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 166.88,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 126.35,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 27.45,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 20.0,
+        "available": true
+      }
+    ],
+    "delivery_fee": 43.12,
+    "service_fee": 6.15,
+    "estimated_delivery_time": "27-34 min",
+    "promotions": [
+      "15% descuento con RappiPrime"
+    ],
+    "total_price_big_mac_combo": 149.37,
+    "screenshot_path": null,
+    "scrape_status": "success",
+    "error": null
+  },
+  {
+    "platform": "ubereats",
+    "address_id": "mty_centro",
+    "address_label": "Centro, Monterrey",
+    "city": "Monterrey",
+    "zone_type": "middle",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 100.67,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 177.35,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 129.17,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 28.68,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": null,
+        "available": false
+      }
+    ],
+    "delivery_fee": 30.01,
+    "service_fee": 9.21,
+    "estimated_delivery_time": "22-31 min",
+    "promotions": [
+      "2x1 en bebidas seleccionadas",
+      "30% off maximo $80"
+    ],
+    "total_price_big_mac_combo": 139.89,
+    "screenshot_path": null,
+    "scrape_status": "partial",
+    "error": null
+  },
+  {
+    "platform": "didi",
+    "address_id": "mty_centro",
+    "address_label": "Centro, Monterrey",
+    "city": "Monterrey",
+    "zone_type": "middle",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 92.5,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 171.86,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 119.69,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 28.8,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 19.54,
+        "available": true
+      }
+    ],
+    "delivery_fee": 23.94,
+    "service_fee": 4.28,
+    "estimated_delivery_time": "54-66 min",
+    "promotions": [],
+    "total_price_big_mac_combo": 120.72,
+    "screenshot_path": null,
+    "scrape_status": "success",
+    "error": null
+  },
+  {
+    "platform": "rappi",
+    "address_id": "mty_cumbres",
+    "address_label": "Cumbres, Monterrey",
+    "city": "Monterrey",
+    "zone_type": "middle",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 106.52,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 169.52,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 114.67,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 28.1,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 19.69,
+        "available": true
+      }
+    ],
+    "delivery_fee": 41.81,
+    "service_fee": 4.71,
+    "estimated_delivery_time": "27-40 min",
+    "promotions": [
+      "Cashback 10% en Rappi creditos"
+    ],
+    "total_price_big_mac_combo": 153.04,
+    "screenshot_path": null,
+    "scrape_status": "success",
+    "error": null
+  },
+  {
+    "platform": "ubereats",
+    "address_id": "mty_cumbres",
+    "address_label": "Cumbres, Monterrey",
+    "city": "Monterrey",
+    "zone_type": "middle",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 110.95,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 190.43,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 120.72,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 30.6,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 20.29,
+        "available": true
+      }
+    ],
+    "delivery_fee": 23.01,
+    "service_fee": 5.6,
+    "estimated_delivery_time": "27-39 min",
+    "promotions": [],
+    "total_price_big_mac_combo": 139.56,
+    "screenshot_path": null,
+    "scrape_status": "success",
+    "error": null
+  },
+  {
+    "platform": "didi",
+    "address_id": "mty_cumbres",
+    "address_label": "Cumbres, Monterrey",
+    "city": "Monterrey",
+    "zone_type": "middle",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": null,
+        "available": false
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 170.45,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 113.19,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": null,
+        "available": false
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 19.9,
+        "available": true
+      }
+    ],
+    "delivery_fee": 34.47,
+    "service_fee": 6.57,
+    "estimated_delivery_time": "46-55 min",
+    "promotions": [],
+    "total_price_big_mac_combo": null,
+    "screenshot_path": null,
+    "scrape_status": "partial",
+    "error": null
+  },
+  {
+    "platform": "rappi",
+    "address_id": "can_hotelera",
+    "address_label": "Zona Hotelera, Cancun",
+    "city": "Cancun",
+    "zone_type": "premium",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 99.4,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 170.92,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 115.29,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 28.78,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 18.39,
+        "available": true
+      }
+    ],
+    "delivery_fee": 31.64,
+    "service_fee": 11.72,
+    "estimated_delivery_time": "26-35 min",
+    "promotions": [],
+    "total_price_big_mac_combo": 142.76,
+    "screenshot_path": null,
+    "scrape_status": "success",
+    "error": null
+  },
+  {
+    "platform": "ubereats",
+    "address_id": "can_hotelera",
+    "address_label": "Zona Hotelera, Cancun",
+    "city": "Cancun",
+    "zone_type": "premium",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 110.89,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 177.14,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 136.21,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 28.77,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 20.04,
+        "available": true
+      }
+    ],
+    "delivery_fee": 23.48,
+    "service_fee": 7.75,
+    "estimated_delivery_time": "22-30 min",
+    "promotions": [
+      "30% off maximo $80"
+    ],
+    "total_price_big_mac_combo": 142.12,
+    "screenshot_path": null,
+    "scrape_status": "success",
+    "error": null
+  },
+  {
+    "platform": "didi",
+    "address_id": "can_hotelera",
+    "address_label": "Zona Hotelera, Cancun",
+    "city": "Cancun",
+    "zone_type": "premium",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 102.97,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 164.19,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 124.64,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 29.59,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 18.06,
+        "available": true
+      }
+    ],
+    "delivery_fee": 28.55,
+    "service_fee": 4.68,
+    "estimated_delivery_time": "22-28 min",
+    "promotions": [],
+    "total_price_big_mac_combo": 136.2,
+    "screenshot_path": null,
+    "scrape_status": "success",
+    "error": null
+  },
+  {
+    "platform": "rappi",
+    "address_id": "can_centro",
+    "address_label": "Centro, Cancun",
+    "city": "Cancun",
+    "zone_type": "middle",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 100.82,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 176.42,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 123.18,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": null,
+        "available": false
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 18.89,
+        "available": true
+      }
+    ],
+    "delivery_fee": 38.5,
+    "service_fee": 14.17,
+    "estimated_delivery_time": "46-57 min",
+    "promotions": [],
+    "total_price_big_mac_combo": 153.49,
+    "screenshot_path": null,
+    "scrape_status": "partial",
+    "error": null
+  },
+  {
+    "platform": "ubereats",
+    "address_id": "can_centro",
+    "address_label": "Centro, Cancun",
+    "city": "Cancun",
+    "zone_type": "middle",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 112.71,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 190.85,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 128.7,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 29.1,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 19.89,
+        "available": true
+      }
+    ],
+    "delivery_fee": 17.71,
+    "service_fee": 11.4,
+    "estimated_delivery_time": "39-45 min",
+    "promotions": [],
+    "total_price_big_mac_combo": 141.82,
+    "screenshot_path": null,
+    "scrape_status": "success",
+    "error": null
+  },
+  {
+    "platform": "didi",
+    "address_id": "can_centro",
+    "address_label": "Centro, Cancun",
+    "city": "Cancun",
+    "zone_type": "middle",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 97.76,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 176.79,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 122.86,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 27.41,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 19.06,
+        "available": true
+      }
+    ],
+    "delivery_fee": 14.13,
+    "service_fee": 8.07,
+    "estimated_delivery_time": "43-55 min",
+    "promotions": [
+      "50% descuento hasta $100"
+    ],
+    "total_price_big_mac_combo": 119.96,
+    "screenshot_path": null,
+    "scrape_status": "success",
+    "error": null
+  },
+  {
+    "platform": "rappi",
+    "address_id": "can_juarez",
+    "address_label": "Puerto Juarez, Cancun",
+    "city": "Cancun",
+    "zone_type": "popular",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 102.26,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": null,
+        "available": false
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 120.25,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 28.59,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": null,
+        "available": false
+      }
+    ],
+    "delivery_fee": 34.97,
+    "service_fee": 12.24,
+    "estimated_delivery_time": "48-57 min",
+    "promotions": [],
+    "total_price_big_mac_combo": 149.47,
+    "screenshot_path": null,
+    "scrape_status": "partial",
+    "error": null
+  },
+  {
+    "platform": "ubereats",
+    "address_id": "can_juarez",
+    "address_label": "Puerto Juarez, Cancun",
+    "city": "Cancun",
+    "zone_type": "popular",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 102.41,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 181.44,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 129.21,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 32.03,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 21.69,
+        "available": true
+      }
+    ],
+    "delivery_fee": 29.04,
+    "service_fee": 8.37,
+    "estimated_delivery_time": "42-47 min",
+    "promotions": [],
+    "total_price_big_mac_combo": 139.82,
+    "screenshot_path": null,
+    "scrape_status": "success",
+    "error": null
+  },
+  {
+    "platform": "didi",
+    "address_id": "can_juarez",
+    "address_label": "Puerto Juarez, Cancun",
+    "city": "Cancun",
+    "zone_type": "popular",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 103.65,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": null,
+        "available": false
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 122.55,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 28.93,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": null,
+        "available": false
+      }
+    ],
+    "delivery_fee": 37.98,
+    "service_fee": 3.37,
+    "estimated_delivery_time": "32-37 min",
+    "promotions": [],
+    "total_price_big_mac_combo": 145.0,
+    "screenshot_path": null,
+    "scrape_status": "partial",
+    "error": null
+  },
+  {
+    "platform": "rappi",
+    "address_id": "pue_centro",
+    "address_label": "Centro, Puebla",
+    "city": "Puebla",
+    "zone_type": "middle",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 98.03,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 173.28,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 114.44,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 29.32,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 18.38,
+        "available": true
+      }
+    ],
+    "delivery_fee": 48.14,
+    "service_fee": 8.94,
+    "estimated_delivery_time": "47-56 min",
+    "promotions": [],
+    "total_price_big_mac_combo": 155.11,
+    "screenshot_path": null,
+    "scrape_status": "success",
+    "error": null
+  },
+  {
+    "platform": "ubereats",
+    "address_id": "pue_centro",
+    "address_label": "Centro, Puebla",
+    "city": "Puebla",
+    "zone_type": "middle",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": null,
+        "available": false
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 192.71,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 134.11,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 30.0,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 21.11,
+        "available": true
+      }
+    ],
+    "delivery_fee": 35.29,
+    "service_fee": 9.18,
+    "estimated_delivery_time": "29-42 min",
+    "promotions": [],
+    "total_price_big_mac_combo": null,
+    "screenshot_path": null,
+    "scrape_status": "partial",
+    "error": null
+  },
+  {
+    "platform": "didi",
+    "address_id": "pue_centro",
+    "address_label": "Centro, Puebla",
+    "city": "Puebla",
+    "zone_type": "middle",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 96.78,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 157.64,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 117.68,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": null,
+        "available": false
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 19.97,
+        "available": true
+      }
+    ],
+    "delivery_fee": 12.68,
+    "service_fee": 9.01,
+    "estimated_delivery_time": "41-49 min",
+    "promotions": [],
+    "total_price_big_mac_combo": 118.47,
+    "screenshot_path": null,
+    "scrape_status": "partial",
+    "error": null
+  },
+  {
+    "platform": "rappi",
+    "address_id": "pue_angelopolis",
+    "address_label": "Angelopolis, Puebla",
+    "city": "Puebla",
+    "zone_type": "premium",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 102.39,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 170.75,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 123.09,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 26.77,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 20.51,
+        "available": true
+      }
+    ],
+    "delivery_fee": 19.53,
+    "service_fee": 9.2,
+    "estimated_delivery_time": "27-38 min",
+    "promotions": [
+      "$50 de descuento en pedidos +$200",
+      "2x1 en McFlurry"
+    ],
+    "total_price_big_mac_combo": 131.12,
+    "screenshot_path": null,
+    "scrape_status": "success",
+    "error": null
+  },
+  {
+    "platform": "ubereats",
+    "address_id": "pue_angelopolis",
+    "address_label": "Angelopolis, Puebla",
+    "city": "Puebla",
+    "zone_type": "premium",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 108.63,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 184.52,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 124.42,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 29.03,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 19.75,
+        "available": true
+      }
+    ],
+    "delivery_fee": 33.32,
+    "service_fee": 7.06,
+    "estimated_delivery_time": "34-39 min",
+    "promotions": [],
+    "total_price_big_mac_combo": 149.01,
+    "screenshot_path": null,
+    "scrape_status": "success",
+    "error": null
+  },
+  {
+    "platform": "didi",
+    "address_id": "pue_angelopolis",
+    "address_label": "Angelopolis, Puebla",
+    "city": "Puebla",
+    "zone_type": "premium",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 97.19,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 159.97,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 117.68,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 28.36,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 19.59,
+        "available": true
+      }
+    ],
+    "delivery_fee": 20.43,
+    "service_fee": 2.94,
+    "estimated_delivery_time": "38-48 min",
+    "promotions": [
+      "50% descuento hasta $100"
+    ],
+    "total_price_big_mac_combo": 120.56,
+    "screenshot_path": null,
+    "scrape_status": "success",
+    "error": null
+  },
+  {
+    "platform": "rappi",
+    "address_id": "pue_cholula",
+    "address_label": "Cholula, Puebla",
+    "city": "Puebla",
+    "zone_type": "middle",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 104.02,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 173.64,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": null,
+        "available": false
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 28.57,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 18.32,
+        "available": true
+      }
+    ],
+    "delivery_fee": 22.95,
+    "service_fee": 6.96,
+    "estimated_delivery_time": "44-49 min",
+    "promotions": [],
+    "total_price_big_mac_combo": 133.93,
+    "screenshot_path": null,
+    "scrape_status": "partial",
+    "error": null
+  },
+  {
+    "platform": "ubereats",
+    "address_id": "pue_cholula",
+    "address_label": "Cholula, Puebla",
+    "city": "Puebla",
+    "zone_type": "middle",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 102.07,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 187.46,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 132.06,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 31.2,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 19.42,
+        "available": true
+      }
+    ],
+    "delivery_fee": 43.36,
+    "service_fee": 5.01,
+    "estimated_delivery_time": "39-52 min",
+    "promotions": [],
+    "total_price_big_mac_combo": 150.44,
+    "screenshot_path": null,
+    "scrape_status": "success",
+    "error": null
+  },
+  {
+    "platform": "didi",
+    "address_id": "pue_cholula",
+    "address_label": "Cholula, Puebla",
+    "city": "Puebla",
+    "zone_type": "middle",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 95.97,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": null,
+        "available": false
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 123.63,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 26.45,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 19.87,
+        "available": true
+      }
+    ],
+    "delivery_fee": 15.41,
+    "service_fee": 4.9,
+    "estimated_delivery_time": "42-53 min",
+    "promotions": [],
+    "total_price_big_mac_combo": 116.28,
+    "screenshot_path": null,
+    "scrape_status": "partial",
+    "error": null
+  },
+  {
+    "platform": "rappi",
+    "address_id": "mer_centro",
+    "address_label": "Centro, Merida",
+    "city": "Merida",
+    "zone_type": "middle",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 106.85,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 170.52,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 114.58,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 29.7,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 19.95,
+        "available": true
+      }
+    ],
+    "delivery_fee": 25.45,
+    "service_fee": 8.4,
+    "estimated_delivery_time": "30-36 min",
+    "promotions": [
+      "Cashback 10% en Rappi creditos",
+      "Combo familiar con 20% off"
+    ],
+    "total_price_big_mac_combo": 140.7,
+    "screenshot_path": null,
+    "scrape_status": "success",
+    "error": null
+  },
+  {
+    "platform": "ubereats",
+    "address_id": "mer_centro",
+    "address_label": "Centro, Merida",
+    "city": "Merida",
+    "zone_type": "middle",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 103.96,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": null,
+        "available": false
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 131.1,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 28.55,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 20.26,
+        "available": true
+      }
+    ],
+    "delivery_fee": 26.18,
+    "service_fee": 4.19,
+    "estimated_delivery_time": "21-34 min",
+    "promotions": [],
+    "total_price_big_mac_combo": 134.33,
+    "screenshot_path": null,
+    "scrape_status": "partial",
+    "error": null
+  },
+  {
+    "platform": "didi",
+    "address_id": "mer_centro",
+    "address_label": "Centro, Merida",
+    "city": "Merida",
+    "zone_type": "middle",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 96.33,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 164.95,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 122.16,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 28.64,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 18.54,
+        "available": true
+      }
+    ],
+    "delivery_fee": 29.73,
+    "service_fee": 3.94,
+    "estimated_delivery_time": "28-38 min",
+    "promotions": [],
+    "total_price_big_mac_combo": 130.0,
+    "screenshot_path": null,
+    "scrape_status": "success",
+    "error": null
+  },
+  {
+    "platform": "rappi",
+    "address_id": "mer_altabrisa",
+    "address_label": "Altabrisa, Merida",
+    "city": "Merida",
+    "zone_type": "premium",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 95.53,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 165.52,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 121.73,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 28.86,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 19.43,
+        "available": true
+      }
+    ],
+    "delivery_fee": 29.05,
+    "service_fee": 10.29,
+    "estimated_delivery_time": "20-25 min",
+    "promotions": [
+      "15% descuento con RappiPrime",
+      "Combo familiar con 20% off"
+    ],
+    "total_price_big_mac_combo": 134.87,
+    "screenshot_path": null,
+    "scrape_status": "success",
+    "error": null
+  },
+  {
+    "platform": "ubereats",
+    "address_id": "mer_altabrisa",
+    "address_label": "Altabrisa, Merida",
+    "city": "Merida",
+    "zone_type": "premium",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 102.17,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 185.49,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 131.98,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 28.55,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 20.12,
+        "available": true
+      }
+    ],
+    "delivery_fee": 14.79,
+    "service_fee": 6.73,
+    "estimated_delivery_time": "22-36 min",
+    "promotions": [],
+    "total_price_big_mac_combo": 123.69,
+    "screenshot_path": null,
+    "scrape_status": "success",
+    "error": null
+  },
+  {
+    "platform": "didi",
+    "address_id": "mer_altabrisa",
+    "address_label": "Altabrisa, Merida",
+    "city": "Merida",
+    "zone_type": "premium",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 93.24,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 160.73,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 121.01,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 28.43,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 18.35,
+        "available": true
+      }
+    ],
+    "delivery_fee": 17.71,
+    "service_fee": 4.2,
+    "estimated_delivery_time": "36-51 min",
+    "promotions": [],
+    "total_price_big_mac_combo": 115.15,
+    "screenshot_path": null,
+    "scrape_status": "success",
+    "error": null
+  },
+  {
+    "platform": "rappi",
+    "address_id": "mer_montejo",
+    "address_label": "Paseo Montejo, Merida",
+    "city": "Merida",
+    "zone_type": "premium",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 98.02,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 182.18,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 116.21,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 29.39,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 18.76,
+        "available": true
+      }
+    ],
+    "delivery_fee": 25.44,
+    "service_fee": 8.27,
+    "estimated_delivery_time": "22-30 min",
+    "promotions": [],
+    "total_price_big_mac_combo": 131.73,
+    "screenshot_path": null,
+    "scrape_status": "success",
+    "error": null
+  },
+  {
+    "platform": "ubereats",
+    "address_id": "mer_montejo",
+    "address_label": "Paseo Montejo, Merida",
+    "city": "Merida",
+    "zone_type": "premium",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 106.52,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 188.96,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 133.96,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 28.27,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 21.39,
+        "available": true
+      }
+    ],
+    "delivery_fee": 24.15,
+    "service_fee": 9.55,
+    "estimated_delivery_time": "24-31 min",
+    "promotions": [
+      "2x1 en bebidas seleccionadas"
+    ],
+    "total_price_big_mac_combo": 140.22,
+    "screenshot_path": null,
+    "scrape_status": "success",
+    "error": null
+  },
+  {
+    "platform": "didi",
+    "address_id": "mer_montejo",
+    "address_label": "Paseo Montejo, Merida",
+    "city": "Merida",
+    "zone_type": "premium",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 102.28,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 175.25,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 112.13,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 26.94,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 18.65,
+        "available": true
+      }
+    ],
+    "delivery_fee": 15.74,
+    "service_fee": 3.64,
+    "estimated_delivery_time": "32-42 min",
+    "promotions": [
+      "Descuento de bienvenida $80"
+    ],
+    "total_price_big_mac_combo": 121.66,
+    "screenshot_path": null,
+    "scrape_status": "success",
+    "error": null
+  },
+  {
+    "platform": "rappi",
+    "address_id": "tij_zonario",
+    "address_label": "Zona Rio, Tijuana",
+    "city": "Tijuana",
+    "zone_type": "premium",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 103.41,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 178.46,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 115.32,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 28.79,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 19.67,
+        "available": true
+      }
+    ],
+    "delivery_fee": 31.64,
+    "service_fee": 8.86,
+    "estimated_delivery_time": "35-47 min",
+    "promotions": [],
+    "total_price_big_mac_combo": 143.91,
+    "screenshot_path": null,
+    "scrape_status": "success",
+    "error": null
+  },
+  {
+    "platform": "ubereats",
+    "address_id": "tij_zonario",
+    "address_label": "Zona Rio, Tijuana",
+    "city": "Tijuana",
+    "zone_type": "premium",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 108.99,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": null,
+        "available": false
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 125.13,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 29.42,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 20.36,
+        "available": true
+      }
+    ],
+    "delivery_fee": 29.17,
+    "service_fee": 6.49,
+    "estimated_delivery_time": "23-28 min",
+    "promotions": [
+      "30% off maximo $80",
+      "Envio gratis con Uber One"
+    ],
+    "total_price_big_mac_combo": 144.65,
+    "screenshot_path": null,
+    "scrape_status": "partial",
+    "error": null
+  },
+  {
+    "platform": "didi",
+    "address_id": "tij_zonario",
+    "address_label": "Zona Rio, Tijuana",
+    "city": "Tijuana",
+    "zone_type": "premium",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 96.82,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 171.22,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 112.16,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": null,
+        "available": false
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": null,
+        "available": false
+      }
+    ],
+    "delivery_fee": 20.58,
+    "service_fee": 5.47,
+    "estimated_delivery_time": "34-39 min",
+    "promotions": [],
+    "total_price_big_mac_combo": 122.87,
+    "screenshot_path": null,
+    "scrape_status": "partial",
+    "error": null
+  },
+  {
+    "platform": "rappi",
+    "address_id": "tij_playas",
+    "address_label": "Playas, Tijuana",
+    "city": "Tijuana",
+    "zone_type": "middle",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 99.85,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": null,
+        "available": false
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 114.35,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 26.74,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 20.5,
+        "available": true
+      }
+    ],
+    "delivery_fee": 37.29,
+    "service_fee": 5.65,
+    "estimated_delivery_time": "47-52 min",
+    "promotions": [
+      "Combo familiar con 20% off",
+      "$50 de descuento en pedidos +$200"
+    ],
+    "total_price_big_mac_combo": 142.79,
+    "screenshot_path": null,
+    "scrape_status": "partial",
+    "error": null
+  },
+  {
+    "platform": "ubereats",
+    "address_id": "tij_playas",
+    "address_label": "Playas, Tijuana",
+    "city": "Tijuana",
+    "zone_type": "middle",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 110.46,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 171.72,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 130.96,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 30.99,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 21.51,
+        "available": true
+      }
+    ],
+    "delivery_fee": 25.0,
+    "service_fee": 8.46,
+    "estimated_delivery_time": "23-38 min",
+    "promotions": [],
+    "total_price_big_mac_combo": 143.92,
+    "screenshot_path": null,
+    "scrape_status": "success",
+    "error": null
+  },
+  {
+    "platform": "didi",
+    "address_id": "tij_playas",
+    "address_label": "Playas, Tijuana",
+    "city": "Tijuana",
+    "zone_type": "middle",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 100.98,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": null,
+        "available": false
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 115.48,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 28.89,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 19.7,
+        "available": true
+      }
+    ],
+    "delivery_fee": 26.21,
+    "service_fee": 4.98,
+    "estimated_delivery_time": "37-47 min",
+    "promotions": [],
+    "total_price_big_mac_combo": 132.17,
+    "screenshot_path": null,
+    "scrape_status": "partial",
+    "error": null
+  },
+  {
+    "platform": "rappi",
+    "address_id": "tij_centro",
+    "address_label": "Centro, Tijuana",
+    "city": "Tijuana",
+    "zone_type": "popular",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": null,
+        "available": false
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 168.06,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": null,
+        "available": false
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 27.16,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 20.0,
+        "available": true
+      }
+    ],
+    "delivery_fee": 43.99,
+    "service_fee": 8.89,
+    "estimated_delivery_time": "43-57 min",
+    "promotions": [],
+    "total_price_big_mac_combo": null,
+    "screenshot_path": null,
+    "scrape_status": "partial",
+    "error": null
+  },
+  {
+    "platform": "ubereats",
+    "address_id": "tij_centro",
+    "address_label": "Centro, Tijuana",
+    "city": "Tijuana",
+    "zone_type": "popular",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 101.48,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": null,
+        "available": false
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 132.48,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 28.83,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 20.21,
+        "available": true
+      }
+    ],
+    "delivery_fee": 27.66,
+    "service_fee": 5.74,
+    "estimated_delivery_time": "31-43 min",
+    "promotions": [],
+    "total_price_big_mac_combo": 134.88,
+    "screenshot_path": null,
+    "scrape_status": "partial",
+    "error": null
+  },
+  {
+    "platform": "didi",
+    "address_id": "tij_centro",
+    "address_label": "Centro, Tijuana",
+    "city": "Tijuana",
+    "zone_type": "popular",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 95.12,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 178.13,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 124.49,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 28.49,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 19.55,
+        "available": true
+      }
+    ],
+    "delivery_fee": 29.13,
+    "service_fee": 3.69,
+    "estimated_delivery_time": "35-44 min",
+    "promotions": [],
+    "total_price_big_mac_combo": 127.94,
+    "screenshot_path": null,
+    "scrape_status": "success",
+    "error": null
+  },
+  {
+    "platform": "rappi",
+    "address_id": "qro_centro",
+    "address_label": "Centro, Queretaro",
+    "city": "Queretaro",
+    "zone_type": "middle",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 94.72,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": null,
+        "available": false
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 124.06,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 27.05,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 18.45,
+        "available": true
+      }
+    ],
+    "delivery_fee": 34.4,
+    "service_fee": 8.79,
+    "estimated_delivery_time": "27-39 min",
+    "promotions": [],
+    "total_price_big_mac_combo": 137.91,
+    "screenshot_path": null,
+    "scrape_status": "partial",
+    "error": null
+  },
+  {
+    "platform": "ubereats",
+    "address_id": "qro_centro",
+    "address_label": "Centro, Queretaro",
+    "city": "Queretaro",
+    "zone_type": "middle",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": null,
+        "available": false
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 179.85,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 125.97,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 28.51,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 19.97,
+        "available": true
+      }
+    ],
+    "delivery_fee": 36.44,
+    "service_fee": 6.51,
+    "estimated_delivery_time": "23-35 min",
+    "promotions": [
+      "$70 off en tu primera orden",
+      "2x1 en bebidas seleccionadas"
+    ],
+    "total_price_big_mac_combo": null,
+    "screenshot_path": null,
+    "scrape_status": "partial",
+    "error": null
+  },
+  {
+    "platform": "didi",
+    "address_id": "qro_centro",
+    "address_label": "Centro, Queretaro",
+    "city": "Queretaro",
+    "zone_type": "middle",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 97.83,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 159.04,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 123.45,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 28.66,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 18.39,
+        "available": true
+      }
+    ],
+    "delivery_fee": 23.34,
+    "service_fee": 7.31,
+    "estimated_delivery_time": "38-51 min",
+    "promotions": [
+      "Envio GRATIS sin minimo",
+      "Descuento de bienvenida $80"
+    ],
+    "total_price_big_mac_combo": 128.48,
+    "screenshot_path": null,
+    "scrape_status": "success",
+    "error": null
+  },
+  {
+    "platform": "rappi",
+    "address_id": "qro_juriquilla",
+    "address_label": "Juriquilla, Queretaro",
+    "city": "Queretaro",
+    "zone_type": "premium",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 101.45,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 166.95,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 118.51,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 27.28,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 19.34,
+        "available": true
+      }
+    ],
+    "delivery_fee": 35.7,
+    "service_fee": 9.05,
+    "estimated_delivery_time": "35-40 min",
+    "promotions": [],
+    "total_price_big_mac_combo": 146.2,
+    "screenshot_path": null,
+    "scrape_status": "success",
+    "error": null
+  },
+  {
+    "platform": "ubereats",
+    "address_id": "qro_juriquilla",
+    "address_label": "Juriquilla, Queretaro",
+    "city": "Queretaro",
+    "zone_type": "premium",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 105.02,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": null,
+        "available": false
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 123.99,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": 31.24,
+        "available": true
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 21.05,
+        "available": true
+      }
+    ],
+    "delivery_fee": 28.61,
+    "service_fee": 7.14,
+    "estimated_delivery_time": "22-34 min",
+    "promotions": [
+      "$70 off en tu primera orden",
+      "2x1 en bebidas seleccionadas"
+    ],
+    "total_price_big_mac_combo": 140.77,
+    "screenshot_path": null,
+    "scrape_status": "partial",
+    "error": null
+  },
+  {
+    "platform": "didi",
+    "address_id": "qro_juriquilla",
+    "address_label": "Juriquilla, Queretaro",
+    "city": "Queretaro",
+    "zone_type": "premium",
+    "timestamp": "2026-03-27T19:25:24.913922",
+    "restaurant": "McDonalds",
+    "products": [
+      {
+        "name": "Big Mac",
+        "price": 104.54,
+        "available": true
+      },
+      {
+        "name": "Combo Mediano McDonalds",
+        "price": 161.26,
+        "available": true
+      },
+      {
+        "name": "McNuggets 10 piezas",
+        "price": 121.64,
+        "available": true
+      },
+      {
+        "name": "Coca-Cola 500ml",
+        "price": null,
+        "available": false
+      },
+      {
+        "name": "Agua Natural 1L",
+        "price": 19.83,
+        "available": true
+      }
+    ],
+    "delivery_fee": 17.06,
+    "service_fee": 8.87,
+    "estimated_delivery_time": "31-41 min",
+    "promotions": [
+      "Descuento de bienvenida $80"
+    ],
+    "total_price_big_mac_combo": 130.47,
+    "screenshot_path": null,
+    "scrape_status": "partial",
+    "error": null
+  }
+]
