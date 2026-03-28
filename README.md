@@ -186,8 +186,8 @@ streamlit run app/main.py
 ## Decisiones Técnicas
 
 ### Por que OpenRouter como gateway LLM
-- **Model-agnostic**: Permite cambiar entre Claude, GPT-4o, Gemini y Llama con un solo parámetro, sin cambiar código.
-- **Flexibilidad de costos**: El usuario puede elegir modelos mas baratos (Gemini Flash, Llama) o mas capaces (Claude Sonnet) según la complejidad de la pregunta.
+- **Model-agnostic**: Permite cambiar entre Claude, GPT-4o y Llama con un solo parámetro, sin cambiar código.
+- **Flexibilidad de costos**: El usuario puede elegir modelos mas baratos (Llama) o mas capaces (Claude Sonnet) según la complejidad de la pregunta.
 - **API compatible con OpenAI**: Usa el SDK estándar de OpenAI, facilitando migración futura.
 
 ### Por que Streamlit
@@ -223,12 +223,12 @@ streamlit run app/main.py
 
 Costos aproximados por sesión via OpenRouter (marzo 2026):
 
-| Escenario | Claude Sonnet 4 | GPT-4o | Gemini 2.5 Flash | Llama 4 Maverick |
-|---|---|---|---|---|
-| Sesión de chat (10 preguntas) | ~$0.15-0.30 | ~$0.10-0.25 | ~$0.03-0.08 | ~$0.02-0.05 |
-| Reporte de insights operativos | ~$0.05-0.15 | ~$0.05-0.10 | ~$0.01-0.03 | ~$0.01-0.02 |
-| Informe competitivo | ~$0.05-0.10 | ~$0.05-0.08 | ~$0.01-0.03 | ~$0.01-0.02 |
-| **Total sesión completa** | **~$0.25-0.55** | **~$0.20-0.43** | **~$0.05-0.14** | **~$0.04-0.09** |
+| Escenario | Claude Sonnet 4 | GPT-4o | Llama 4 Maverick |
+|---|---|---|---|
+| Sesión de chat (10 preguntas) | ~$0.15-0.30 | ~$0.10-0.25 | ~$0.02-0.05 |
+| Reporte de insights operativos | ~$0.05-0.15 | ~$0.05-0.10 | ~$0.01-0.02 |
+| Informe competitivo | ~$0.05-0.10 | ~$0.05-0.08 | ~$0.01-0.02 |
+| **Total sesión completa** | **~$0.25-0.55** | **~$0.20-0.43** | **~$0.04-0.09** |
 
 > Nota: Costos basados en pricing publico de OpenRouter. Varian según longitud de prompts y respuestas.
 

@@ -28,7 +28,6 @@ AVAILABLE_MODELS = [
     {"id": "anthropic/claude-sonnet-4.6", "label": "Claude Sonnet 4.6"},
     {"id": "anthropic/claude-haiku-4.5", "label": "Haiku 4.5"},
     {"id": "openai/gpt-4o", "label": "GPT-4o"},
-    {"id": "google/gemini-2.5-flash", "label": "Gemini 2.5 Flash"},
     {"id": "meta-llama/llama-4-maverick", "label": "Llama 4 Maverick"},
 ]
 
