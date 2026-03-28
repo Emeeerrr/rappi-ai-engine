@@ -287,7 +287,7 @@ if case == "Análisis de Operaciones":
     # TAB: Chat
     # ==================================================================
     with tab_chat:
-        chat_area = st.container(height=320)
+        chat_area = st.container()
         with chat_area:
             if not st.session_state.chat_history:
                 st.markdown("")
