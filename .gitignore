@@ -13,8 +13,9 @@ dist/
 build/
 *.egg
 
-# Data
+# Data (not tracked)
 data/raw/
+data/competitive/
 
 # IDE
 .vscode/
@@ -26,8 +27,11 @@ data/raw/
 .DS_Store
 Thumbs.db
 
-# Outputs (optional, uncomment if you want to ignore)
-# outputs/
+# Outputs
+outputs/
+
+# Streamlit
+.streamlit/
 
 # Jupyter
 .ipynb_checkpoints/

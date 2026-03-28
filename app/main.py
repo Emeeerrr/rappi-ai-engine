@@ -198,6 +198,9 @@ with st.sidebar:
         if st.session_state.chat_engine is not None:
             st.session_state.chat_engine.clear_memory()
         st.rerun()
+    st.markdown("---")
+    st.caption("Powered by OpenRouter")
+    st.caption("Prueba Tecnica Rappi 2025")
 
 
 # ------------------------------------------------------------------
@@ -462,7 +465,7 @@ else:
                 st.session_state.competitive_data = results
             st.rerun()
 
-    # Display loaded data
+    # Display loaded data and analysis
     if st.session_state.competitive_data:
         data = st.session_state.competitive_data
         platforms = sorted(set(r["platform"] for r in data))
@@ -493,8 +496,174 @@ else:
                     "Tiempo Entrega": r.get("estimated_delivery_time"),
                     "Total Big Mac": r.get("total_price_big_mac_combo"),
                 })
-        if rows:
-            df_comp = pd.DataFrame(rows)
-            st.dataframe(df_comp, use_container_width=True, height=400)
 
-        st.caption("El analisis competitivo detallado y reporte se implementaran en la siguiente fase.")
+        with st.expander("Ver datos crudos"):
+            if rows:
+                st.dataframe(pd.DataFrame(rows), use_container_width=True, height=300)
+
+        # -- Run CompetitiveAnalyzer (cached) --
+        from app.competitive.analysis import CompetitiveAnalyzer
+
+        if "comp_analyzer" not in st.session_state or st.session_state.get("_comp_data_id") != id(data):
+            st.session_state.comp_analyzer = CompetitiveAnalyzer(data)
+            st.session_state._comp_data_id = id(data)
+
+        analyzer = st.session_state.comp_analyzer
+
+        # Platform colors
+        PLAT_COLORS = {"rappi": "#FF441F", "ubereats": "#06C167", "didi": "#FF8C00"}
+
+        # ==============================================
+        # Analisis Rapido (metrics)
+        # ==============================================
+        st.divider()
+        st.subheader("Analisis Rapido")
+
+        costs = analyzer.total_cost_analysis()
+        fees = analyzer.fee_structure_analysis()
+        times = analyzer.delivery_time_comparison()
+
+        cost_df = costs["data"]
+        fee_df = fees["data"]
+        time_df = times["data"]
+
+        mc1, mc2, mc3 = st.columns(3)
+
+        # Cheapest platform
+        if isinstance(cost_df, pd.DataFrame) and not cost_df.empty:
+            cheapest = cost_df.loc[cost_df["total_cost"].idxmin()]
+            rappi_cost = cost_df.loc[cost_df["platform"] == "rappi", "total_cost"]
+            rappi_cost_val = rappi_cost.values[0] if len(rappi_cost) > 0 else 0
+            delta = rappi_cost_val - cheapest["total_cost"]
+            mc1.metric(
+                "Plataforma mas barata",
+                f"{cheapest['platform']} (${cheapest['total_cost']:.0f})",
+                delta=f"Rappi +${delta:.0f}" if delta > 0 else "Rappi es la mas barata",
+                delta_color="inverse",
+            )
+
+        # Rappi delivery fee
+        if isinstance(fee_df, pd.DataFrame) and not fee_df.empty:
+            rappi_fee = fee_df.loc[fee_df["platform"] == "rappi", "delivery_fee"]
+            avg_other = fee_df.loc[fee_df["platform"] != "rappi", "delivery_fee"].mean()
+            if len(rappi_fee) > 0:
+                rv = rappi_fee.values[0]
+                mc2.metric(
+                    "Delivery Fee Rappi",
+                    f"${rv:.0f} MXN",
+                    delta=f"${rv - avg_other:+.0f} vs competencia",
+                    delta_color="inverse",
+                )
+
+        # Rappi delivery time
+        if isinstance(time_df, pd.DataFrame) and not time_df.empty:
+            rappi_time = time_df.loc[time_df["platform"] == "rappi", "delivery_time_min"]
+            avg_other_time = time_df.loc[time_df["platform"] != "rappi", "delivery_time_min"].mean()
+            if len(rappi_time) > 0:
+                rt = rappi_time.values[0]
+                mc3.metric(
+                    "Tiempo Entrega Rappi",
+                    f"{rt:.0f} min",
+                    delta=f"{rt - avg_other_time:+.0f} min vs competencia",
+                    delta_color="inverse",
+                )
+
+        # ==============================================
+        # Comparaciones (charts)
+        # ==============================================
+        st.divider()
+        st.subheader("Comparaciones")
+
+        # 1. Price by product (grouped bar)
+        prices = analyzer.price_comparison()
+        price_chart = prices["chart_data"]
+        if price_chart and price_chart.get("series"):
+            fig = go.Figure()
+            for plat, vals in price_chart["series"].items():
+                fig.add_trace(go.Bar(
+                    name=plat, x=price_chart["categories"], y=vals,
+                    marker_color=PLAT_COLORS.get(plat, "#888"),
+                ))
+            fig.update_layout(
+                barmode="group", title=price_chart["labels"]["title"],
+                xaxis_title=price_chart["labels"]["x"], yaxis_title=price_chart["labels"]["y"],
+                **PLOTLY_LAYOUT,
+            )
+            st.plotly_chart(fig, width="stretch", key="comp_prices")
+
+        # 2. Delivery fee by platform
+        fee_chart = fees["chart_data"]
+        if fee_chart and fee_chart.get("series"):
+            fig2 = go.Figure()
+            for label, vals in fee_chart["series"].items():
+                fig2.add_trace(go.Bar(
+                    name=label, x=fee_chart["categories"], y=vals,
+                    marker_color=[PLAT_COLORS.get(c, "#888") for c in fee_chart["categories"]],
+                ))
+            fig2.update_layout(
+                barmode="stack", title=fee_chart["labels"]["title"],
+                xaxis_title=fee_chart["labels"]["x"], yaxis_title=fee_chart["labels"]["y"],
+                **PLOTLY_LAYOUT,
+            )
+            st.plotly_chart(fig2, width="stretch", key="comp_fees")
+
+        # 3. Total cost by platform
+        cost_chart = costs["chart_data"]
+        if cost_chart and cost_chart.get("values"):
+            fig3 = go.Figure(go.Bar(
+                x=cost_chart["categories"], y=cost_chart["values"],
+                marker_color=[PLAT_COLORS.get(c, "#888") for c in cost_chart["categories"]],
+                text=[f"${v:.0f}" for v in cost_chart["values"]], textposition="auto",
+            ))
+            fig3.update_layout(
+                title=cost_chart["labels"]["title"],
+                xaxis_title=cost_chart["labels"]["x"], yaxis_title=cost_chart["labels"]["y"],
+                **PLOTLY_LAYOUT,
+            )
+            st.plotly_chart(fig3, width="stretch", key="comp_cost")
+
+        # 4. Delivery time (horizontal bar)
+        time_chart = times["chart_data"]
+        if time_chart and time_chart.get("values"):
+            fig4 = go.Figure(go.Bar(
+                y=time_chart["categories"], x=time_chart["values"], orientation="h",
+                marker_color=[PLAT_COLORS.get(c, "#888") for c in time_chart["categories"]],
+                text=[f"{v:.0f} min" for v in time_chart["values"]], textposition="auto",
+            ))
+            fig4.update_layout(
+                title=time_chart["labels"]["title"],
+                xaxis_title=time_chart["labels"]["x"], yaxis_title=time_chart["labels"]["y"],
+                **PLOTLY_LAYOUT,
+            )
+            st.plotly_chart(fig4, width="stretch", key="comp_time")
+
+        # ==============================================
+        # Informe Competitivo
+        # ==============================================
+        st.divider()
+        st.subheader("Informe Competitivo")
+
+        if "comp_report_md" not in st.session_state:
+            st.session_state.comp_report_md = None
+            st.session_state.comp_report_html = None
+
+        if st.button("Generar Informe Completo", type="primary", key="gen_comp_report"):
+            from app.competitive.report import CompetitiveReportGenerator
+            gen = CompetitiveReportGenerator(model=st.session_state.selected_model)
+            with st.spinner("Generando informe competitivo con IA..."):
+                report_md = gen.generate_report(analyzer)
+                report_html = gen.generate_html_report(report_md)
+            st.session_state.comp_report_md = report_md
+            st.session_state.comp_report_html = report_html
+            st.rerun()
+
+        if st.session_state.comp_report_md:
+            st.markdown(st.session_state.comp_report_md)
+            st.divider()
+            st.download_button(
+                label="Descargar Informe",
+                data=st.session_state.comp_report_md,
+                file_name="rappi_competitive_report.md",
+                mime="text/markdown",
+                key="dl_comp_report",
+            )
